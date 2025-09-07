@@ -49,5 +49,19 @@ def Distance_impact():
 def Angle_impact():
     return render_template('Angle_impact.html')
 
+
+@app.after_request
+def apply_csp(response):
+    csp = (
+        "default-src 'self'; "
+        "script-src 'self' 'unsafe-eval'; "
+        "style-src 'self'; "
+        "img-src 'self' data:; "
+        "font-src 'self' data:; "
+        "object-src 'none'"
+    )
+    response.headers["Content-Security-Policy"] = csp
+    return response
+
 if __name__ == '__main__':
     app.run(debug=True)
