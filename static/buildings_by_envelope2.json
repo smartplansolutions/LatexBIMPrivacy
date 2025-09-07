@@ -1,0 +1,77 @@
+{
+    "environment": {
+      "name": "Environment1"
+    },
+    "materials": {
+      "wall": { "color": "#a0a0a0", "opacity": 1 },
+      "floor": { "color": "#dfdfdf", "opacity": 1 },
+      "frame": { "color": "#aa7777", "opacity": 1 },
+      "handle": { "color": "#aaaaaa", "opacity": 1 },
+      "glass": { "color": "#0000FF", "opacity": 1 }
+    },
+    "buildings": [
+      {
+        "name": "building1",
+        "xCoords": [-4, 10, 10, -4],
+        "zCoords": [3, 3, 10, 10],
+        "levels": [0, 4, 8, 12, 16],
+        "windows": [
+              {
+              "side_index":2,
+               "width": 3,
+              "height": 2,
+              "rel_position": [2, 0.9], 
+              "levels_index":[0,1,2,3]
+               }
+            ],
+          "walls": [
+                {"xzCoordinates":[[0, 3], [0, 10]],
+                "levels":[0, 4, 8, 12,16],
+                "doors":[
+                    {
+                        "rel_position":4 
+                    }
+                 ]
+                }
+              ]
+      },
+      {
+        "name": "building2",
+        "xCoords": [19, 26, 26, 19],
+        "zCoords": [3, 3, 10, 10],
+        "levels": [0, 4, 8, 12, 16, 20],
+        "windows": [
+              {
+              "side_index":0,
+               "width": 3,
+              "height": 2,
+              "rel_position": [2, 0.9], 
+              "levels_index":[0,1,2,3]
+               }
+            ]
+      }
+    ],
+    "views": [
+    {
+      "name": "3D",
+      "cameraType": "perspective", 
+      "cameraPosition": [32, 13, 30],
+      "cameraLookAt": [0, -1, 0],
+      "hideRule": [
+        { "condition":"element instanceof OBIM.WALL && element.spoint[2]>7 && element.epoint[2]>7" }
+      ]
+    },
+    {
+      "name": "Up View",
+      "cameraType": "orthographic",  
+      "cameraLookAt": [0, -1, 0],
+      "cameraPosition": [10, 8, 10],
+      "hideRule": [
+        { "condition":"element instanceof OBIM.FLOOR && element.level<5" }
+      ]
+    }
+  ]
+
+
+  }
+  

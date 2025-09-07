@@ -346,6 +346,8 @@
     const building_1_sum=[0,0,0,0,0]
     const building_2_sum=[0,0,0,0,0]
     const building_3_sum=[0,0,0,0,0]
+    const pooled_sum=[0,0,0,0,0]
+    const total_points=points_building1.length+points_building2.length+points_building3.length
     for(let i=0;i<5;i++)
     {
         vi_building_1.forEach((pointvi)=>
@@ -354,10 +356,12 @@
         {building_2_sum[i]+=pointvi[i]})
         vi_building_3.forEach((pointvi)=>
         {building_3_sum[i]+=pointvi[i]})
+        pooled_sum[i]=building_1_sum[i]+building_2_sum[i]+building_3_sum[i]
         console.log("Average privacy for p=",ps[i])
         console.log("building 1:",building_1_sum[i]/points_building1.length)
         console.log("building 2:",building_2_sum[i]/points_building2.length)
-        console.log("building 3:",building_2_sum[i]/points_building2.length)
+        console.log("building 3:",building_3_sum[i]/points_building3.length)
+        console.log("pooled:",pooled_sum[i]/total_points)
     }
 
 
