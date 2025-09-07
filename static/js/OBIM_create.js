@@ -2,7 +2,7 @@ import * as OBIM from './main.js'
 import * as families from './families.js'
 import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/build/three.module.js';
 
-export function create_buildings_from_json(data,view_name="3D")
+export function create_buildings_from_json(data, renderer = OBIM.renderer, view_name = "3D")
 {
 
   
@@ -18,8 +18,8 @@ export function create_buildings_from_json(data,view_name="3D")
 
 
   const df=families.simple_door_family(1,2.5,.3,frame_material,handle_material)
-  
-  const env1=new OBIM.BuiltEnvironment("Environment1",OBIM.renderer)
+
+  const env1=new OBIM.BuiltEnvironment("Environment1",renderer)
   //***********set view names********************/
   const view = data.views.find(v => v.name === view_name);
     
