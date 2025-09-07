@@ -398,6 +398,7 @@ Perceptual judgments are elicited with standardized stimuli from the BIM scene. 
 H^{(r)} \;=\; \frac{r^{(r)}-1}{4}\,.
 \label{eq:rating-normalization}
 \end{equation}
+This normalization scales the raw 1--5 rating onto the unit interval so that 0 denotes minimal perceived visibility and 1 represents maximal visibility.
 
 \paragraph{Monotone, non-parametric memberships (respondent-specific or pooled).}
 Let $\{(x_i,H^{(r)}_i)\}_{i=1}^{n}$ be the ordered levels for a single factor $x\!\in\!\{d,\theta\}$ rated by respondent $r$. We estimate a bounded, non-increasing sequence $\mu^{(r)}_1,\dots,\mu^{(r)}_n$ by isotonic regression,
@@ -406,28 +407,33 @@ Let $\{(x_i,H^{(r)}_i)\}_{i=1}^{n}$ be the ordered levels for a single factor $x
 \quad \text{subject to} \quad 0 \le \mu^{(r)}_i \le 1 \,,
 \label{eq:isotonic-individual}
 \end{equation}
+This constrained least-squares fit finds a monotone sequence of membership values that best matches respondent ratings while staying within [0,1].
 solved by the pool-adjacent-violators algorithm (PAVA). Endpoints are enforced by projection,
 \begin{equation}
 \mu^{(r)}(x_{\min}) = 1 \,, \qquad \mu^{(r)}(x_{\max}) = 0 \,,
 \label{eq:anchors}
 \end{equation}
+These anchor conditions force the membership function to be one at the nearest level and zero at the farthest.
 and a continuous membership function is obtained by piecewise-linear interpolation between fitted knots:
 \begin{equation}
 \mu^{(r)}(x) \;=\; \mu^{(r)}_i \;+\; \frac{\mu^{(r)}_{i+1}-\mu^{(r)}_i}{\,x_{i+1}-x_i\,}\,\big(x-x_i\big)
 \quad \text{for } x\in[x_i,x_{i+1}] \,.
 \label{eq:interp}
 \end{equation}
+Linear interpolation between successive knots yields a continuous membership curve over the factor $x$.
 When a representative curve is preferred, we form pooled targets by averaging ratings across respondents at each level,
 \begin{equation}
 \bar{H}_i \;=\; \frac{1}{M}\sum_{r=1}^{M} H^{(r)}_i \,,
 \label{eq:pooled-mean}
 \end{equation}
+Averaging the normalized ratings over all $M$ respondents produces a pooled estimate for level $i$.
 and fit pooled monotone sequences $\bar{\mu}_1,\ldots,\bar{\mu}_n$ using the same isotonic formulation,
 \begin{equation}
 \min_{\bar{\mu}_1\ge \cdots \ge \bar{\mu}_n}\;\; \sum_{i=1}^{n} (\bar{\mu}_i - \bar{H}_i)^2
 \quad \text{subject to} \quad 0 \le \bar{\mu}_i \le 1 \,,
 \label{eq:isotonic-pooled}
 \end{equation}
+Applying the same isotonic regression to the pooled ratings yields group-level membership functions that remain monotone and bounded.
 yielding $\bar{\mu}_d(d)$ and $\bar{\mu}_\theta(\theta)$. If smoother profiles are desired, a monotone shape-preserving interpolant (e.g., PCHIP) is applied after isotonic fitting; monotonicity and bounds are preserved. When no ratings are available, we fall back to linear defaults $(d_{\min},d_{\max})=(7,50)$\,m and $(\theta_{\min},\theta_{\max})=(10^\circ,90^\circ)$, reported explicitly in the study.
 \textit{Pooled and respondent-specific curves (with 95\% CI for the pooled model), alongside the two-parameter linear special case, are visualized in Fig.~\ref{fig:memberships}.}
 
@@ -450,6 +456,7 @@ When time or respondent burden is constrained, we elicit only two thresholds per
 \end{cases}
 \label{eq:linear-distance}
 \end{equation}
+This piecewise curve assigns full visibility below $d_{\min}$, decreases linearly between the thresholds, and drops to zero beyond $d_{\max}$.
 \begin{equation}
 \mu^{\mathrm{lin}}_\theta(\theta)=
 \begin{cases}
@@ -459,6 +466,7 @@ When time or respondent burden is constrained, we elicit only two thresholds per
 \end{cases}
 \label{eq:linear-angle}
 \end{equation}
+This angular membership declines linearly from the narrowest admissible angle to zero at the widest angle.
 These two-parameter curves can be used directly or as priors/anchors for the monotone fits in Eqs.~\eqref{eq:isotonic-individual}--\eqref{eq:interp} when a small number of ratings is also collected.
 
 \paragraph{Per-ray visibility.}
@@ -467,11 +475,13 @@ Given respondent-specific memberships $\mu^{(r)}_d(d)$ and $\mu^{(r)}_\theta(\th
 \mathrm{RVI}^{(r)}(d,\theta) \;=\; \mu^{(r)}_d(d)\,\mu^{(r)}_\theta(\theta)\,,
 \label{eq:rvi-individual}
 \end{equation}
+Multiplying the distance and angle memberships yields a per-ray visibility score for a respondent.
 and, if a pooled curve is used,
 \begin{equation}
 \mathrm{RVI}^{\mathrm{pool}}(d,\theta) \;=\; \bar{\mu}_d(d)\,\bar{\mu}_\theta(\theta)\,.
 \label{eq:rvi-pooled}
 \end{equation}
+Using pooled memberships provides a population-level estimate of ray visibility.
 Rays that fail the window–through–window condition receive $\mathrm{RVI}=0$.
 
 \subsection{Aggregating Ray Visibility Indices}
@@ -484,6 +494,7 @@ At a grid point $j$, we aggregate the $N$ ray scores using a solid-angle–aware
 \right)^{\!1/p}, \qquad p=10\,,
 \label{eq:softmax-weighted}
 \end{equation}
+This weighted soft maximum emphasizes directions with high visibility while still accounting for all sampled rays.
 where $\omega_i$ is the solid angle associated with direction $i$ (spherical Voronoi area); for our icosahedral set these are nearly uniform, and we set $\omega_i{=}1$ unless stated otherwise. As $p\!\to\!1$ the operator approaches the arithmetic mean; as $p\!\to\!\infty$ it approaches the maximum. We use $p{=}10$ to emphasize strong sightlines while retaining information from multiple directions.
 \textit{The qualitative effect of $p$ on hotspot sensitivity and the resulting SPI maps is illustrated in Fig.~\ref{fig:softmax}.}
 
@@ -502,12 +513,14 @@ To summarize across respondents we report respondent-specific maps $\mathrm{VI}_
 \mathrm{VI}_j^{\mathrm{worst}} \;=\; \max_{r}\,\mathrm{VI}_j^{(r)}.
 \label{eq:acrossrespondents}
 \end{equation}
+These statistics summarize visibility at each grid point via the median, upper quartile, and worst respondent score.
 Privacy follows from $\mathrm{PI}_j = 1 - \mathrm{VI}_j$. Space-level privacy indices are then
 \begin{equation}
 \mathrm{SPI}^{(r)} \;=\; \frac{1}{N}\sum_{j=1}^{N}\!\big(1-\mathrm{VI}_j^{(r)}\big),\qquad
 \mathrm{SPI}^{\mathrm{med}} \;=\; \frac{1}{N}\sum_{j=1}^{N}\!\big(1-\mathrm{VI}_j^{\mathrm{med}}\big),
 \label{eq:spi_respondent_pooled}
 \end{equation}
+Averaging one minus the visibility over all grid points yields an overall privacy index for individuals or pooled data.
 with analogous definitions for $\mathrm{SPI}^{\mathrm{qa}}$ and $\mathrm{SPI}^{\mathrm{worst}}$.
 
 \paragraph{Runtime and scale (reporting template).}
@@ -566,6 +579,7 @@ Given the fitted memberships, the predicted perceived visibility for a held-out 
 \widehat{H}^{(r)}(d,\theta) \;=\; \mu^{(r)}_d(d)\,\mu^{(r)}_\theta(\theta)\,,
 \label{eq:hhat}
 \end{equation}
+This prediction multiplies the distance and angle memberships to estimate perceived visibility for a new stimulus.
 or pooled $\widehat{H}^{\mathrm{pool}}(d,\theta)=\bar{\mu}_d(d)\,\bar{\mu}_\theta(\theta)$. We evaluated agreement using root mean squared error (RMSE), mean absolute error (MAE), and Spearman rank correlation:
 \begin{equation}
 \mathrm{RMSE}^{(r)} \;=\; \sqrt{\frac{1}{S}\sum_{(d,\theta)\in \mathcal{G}}
@@ -574,6 +588,7 @@ or pooled $\widehat{H}^{\mathrm{pool}}(d,\theta)=\bar{\mu}_d(d)\,\bar{\mu}_\thet
 \big|\widehat{H}^{(r)}(d,\theta)-H^{(r)}(d,\theta)\big|\,,
 \label{eq:rmse-mae}
 \end{equation}
+RMSE penalizes large discrepancies whereas MAE reports the average absolute error over the held-out set.
 \begin{equation}
 \rho^{(r)} \;=\; \mathrm{Spearman}\!\left(
 \{\widehat{H}^{(r)}(d,\theta)\}_{\mathcal{G}},
@@ -581,11 +596,13 @@ or pooled $\widehat{H}^{\mathrm{pool}}(d,\theta)=\bar{\mu}_d(d)\,\bar{\mu}_\thet
 \right),
 \label{eq:spearman}
 \end{equation}
+Spearman's rank correlation evaluates how well the predicted and observed visibilities order the held-out stimuli.
 with $S{=}\langle |\mathcal{G}|\rangle$ held-out items. For an optional binary “high-visibility” label $Y^{(r)}=\mathbb{I}\{H^{(r)}\ge\tau\}$ (e.g., $\tau{=}0.6$), we report AUC:
 \begin{equation}
 \mathrm{AUC}^{(r)} \;=\; \mathrm{AUC}\!\left(\{\widehat{H}^{(r)}\}_{\mathcal{G}}, \{Y^{(r)}\}_{\mathcal{G}}\right).
 \label{eq:auc}
 \end{equation}
+The area under the ROC curve summarizes binary classification performance for identifying high-visibility cases.
 
 \begin{table}[H]
 \centering
@@ -665,6 +682,7 @@ We selected $\langle K \rangle$ rooms across the BIM examples in Fig.~\ref{fig:b
 \widehat{V}^{(r)} \;=\; 1 - \mathrm{SPI}^{(r)} \,,
 \label{eq:room-visibility-proxy}
 \end{equation}
+Taking one minus the privacy index provides a room-level visibility estimate for each respondent.
 with pooled summaries obtained by substituting $\mathrm{VI}_j^{\mathrm{med}}$ from Eq.~\eqref{eq:acrossrespondents}.
 
 \begin{table}[H]
@@ -759,6 +777,7 @@ Prediction error follows Eq.~\eqref{eq:rmse-mae}. Ranking stability is the Spear
 \bar{\mathrm{VI}}=\frac{1}{N}\sum_{j=1}^N \mathrm{VI}_j.
 \label{eq:cov-vi}
 \end{equation}
+This coefficient of variation measures the relative spread of visibility values within a room.
 We also quantify \emph{hotspot stability} via Jaccard overlap between the top-$q$\% points (we use $q{=}10$) at two $p$ values:
 \begin{equation}
 J\!\big(\mathcal{H}(p_a),\mathcal{H}(p_b)\big) \;=\; 
@@ -766,6 +785,7 @@ J\!\big(\mathcal{H}(p_a),\mathcal{H}(p_b)\big) \;=\;
      { \left| \mathcal{H}(p_a)\cup \mathcal{H}(p_b) \right| } \,.
 \label{eq:jaccard}
 \end{equation}
+The Jaccard index quantifies the overlap between hotspot sets produced by two different $p$ values.
 
 \paragraph{Findings.}
 A clear knee appears near $p{\approx}10$: larger $p$ offers negligible ranking gains but reduces within-room differentiation (hotspot saturation). Top-10\% Jaccard overlaps between $p{=}10$ and $\{20,50\}$ remain high, indicating stable salient regions.
@@ -807,6 +827,7 @@ Let $\widehat{V}^{(r)}_{\text{uni}}$ and $\widehat{V}^{(r)}_{\text{vor}}$ be roo
 \Delta V \;=\; \mathrm{median}_{r,\text{rooms}} \left| \widehat{V}^{(r)}_{\text{vor}} - \widehat{V}^{(r)}_{\text{uni}} \right|,
 \label{eq:deltaV}
 \end{equation}
+This statistic reports the median absolute change in room-level visibility when replacing uniform directional weights with Voronoi-based areas.
 and ranking stability $\rho(\widehat{V}_{\text{vor}},\widehat{V}_{\text{uni}})$ across rooms.
 
 \paragraph{Findings.}
@@ -835,6 +856,7 @@ For each factor and respondent (or pooled), we draw $B$ resamples of elicitation
 \Delta \mathrm{VI}_j^{\mathrm{boot}} \;=\; \mathrm{median}\_{b=1..B}\left| \mathrm{VI}_j^{(b)} - \mathrm{VI}_j^{\mathrm{med}} \right|,
 \label{eq:boot-map-diff}
 \end{equation}
+This median absolute difference captures how much the visibility at a point varies across bootstrap resamples.
 then aggregated by the median across $j$.
 
 \paragraph{Findings.}
@@ -856,6 +878,7 @@ Relative to $(\Delta{=}1.0\text{ m}, R{=}1212)$, we report the median point-wise
 \Delta \mathrm{VI}^{(\Delta,R)} \;=\; \mathrm{median}_j \left| \mathrm{VI}_j^{(\Delta,R)} - \mathrm{VI}_j^{(1.0,1212)} \right|,
 \label{eq:map-delta}
 \end{equation}
+Comparing each setting with the reference using this median difference reveals sensitivity to grid spacing and ray count.
 Spearman $\rho$ of room rankings, and runtime (Table~\ref{tab:runtime}). Figure~\ref{fig:discretization-tradeoff} visualizes the accuracy--cost frontier.
 
 \paragraph{Findings.}
