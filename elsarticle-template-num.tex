@@ -458,14 +458,10 @@ Rays that fail the window–through–window condition receive $\mathrm{RVI}=0$.
 \label{sec:aggregation}
 At a grid point $j$, we aggregate the $N$ ray scores using a solid-angle–aware soft-maximum that balances average- and max-like behavior:
 \begin{equation}
-\mathrm{VI}_j^{(r)} \;=\; \left(
-\frac{\sum_{i=1}^{N} \omega_i \,\big(\mathrm{RVI}^{(r)}_{ij}\big)^{p}}
-     {\sum_{i=1}^{N} \omega_i}
-\right)^{\!1/p}, \qquad p=10\,,
-\label{eq:softmax-weighted}
+\mathrm{VI}_j^{(r)} \;=\; \left(\frac{1}{N} \sum_{i=1}^{N} \big(\mathrm{RVI}^{(r)}_{ij}\big)^{p} \right)^{\!1/p}, \qquad p=10\,,
+\label{eq:softmax}
 \end{equation}
-This weighted soft maximum emphasizes directions with high visibility while still accounting for all sampled rays.
-where $\omega_i$ is the solid angle associated with direction $i$ (spherical Voronoi area); for our icosahedral set these are nearly uniform, and we set $\omega_i{=}1$ unless stated otherwise. As $p\!\to\!1$ the operator approaches the arithmetic mean; as $p\!\to\!\infty$ it approaches the maximum. We use $p{=}10$ to emphasize strong sightlines while retaining information from multiple directions.
+This soft maximum emphasizes directions with high visibility while still accounting for all sampled rays. Our icosahedral directions have nearly uniform solid angles, so we aggregate them without weights. As $p\!\to\!1$ the operator approaches the arithmetic mean; as $p\!\to\!\infty$ it approaches the maximum. We use $p{=}10$ to emphasize strong sightlines while retaining information from multiple directions.
 \textit{The qualitative effect of $p$ on hotspot sensitivity and the resulting SPI maps is illustrated in Fig.~\ref{fig:softmax}.}
 
 % ==== FIGURE 3: Soft-max p effect (placed right after introducing p) ====
@@ -521,7 +517,7 @@ Sec.~\ref{sec:evaluation} using case studies with statistical tests
 (Table~\ref{tab:runtime}).
 
 \section{Experimental Analysis}\label{sec:evaluation}
-We evaluated the framework along three axes: (i) whether elicited, monotonically decreasing memberships predict perceived visibility for held-out stimuli; (ii) whether room-scale visibility/privacy maps align with human judgments; and (iii) robustness to modeling choices. Unless stated otherwise, ratings were normalized by Eq.~\eqref{eq:rating-normalization}; ray aggregation used Eq.~\eqref{eq:softmax-weighted}.
+We evaluated the framework along three axes: (i) whether elicited, monotonically decreasing memberships predict perceived visibility for held-out stimuli; (ii) whether room-scale visibility/privacy maps align with human judgments; and (iii) robustness to modeling choices. Unless stated otherwise, ratings were normalized by Eq.~\eqref{eq:rating-normalization}; ray aggregation used Eq.~\eqref{eq:softmax}.
 
 \subsection{Participants and Apparatus}
 We recruited $M=\langle \text{number} \rangle$ adults (normal or corrected-to-normal vision; age $\langle \text{mean}\rangle\pm\langle \text{sd}\rangle$\,years) via $\langle \text{platform} \rangle$. The study was approved by $\langle \text{IRB/ethics body} \rangle$; all participants provided informed consent. Stimuli were viewed on $\langle \text{display/VR HMD} \rangle$ at resolution $\langle \cdot \rangle$, refresh $\langle \cdot \rangle$\,Hz; viewing distance was $\langle \cdot \rangle$\,cm for monitors. Scenes were generated from the BIM models in Sec.~\ref{sec:raycasting} with fixed lighting and unobstructed windows.
@@ -647,7 +643,7 @@ $\Delta$ (Ours $-$ Baseline)      & $\langle\cdot\rangle$ & $\langle\cdot\rangle
 For each metric, we compute paired differences per room/respondent and apply a Wilcoxon signed-rank test (two-sided, $\alpha{=}0.05$). Report $p$-values and effect sizes ($r{=}\tfrac{Z}{\sqrt{N}}$) alongside medians/IQRs. Significant improvements should be marked in Table~\ref{tab:baseline}.
 
 \subsection{Scene-Level Validation (VI/PI Maps)}
-We selected $\langle K \rangle$ rooms across the BIM examples in Fig.~\ref{fig:bim_models}, computed point-level visibility $\mathrm{VI}_j$ using Eq.~\eqref{eq:softmax-weighted}, and derived space privacy $\mathrm{SPI}$ per Eq.~\eqref{eq:spi_respondent_pooled}. Respondents viewed a 10\,s video fly-through of each room and rated overall perceived visibility on the same 1--5 scale (normalized). The model’s room-level visibility proxy is the complement of privacy:
+We selected $\langle K \rangle$ rooms across the BIM examples in Fig.~\ref{fig:bim_models}, computed point-level visibility $\mathrm{VI}_j$ using Eq.~\eqref{eq:softmax}, and derived space privacy $\mathrm{SPI}$ per Eq.~\eqref{eq:spi_respondent_pooled}. Respondents viewed a 10\,s video fly-through of each room and rated overall perceived visibility on the same 1--5 scale (normalized). The model’s room-level visibility proxy is the complement of privacy:
 \begin{equation}
 \widehat{V}^{(r)} \;=\; 1 - \mathrm{SPI}^{(r)} \,,
 \label{eq:room-visibility-proxy}
@@ -688,7 +684,7 @@ The left map reveals localized “hot” directions (e.g., a narrow opposing win
 We examined robustness with respect to (i) the soft-max exponent $p$, (ii) directional weights $\omega_i$, (iii) uncertainty in the elicited monotone memberships, and (iv) discretization (grid spacing, rays per point).
 
 \paragraph{Soft-max exponent $p$.}
-We swept $p\in\{1,5,10,20,50\}$ in Eq.~\eqref{eq:softmax-weighted} and evaluated: (a) S3 errors (Eq.~\eqref{eq:rmse-mae}); (b) room ranking stability (Spearman $\rho$ across $p$); and (c) within-room differentiation via the coefficient of variation of $\{\mathrm{VI}_j\}$. We observe a knee near $p{=}10$: larger $p$ yields negligible ranking gains but saturates maps.
+We swept $p\in\{1,5,10,20,50\}$ in Eq.~\eqref{eq:softmax} and evaluated: (a) S3 errors (Eq.~\eqref{eq:rmse-mae}); (b) room ranking stability (Spearman $\rho$ across $p$); and (c) within-room differentiation via the coefficient of variation of $\{\mathrm{VI}_j\}$. We observe a knee near $p{=}10$: larger $p$ yields negligible ranking gains but saturates maps.
 
 \begin{figure}[H]
     \centering
@@ -718,7 +714,7 @@ $p$ & RMSE $\downarrow$ & Spearman $\rho$ (room ranking) $\uparrow$ & VI CoV (wi
 We compared uniform weights ($\omega_i{=}1$) with spherical-Voronoi solid-angle areas. Median absolute change in room-level $\widehat{V}^{(r)}$ (Eq.~\eqref{eq:room-visibility-proxy}) was $\langle\cdot\rangle$, with room rankings virtually unchanged ($\rho\ge\langle\cdot\rangle$), reflecting near-uniform directional coverage.
 
 \paragraph{Uncertainty in monotone memberships.}
-We computed 95\% CIs for $\bar{\mu}_d,\bar{\mu}_\theta$ via nonparametric bootstrap over trials/levels and propagated draws through Eq.~\eqref{eq:softmax-weighted} to obtain VI map envelopes (median absolute map difference $\langle\cdot\rangle$). Leave-one-level-out validation for S1/S2 kept S3 errors within $\langle\cdot\rangle$ of Table~\ref{tab:heldout}.
+We computed 95\% CIs for $\bar{\mu}_d,\bar{\mu}_\theta$ via nonparametric bootstrap over trials/levels and propagated draws through Eq.~\eqref{eq:softmax} to obtain VI map envelopes (median absolute map difference $\langle\cdot\rangle$). Leave-one-level-out validation for S1/S2 kept S3 errors within $\langle\cdot\rangle$ of Table~\ref{tab:heldout}.
 
 \paragraph{Discretization: grid spacing and rays per point.}
 We varied grid spacing $\Delta\in\{0.5,1.0,2.0\}$\,m and rays/point $R\in\{812,1212,1692\}$ (Table~\ref{tab:subdivisions}). Median map-to-map difference versus $(\Delta{=}1.0,R{=}1212)$ was $\langle\cdot\rangle$ (VI units); room rankings remained stable ($\rho\ge\langle\cdot\rangle$). Throughput and runtime are reported in Table~\ref{tab:runtime}.
@@ -734,10 +730,10 @@ To quantify the trade-off between respondent burden and accuracy, we compared th
 
 \section{Sensitivity Analyses}
 \label{sec:sensitivity}
-We assessed robustness to modeling and discretization choices along five axes: (i) the soft-max exponent $p$ in Eq.~\eqref{eq:softmax-weighted}; (ii) directional weights $\omega_i$; (iii) uncertainty in the elicited monotone memberships; (iv) discretization choices (grid spacing and rays per point); and (v) the definition of the forward direction $\hat{\mathbf{u}}_j$. Unless stated otherwise, summaries are reported as medians with interquartile ranges across rooms and respondents.
+We assessed robustness to modeling and discretization choices along five axes: (i) the soft-max exponent $p$ in Eq.~\eqref{eq:softmax}; (ii) directional weights $\omega_i$; (iii) uncertainty in the elicited monotone memberships; (iv) discretization choices (grid spacing and rays per point); and (v) the definition of the forward direction $\hat{\mathbf{u}}_j$. Unless stated otherwise, summaries are reported as medians with interquartile ranges across rooms and respondents.
 
 \subsection{Soft-max Exponent $p$}
-We varied $p\in\{1,5,10,20,50\}$ in Eq.~\eqref{eq:softmax-weighted} and evaluated three criteria: (a) prediction error on held-out stimuli; (b) stability of room rankings; (c) within-room differentiation. Figure~\ref{fig:softmax} (Methods) already illustrates the \emph{visual} effect of $p$; here we quantify its impact.
+We varied $p\in\{1,5,10,20,50\}$ in Eq.~\eqref{eq:softmax} and evaluated three criteria: (a) prediction error on held-out stimuli; (b) stability of room rankings; (c) within-room differentiation. Figure~\ref{fig:softmax} (Methods) already illustrates the \emph{visual} effect of $p$; here we quantify its impact.
 
 \paragraph{Metrics.}
 Prediction error follows Eq.~\eqref{eq:rmse-mae}. Ranking stability is the Spearman correlation between room-level visibilities across $p$ values. Within-room differentiation is the coefficient of variation (CoV) of $\{\mathrm{VI}_j\}$:
@@ -821,7 +817,7 @@ Voronoi vs.\ Uniform & \(\langle\cdot\rangle\) & \(\langle\cdot\rangle\) \\
 We quantified uncertainty in $\mu_d$ and $\mu_\theta$ by bootstrap and leave-one-level-out validation, then propagated that uncertainty to maps.
 
 \paragraph{Bootstrap propagation.}
-For each factor and respondent (or pooled), we draw $B$ resamples of elicitation data, refit the monotone interpolant, and propagate each draw through Eq.~\eqref{eq:softmax-weighted} to obtain a distribution of maps. Point-wise envelopes are summarized by
+For each factor and respondent (or pooled), we draw $B$ resamples of elicitation data, refit the monotone interpolant, and propagate each draw through Eq.~\eqref{eq:softmax} to obtain a distribution of maps. Point-wise envelopes are summarized by
 \begin{equation}
 \Delta \mathrm{VI}_j^{\mathrm{boot}} \;=\; \mathrm{median}\_{b=1..B}\left| \mathrm{VI}_j^{(b)} - \mathrm{VI}_j^{\mathrm{med}} \right|,
 \label{eq:boot-map-diff}
