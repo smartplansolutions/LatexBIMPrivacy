@@ -401,18 +401,18 @@ H^{(r)} \;=\; \frac{r^{(r)}-1}{4}\,.
 This normalization scales the raw 1--5 rating onto the unit interval so that 0 denotes minimal perceived visibility and 1 represents maximal visibility.
 
 \paragraph{Monotone, non-parametric memberships (respondent-specific or pooled).}
-Let $\{(x_i,H^{(r)}_i)\}_{i=1}^{n}$ be the ordered levels for a single factor $x\!\in\!\{d,\theta\}$ rated by respondent $r$. Because visibility is expected to decrease monotonically, we fit a bounded, non-increasing membership curve $\mu^{(r)}(x)$ by passing a monotone, shape-preserving interpolant (e.g., PCHIP) through these points. Endpoint projections enforce $\mu^{(r)}(x_{\min}) = 1$ and $\mu^{(r)}(x_{\max}) = 0$, yielding a continuous function over $x$. When a representative curve is preferred, we form pooled targets by averaging ratings across respondents at each level,
+Let $\{(x_i,H^{(r)}_i)\}_{i=1}^{n}$ be the ordered levels for a single factor $x\!\in\!\{d,\theta\}$ rated by respondent $r$. Because visibility is expected to decrease monotonically, we fit a bounded, non-increasing membership curve $\mu^{(r)}(x)$ using a logistic profile with horizontal asymptotes at $\mu{=}1$ and $\mu{=}0$. This S-shaped model captures early flat regions and saturation at long range. When a representative curve is preferred, we form pooled targets by averaging ratings across respondents at each level,
 \begin{equation}
 \bar{H}_i \;=\; \frac{1}{M}\sum_{r=1}^{M} H^{(r)}_i \,,
 \label{eq:pooled-mean}
 \end{equation}
-Averaging the normalized ratings over all $M$ respondents produces a pooled estimate for level $i$, and the same monotone interpolation yields group-level membership functions $\bar{\mu}_d(d)$ and $\bar{\mu}_\theta(\theta)$. The interpolant naturally provides smooth profiles while preserving monotonicity and bounds. When no ratings are available, we fall back to linear defaults $(d_{\min},d_{\max})=(7,50)$\,m and $(\theta_{\min},\theta_{\max})=(10^\circ,90^\circ)$, reported explicitly in the study. \textit{Pooled and respondent-specific curves (with 95\% CI for the pooled model), alongside the two-parameter linear special case, are visualized in Fig.~\ref{fig:memberships}.}
+Averaging the normalized ratings over all $M$ respondents produces a pooled estimate for level $i$, and fitting the same logistic form yields group-level membership functions $\bar{\mu}_d(d)$ and $\bar{\mu}_\theta(\theta)$. This approach produces smooth, monotone profiles with flat tails. When no ratings are available, we fall back to linear defaults $(d_{\min},d_{\max})=(7,50)$\,m and $(\theta_{\min},\theta_{\max})=(10^\circ,90^\circ)$, reported explicitly in the study. \textit{Pooled and respondent-specific curves, alongside the two-parameter linear special case, are visualized in Fig.~\ref{fig:memberships}.}
 
 % ==== FIGURE 2: Memberships (placed right after memberships text) ====
 \begin{figure}[t]
   \centering
   \includegraphics[width=\linewidth]{fig6_memberships.pdf}
-  \caption{\textbf{Monotone memberships from elicitation.} Left: pooled fits for distance and angle (thick line with 95\% CI band). Right: several respondent-specific curves and the two-parameter linear special case used for low-burden elicitation.}
+  \caption{\textbf{Monotone memberships from elicitation.} Left: pooled logistic fits for distance and angle (thick line). Right: respondent-specific logistic curves and the two-parameter linear special case used for low-burden elicitation.}
   \label{fig:memberships}
 \end{figure}
 
@@ -684,12 +684,12 @@ The left map reveals localized “hot” directions (e.g., a narrow opposing win
 We examined robustness with respect to (i) the soft-max exponent $p$, (ii) directional weights $\omega_i$, (iii) uncertainty in the elicited monotone memberships, and (iv) discretization (grid spacing, rays per point).
 
 \paragraph{Soft-max exponent $p$.}
-We swept $p\in\{1,5,10,20,50\}$ in Eq.~\eqref{eq:softmax} and evaluated: (a) S3 errors (Eq.~\eqref{eq:rmse-mae}); (b) room ranking stability (Spearman $\rho$ across $p$); and (c) within-room differentiation via the coefficient of variation of $\{\mathrm{VI}_j\}$. We observe a knee near $p{=}10$: larger $p$ yields negligible ranking gains but saturates maps.
+We swept $p\in\{1,5,10,20,50\}$ in Eq.~\eqref{eq:softmax} and evaluated: (a) S3 errors (Eq.~\eqref{eq:rmse-mae}); (b) room ranking stability (Spearman $\rho$ across $p$); and (c) within-room differentiation via the coefficient of variation of $\{\mathrm{VI}_j\}$. For each exponent the companion code reports building-level averages and a pooled mean across all examples. We observe a knee near $p{=}10$: larger $p$ yields negligible ranking gains but saturates maps.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{P-value-impacts.jpg} % reuse
-    \caption{Effect of soft-max exponent $p$ on visibility maps in a representative floor (same scene as Fig.~\ref{fig:bim_models}b). Left to right: $p{=}1,5,10,20,50$. Higher $p$ emphasizes strongest sightlines; $p{=}10$ preserves hotspots without saturation.}
+    \caption{Effect of soft-max exponent $p$ on visibility maps in a representative floor (same scene as Fig.~\ref{fig:bim_models}b). Left to right: $p{=}1,5,10,20,50$. Higher $p$ emphasizes strongest sightlines; $p{=}10$ preserves hotspots without saturation. Building-level and pooled-average visibility indices for each $p$ are reported by the accompanying script.}
     \label{fig:p-sweep-heatmaps}
 \end{figure}
 
