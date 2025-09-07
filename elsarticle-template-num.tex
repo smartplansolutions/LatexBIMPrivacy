@@ -64,6 +64,7 @@
 \usepackage{amsmath}
 %\usepackage{gensymb}
 \usepackage{listings}
+\usepackage[ruled,vlined]{algorithm2e}
 %\usepackage{amsfonts} % for dummy text
 %% The amsthm package provides extended theorem environments
 %% \usepackage{amsthm}
@@ -296,10 +297,21 @@ Fuzzy logic also shows potential in addressing subjective aspects of privacy. Ho
 To bridge these gaps, this study proposes a novel framework that integrates ray-casting techniques with fuzzy logic to quantify visual privacy. Leveraging BIM, the framework incorporates both exterior and interior spatial configurations to provide a holistic privacy assessment. By incorporating user-centric fuzzy logic models, this approach enables the systematic evaluation of subjective privacy perceptions, offering designers insights to optimize privacy in various architectural contexts.
 
 \section{Methodology}
-This study proposes a framework for quantifying visual privacy by leveraging Building Information Modeling (BIM), uniform ray-casting, and fuzzy logic. The pipeline consists of: (i) preparing a BIM scene, (ii) generating occupant-relevant grid points, (iii) casting rays and detecting \emph{window-through-window} lines of sight, (iv) assigning a Ray Visibility Index (RVI) to each visible ray using respondent-calibrated, monotonically decreasing membership functions of distance and angle, and (v) aggregating per-ray scores to point- and space-level indices.
+Our pipeline (Fig.~\ref{fig:pipeline}) comprises five stages:
+(i) BIM preprocessing, (ii) grid generation, (iii) ray casting,
+(iv) ray scoring, and (v) space-level aggregation.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{visibility.png}
+    \caption{Processing pipeline from BIM preprocessing to space-level privacy aggregation.}
+    \label{fig:pipeline}
+\end{figure}
 
 \subsection{BIM Model Setup}
-The method assumes a BIM model with interior layout (rooms, partitions, windows) and surrounding context (neighboring buildings and façades). Two illustrative examples are shown in Fig.~\ref{fig:bim_models}. The first case (a) places two buildings with facing windows, creating direct lines of sight; the second (b) introduces a third building with a window facing the leftmost building, increasing exposure. Models were created with OBIM (Three.js based), but the approach is platform-agnostic.
+We assume valid, watertight BIM geometry with explicit wall, slab, and window semantics. Models use a right-handed, $z$-up coordinate frame in metres. Window panes are treated as transparent surfaces bounded by opaque frames, and all other elements are opaque occluders. Neighboring context follows the same conventions.
+
+Given a BIM model with interior layout (rooms, partitions, windows) and surrounding context (neighboring buildings and façades), two illustrative examples are shown in Fig.~\ref{fig:bim_models}. The first case (a) places two buildings with facing windows, creating direct lines of sight; the second (b) introduces a third building with a window facing the leftmost building, increasing exposure. Models were created with OBIM (Three.js based), but the approach is platform-agnostic.
 
 \begin{figure}[ht!]
     \centering
@@ -308,11 +320,9 @@ The method assumes a BIM model with interior layout (rooms, partitions, windows)
     \label{fig:bim_models}
 \end{figure}
 
-\paragraph{Coordinate frame and semantics.}
-We adopt a right-handed world frame in metres with $z$ vertical. BIM elements are typed (walls, slabs, windows, doors); \emph{opaque} elements (walls, slabs, opaque frames) block rays at first hit, while \emph{window} elements are traversable openings. Window geometry is modeled as pane surfaces bounded by frames; glass is treated as transparent for visibility. Neighboring buildings include façade openings as window elements so that window–through–window paths can be detected consistently.
 
 \subsection{Grid Point Generation}
-To evaluate privacy within rooms, we generate a grid of occupant vantage points. Grid spacing is user-defined (1\,m in our examples). Because privacy perception depends on posture and eye height, each $(x,y)$ grid location is sampled at $z\in\{0.7,1.7\}$\,m. Figure~\ref{fig:griding} shows the grid on a representative storey.
+To evaluate privacy within rooms, we generate a grid of occupant vantage points. Grid spacing $s$ and eye-height samples $z \in \{0.7,1.7\}\,\text{m}$ were chosen from preliminary sensitivity tests (Appendix~A) showing diminishing returns for finer sampling. Figure~\ref{fig:griding} shows the grid on a representative storey.
 
 \begin{figure}[H]
 \centering
@@ -332,6 +342,16 @@ Each grid point $j$ has a forward unit vector $\hat{\mathbf{u}}_j$ used for angl
 
 \subsection{Ray-Casting Methodology}
 \label{sec:raycasting}
+\begin{algorithm}[H]
+\SetAlgoLined
+\KwIn{Grid point $j$, subdivision level $k$}
+\KwOut{Ray set $R_j$}
+$R_j \leftarrow$ IcosahedronVertices$(k)$\;
+\ForEach{$r \in R_j$}{
+    CastRay$(j, r)$\;
+}
+\caption{Uniform ray generation and casting}
+\end{algorithm}
 From each grid point we cast a uniform set of rays over the hemisphere of potential view directions. Uniformity is achieved by subdividing an icosahedron and mapping its vertices to unit directions. As subdivision increases, direction density and angular resolution improve (Fig.~\ref{fig:raycasting}); we use 10 subdivisions (1212 rays/point) as a balance of cost and fidelity (Table~\ref{tab:subdivisions}).
 
 \begin{figure}[H]
@@ -343,7 +363,7 @@ From each grid point we cast a uniform set of rays over the hemisphere of potent
 
 \begin{table}[H]
     \centering
-    \caption{Number of rays generated for different subdivisions.}
+    \caption{Number of rays for different subdivisions (chosen to balance accuracy and runtime).}
     \label{tab:subdivisions}
     \begin{tabular}{cc}
         \toprule
@@ -526,7 +546,17 @@ Block (multi-bld) & \textlangle{}\,\textellipsis\,\textrangle{} & \textlangle{}\
 \end{tabular}
 \end{table}
 
-\section{Experimental Analysis}
+\subsection{Reproducibility and Data Handling}
+Scripts for mesh cleaning, grid generation, and ray casting are available
+in the project repository. Model files and parameter settings used in the
+case studies (Sec.~\ref{sec:evaluation}) can be reproduced via
+\texttt{build_results.py}.
+
+The resulting Privacy Index (PI) values are evaluated in
+Sec.~\ref{sec:evaluation} using case studies with statistical tests
+(Table~\ref{tab:runtime}).
+
+\section{Experimental Analysis}\label{sec:evaluation}
 We evaluated the framework along three axes: (i) whether elicited, monotonically decreasing memberships predict perceived visibility for held-out stimuli; (ii) whether room-scale visibility/privacy maps align with human judgments; and (iii) robustness to modeling choices. Unless stated otherwise, ratings were normalized by Eq.~\eqref{eq:rating-normalization}; ray aggregation used Eq.~\eqref{eq:softmax-weighted}.
 
 \subsection{Participants and Apparatus}
