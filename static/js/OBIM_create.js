@@ -2,7 +2,7 @@ import * as OBIM from './main.js'
 import * as families from './families.js'
 import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/build/three.module.js';
 
-export function create_buildings_from_json(data,view_name="3D")
+export function create_buildings_from_json(data,renderer,view_name="3D")
 {
 
   
@@ -10,7 +10,7 @@ export function create_buildings_from_json(data,view_name="3D")
   const floor_material = new THREE.MeshPhongMaterial({name:"concrete", color: 0xdfdfdf,transparent:true,opacity:1,});
   const frame_material=new THREE.MeshPhongMaterial({name:"wood", color: 0xaa7777,transparent:true,opacity:1});
   const handle_material=new THREE.MeshPhongMaterial({name:"metal", color: 0xaaaaaa,transparent:true,opacity:1});
-  const glass_material=new THREE.MeshPhongMaterial({name:"glass", color: 0x87CEEB,transparent:true,opacity:.7});
+  const glass_material=new THREE.MeshPhongMaterial({name:"glass", color: 0x0000ff,transparent:true,opacity:.7});
 
 
   const wall_family=[[wall_material,.2]]
@@ -19,29 +19,9 @@ export function create_buildings_from_json(data,view_name="3D")
 
   const df=families.simple_door_family(1,2.5,.3,frame_material,handle_material)
   
-  const env1=new OBIM.BuiltEnvironment("Environment1",OBIM.renderer)
+  const env1=new OBIM.BuiltEnvironment("Environment1",renderer)
   //***********set view names********************/
-  const view = data.views.find(v => v.name === view_name);
-    
-  if (view) {
-      // Set camera type
-      const cameraType = view.cameraType;
-      if (cameraType === "perspective") {
-        env1.camera.position.set(...view.cameraPosition);
-        env1.camera.lookAt(...view.cameraLookAt);
-      } else if (cameraType && cameraType === "orthographic") {
-          // Set up orthographic camera
-          const aspect = window.innerWidth / window.innerHeight;
-          const d = 10; // adjust as needed
-          env1.camera = new THREE.OrthographicCamera(-d * aspect, d * aspect, d, -d, 0.1, 1000);
-          const target = new THREE.Vector3(0, 0, 0); // Set this to any point you want the camera to look at
-          env1.camera.lookAt(...view.cameraLookAt);
-          env1.camera.position.set(...view.cameraPosition);
-      }
-      console.log(`Camera set for view: ${view.name}`);
-  } else {
-      console.error(`View with name "${view_name}" not found.`);
-  }
+ 
 
   data.buildings.forEach(building => {
     const bld = new OBIM.BuiltObject(env1, building.name);
@@ -56,7 +36,7 @@ export function create_buildings_from_json(data,view_name="3D")
 
     building.levels.forEach((level, i) => {
             new OBIM.FLOOR(bld, building.xCoords, building.zCoords, level, floor_family);
-            console.log("creating and OBIM floor")
+            console.log("creating an OBIM floor")
             if(i!=0)
             {for(let j=0;j<Xs.length;j++)
               {
@@ -70,7 +50,7 @@ export function create_buildings_from_json(data,view_name="3D")
                       const width=window.width;
                       const height=window.height;
                       const frame_depth=.2;
-                      const glass_depth=.1
+                      const glass_depth=.4
                       const frameThickness=.2;
                       const wf=families.simple_window_family(width,height,frame_depth,glass_depth,frameThickness,frame_material,glass_material)
                       const w=new OBIM.WINDOW(wall,wf,window.rel_position[0],window.rel_position[1])
@@ -88,7 +68,7 @@ export function create_buildings_from_json(data,view_name="3D")
   // write now only walls and doors are implemented
   if (building.walls && building.walls.length > 0) {
   building.walls.forEach(wall => {
-      const xzCoords = wall.xzCoordinates;
+      const xzCoords = wall.xzCoords;
       const levels = wall.levels; // Levels for this wall
       
       // Create the wall for each level specified
@@ -118,14 +98,40 @@ return env1
 export function set_view(env,data,view_name)
 {
     const view = data.views.find(v => v.name === view_name);
-    if (!view) {
-        console.error(`View with name "${view_name}" not found.`);
-        return;
+    
+    if (view) {
+        // Set camera type
+        const cameraType = view.cameraType;
+        if (cameraType === "perspective") {
+          env.camera.position.set(...view.cameraPosition);
+          env.camera.lookAt(...view.cameraLookAt);
+        } else if (cameraType && cameraType === "orthographic") {
+          const aspectRatio = window.innerWidth / window.innerHeight;
+          const frustumSize = view.frustumSize; // Adjust this to control the zoom level
+  
+          env.camera = new THREE.OrthographicCamera(
+              frustumSize * aspectRatio / -2, // left
+              frustumSize * aspectRatio / 2,  // right
+              frustumSize / 2,                // top
+              frustumSize / -2,               // bottom
+              0.1,                            // near
+              1000                            // far
+          );
+         
+          env.camera.position.set(...view.cameraPosition);
+          env.camera.lookAt(...view.cameraLookAt);
+        }
+        console.log(`Camera set for view: ${view.name}`);
+    } else {
+        console.error(`View with name "${viewName}" not found.`);
     }
+    if(view.hideRule)
+      {
     env.children.forEach(element => {
         let shouldHide = false; // Flag to determine if the element should be hidden
 
         // Check each hide rule in the view
+
         view.hideRule.forEach(hideRule => {
             // Evaluate the condition using eval
 
@@ -136,5 +142,6 @@ export function set_view(env,data,view_name)
         // Show or hide the element based on the flag
         element.visible = !shouldHide; // Show the element if it should not be hidden
         console.log(`${element.name} visibility set to ${element.visible}`);
-    });
+    });}
 }
+
