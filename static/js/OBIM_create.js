@@ -200,9 +200,14 @@ export function set_view(env, data, view_name) {
       let shouldHide = false;
 
       view.hideRule.forEach(hideRule => {
-        const evaluator = CONDITION_EVALUATORS[hideRule.condition.trim()];
-        if (evaluator && evaluator(element)) {
-          shouldHide = true;
+        const condition = hideRule.condition.trim();
+        const evaluator = CONDITION_EVALUATORS[condition];
+        if (evaluator) {
+          if (evaluator(element)) {
+            shouldHide = true;
+          }
+        } else {
+          console.warn(`Unknown hide rule condition: ${condition}`);
         }
       });
 
