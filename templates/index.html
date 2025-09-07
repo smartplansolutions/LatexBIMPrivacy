@@ -17,8 +17,13 @@
         // import * as families from './static/js/families.js'
         import * as OBIMcreate from './static/js/OBIM_create.js'
         const response = await fetch('./static/buildings_by_envelope.json');
+        import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/build/three.module.js';
         const data = await response.json();
-        const env1=OBIMcreate.create_buildings_from_json(data,"3D")
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        const env1=OBIMcreate.create_buildings_from_json(data,renderer,"3D")
     </script>
 </body>
 </html>

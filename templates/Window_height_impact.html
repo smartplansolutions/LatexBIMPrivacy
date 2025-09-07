@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fig. 8</title>
+    <!--<script src="{{ url_for('static', filename='js/three.min.js') }}"></script>!-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+#containers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 2 columns, equal width */
+    grid-template-rows: repeat(3, 1fr);   /* 3 rows, equal height */
+    gap: 10px;  /* Space between containers */
+    max-width: 900px;  /* Set maximum width for containers */
+    margin: 0 auto;  /* Center the grid horizontally */
+}
+
+.container-wrapper {
+    display: flex;
+    flex-direction: column;  /* Stack container and label vertically */
+    align-items: center;  /* Center the container and label horizontally */
+    width:100%;
+}
+
+.container {
+    width: 100%;  /* Make containers fill their parent width */
+    height: 270px; /* Make containers fill their parent height */
+    
+}
+
+.label {
+    font-family: 'Times New Roman', serif;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#visibilityChart {
+        width: 100%; /* Keep full width */
+        height: 100%; /* Increase height */
+    }
+ /* Ensure the legend doesn't overlap with your top-left icon */
+        .legend-container {
+            position:absolute;
+            text-align: center;
+
+            top: 5px;  /* Position it at the top of the grid */
+            left: 300px;  /* Align it to the left side */
+            z-index: 10;  /* Ensures it stays above other elements */
+                }
+
+        .gradient-scale {
+            width: 200px;
+            height: 20px;
+            background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 0, 0));
+            border: 1px solid #000;
+            margin: 10px;
+            align-items: center; 
+
+        }
+
+        .legend-labels {
+    display: flex;
+    justify-content: center;  /* Center the labels horizontally */
+    align-items: center;      /* Align items in the center vertically */
+    width: 100%;              /* Make sure the labels take up the full width */
+    margin-top: 5px;          /* Add a small gap between the gradient scale and labels */
+}
+
+.legend-labels .label {
+    font-family: 'Times New Roman', serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 10px;           /* Optional: Adds spacing between labels */
+}
+
+
+      </style>
+</head>
+<body>
+    
+    <!-- Containers for different figures -->
+    <!-- Containers for different figures -->
+    <div class="legend-container">
+    <div class="label">Visibility Index:</div>
+        <div class="gradient-scale"></div>
+        <div class="legend-labels">
+            <span class="label">0</span>
+            <span class="label">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1</span>
+        </div>
+    </div>
+    <div id="containers">
+        <div class="container-wrapper">
+            <div id="container1" class="container"></div>
+            <div class="label">(a)</div>
+        </div>
+        <div class="container-wrapper">
+            <div id="container2" class="container"></div>
+            <div class="label">(b)</div>
+        </div>
+        <div class="container-wrapper">
+            <div id="container3" class="container"></div>
+            <div class="label">(c)</div>
+        </div>
+        <div class="container-wrapper">
+            <div id="container4" class="container"></div>
+            <div class="label">(d)</div>
+        </div>
+        <div class="container-wrapper">
+            <div id="container5" class="container"></div>
+            <div class="label">(e)</div>
+        </div>
+        <div class="container-wrapper">
+            <div id="container6" class="container"><canvas id="visibilityChart"></canvas></div>
+            <div class="label">(f)</div>
+        </div>
+    </div>
+    
+    <script type="module">
+        import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/build/three.module.js';
+        import * as OBIMcreate from './static/js/OBIM_create.js'
+        import * as OBIM from './static/js/main.js'
+        const response = await fetch('./static/buildings_by_envelope2.json');
+        const data = await response.json();
+        const containers = [
+            document.getElementById('container1'),
+            document.getElementById('container2'),
+            document.getElementById('container3'),
+            document.getElementById('container4'),
+            document.getElementById('container5')
+        ];
+
+        const renderers=[]
+        const envs=[]
+        const p=10
+        let OKB=[.2,.5,.8,1.1,1.4]
+        const buildings_data_list=[JSON.parse(JSON.stringify(data)),JSON.parse(JSON.stringify(data)),JSON.parse(JSON.stringify(data)),JSON.parse(JSON.stringify(data)),JSON.parse(JSON.stringify(data))]
+        for(let i=0;i<5;i++)
+        {   
+            buildings_data_list[i].buildings.forEach(building => {
+            if (building.windows) {
+                building.windows.forEach(window => {
+                    // Change the window width
+                    window.rel_position=[window.rel_position[0],OKB[i]]
+                    window.height=2.9-OKB[i]
+
+                });
+                }
+            });
+        }
+
+        containers.forEach((element,index)=>
+        {
+            const renderer = new THREE.WebGLRenderer();
+             // Get the fixed container width and height
+             renderer.setSize(element.clientWidth, element.clientHeight);
+            element.appendChild(renderer.domElement);
+            renderers.push(renderer)
+            
+            envs.push(OBIMcreate.create_buildings_from_json(buildings_data_list[index],renderer,"Fig7"))
+            
+        });
+
+        function compute_visibility(data,env)
+    {
+        
+        let points_building1=[]
+        let points_building2=[]
+        let points_building3=[]
+    
+        data.buildings.forEach((building) => {
+         //const building=data.buildings[0]
+             const X1s=building.xCoords;
+             const Z1s=building.zCoords;
+             const L1s=building.levels;
+             const y=(L1s[0]+1.5)
+             let minx=Math.min(...X1s)
+             let maxx=Math.max(...X1s)
+             let minz=Math.min(...Z1s)
+             let maxz=Math.max(...Z1s)
+
+             let grid_width=1
+             for(let x=minx+grid_width/2;x<=maxx-grid_width/2;x+=grid_width)
+            {
+                for (let z=minz+grid_width/2;z<=maxz-grid_width/2;z+=grid_width)
+                {
+                    if(building.name=="building1" && x>0)
+                    {points_building1.push([x,y,z])
+                     points_building1.push([x,y-1,z])
+                    }
+                    else if (building.name=="building2")
+                    {points_building2.push([x,y,z])
+                    points_building2.push([x,y-1,z])
+                    }
+                    else if (building.name=="building3")
+                    {points_building3.push([x,y,z])
+                    points_building3.push([x,y-1,z])
+                    }
+                    }
+                }
+           })
+    function compute_points_visibilities(points,env)
+    {
+        let points_visibility_indexes=[]
+        for(let point of points)
+        {
+           let visibility_sum=0
+        const basePoint = new THREE.Vector3(point[0], point[1], point[2]);
+        const arrowLength = 200;
+        let ray_count=0
+        const radius = 20;       // Sphere radius
+        const subdivisions = 10; // Number of subdivisions for the icosahedron (higher = more points)
+        const ray_generator_geometry = new THREE.IcosahedronGeometry(radius, subdivisions);
+        for (let i = 0; i < ray_generator_geometry.vertices.length; i++) {
+            const vertex = ray_generator_geometry.vertices[i];
+            const rayDirection = new THREE.Vector3(vertex.x, vertex.y, vertex.z);  // Position at vertex     
+            const rayOrigin = new THREE.Vector3(
+                    basePoint.x ,
+                    basePoint.y ,
+                    basePoint.z 
+                );
+                    let raycaster = new THREE.Raycaster(rayOrigin, rayDirection);
+                    ray_count+=1
+                    //console.log("****ray direction:",raycaster.ray.direction)
+                    const intersections = [];
+
+                    for (let child of env.children) {
+                        if (child instanceof OBIM.WALL || child instanceof OBIM.WINDOW || child instanceof OBIM.FLOOR) {
+                            let boundingBox = new THREE.Box3().setFromObject(child);
+                            if (child instanceof OBIM.WINDOW)
+                            {boundingBox = new THREE.Box3().setFromObject(child.children[1]);}
+                            
+                            const intersection_Point = new THREE.Vector3();
+                            if (raycaster.ray.intersectBox(boundingBox, intersection_Point)) {
+                                //console.log("I want to see the ray")
+                                //console.log("Ray Origin:", raycaster.ray.origin);
+                                //console.log("Ray Direction:", raycaster.ray.direction);
+                                //console.log(boundingBox)
+                                const distance = rayOrigin.distanceTo(intersection_Point);
+                                intersections.push({
+                                    point: intersection_Point.clone(),
+                                    distance: distance,
+                                    object: child
+                                });
+                            }
+                        }
+                    }
+                let rayColor = 0x00ff00; // Default green color
+                intersections.sort((a, b) => a.distance - b.distance);
+                let visualize=false;
+                let intrsected_wall;
+                if (intersections.length >= 4) {
+                   if(intersections[0].object instanceof OBIM.WINDOW)
+                    {    if(intersections[2].object instanceof OBIM.WINDOW)
+                        {   visualize=true;
+                            intrsected_wall=intersections[2].object.wall
+                        }
+                        else if(intersections[3].object instanceof OBIM.WINDOW && intersections[3].object.wall==intersections[2].object)
+                        {visualize=true;
+                            intrsected_wall=intersections[2].object
+                        }
+                    }
+                   else if(intersections[1].object instanceof OBIM.WINDOW && intersections[1].object.wall==intersections[0].object)
+                   {
+                    if(intersections[2].object instanceof OBIM.WINDOW)
+                        {   visualize=true;
+                            intrsected_wall=intersections[2].object.wall
+                        }
+                        else if(intersections[3].object instanceof OBIM.WINDOW && intersections[3].object.wall==intersections[2].object)
+                        {   visualize=true;
+                            intrsected_wall=intersections[2].object
+                        }
+                   }
+                    if (visualize)
+                    {
+                        
+                        const distance=intersections[2].distance
+                        const defaultNormal = new THREE.Vector3(0, 0, 1);
+                        const wallNormal = defaultNormal.clone().applyEuler(intersections[2].object.rotation).normalize();
+                        const dotProduct = wallNormal.dot(rayDirection.clone().normalize());
+                        // dot product is cosine
+                        const angleRadians = Math.acos(dotProduct);
+                        let angleDegrees = THREE.MathUtils.radToDeg(angleRadians);
+                        //console.log("distance:",distance," angle degree:",angleDegrees)
+                        if(angleDegrees>90)
+                        {angleDegrees=180-angleDegrees}
+                        //console.log("angle is:")
+                        //console.log(angleDegrees)
+                            // Fuzzy membership function for distance
+                        function fuzzyDistanceWeight(d) {
+                            if (d < 7) {
+                                return 1; // High visibility
+                            } else if (d >= 7 && d < 50) {
+                                return (50 - d) / 43; // Linear decline
+                            } else {
+                                return 0; // No visibility
+                            }
+                        }
+
+                        // Fuzzy membership function for angle
+                        function fuzzyAngleWeight(theta) {
+                            if (theta < 10) {
+                                return 1; // High visibility
+                            } else if (theta >= 10 && theta < 90) {
+                                return (90 - theta) / 80; // Linear decline
+                            } else {
+                                return 0; // No visibility
+                            }
+                        }
+
+                        // Calculate the weights
+                        const distanceWeight = fuzzyDistanceWeight(distance);
+                        const angleWeight = fuzzyAngleWeight(angleDegrees);
+
+                        // Overall visibility weight
+                        const visibilityWeight = distanceWeight * angleWeight;
+                        visibility_sum+=visibilityWeight**p
+                  
+                    }                 
+                }    
+            }  
+            function getColorFromVisibilityIndex(index) {
+                // Calculate red, green, and blue components for the color
+                const red = 1;                 // Keep red fully on
+                const green = 1 - index;       // Vary green from 1 to 0
+                const blue = 1 - index;        // Vary blue from 1 to 0
+
+                return new THREE.Color(red, green, blue); // THREE.Color takes values from 0 to 1
+            }
+            //console.log("***aggregated visibility****")
+
+            //console.log(visibility_sum,ray_count)
+            const visibility_index=(visibility_sum/ray_count)**(1/p)
+            //console.log("point visibility:",visibility_index) 
+                const color = getColorFromVisibilityIndex(visibility_index);
+
+                const geometry = new THREE.BoxGeometry(1, 1, 1);
+                const material = new THREE.MeshBasicMaterial({ color: color });
+                const box = new THREE.Mesh(geometry, material);
+
+            box.position.set(point[0], point[1], point[2]);
+            env.add(box);
+ 
+            points_visibility_indexes.push(visibility_index)
+        }
+        return points_visibility_indexes
+    }
+    return [points_building1,compute_points_visibilities(points_building1,env),points_building2,compute_points_visibilities(points_building2,env),points_building3,compute_points_visibilities(points_building3,env)]
+}
+const labels="abcdef"
+
+console.log("******Room Visibility Index*********")
+let room1=[]
+let room2=[]
+let room3=[]
+console.log(OKB)
+    for(let i=0;i<5;i++)
+    {
+        const vi=compute_visibility(buildings_data_list[i],envs[i])
+        let building_1_sum = 0;
+        let building_2_sum = 0;
+        let building_3_sum = 0;
+        console.log(vi)
+        vi[1].forEach((el) => building_1_sum += el);
+        vi[3].forEach((el) => building_2_sum += el);
+        vi[5].forEach((el) => building_3_sum += el);
+        console.log("(",labels[i],")")
+        room1.push(1-building_1_sum/vi[0].length)
+        room2.push(1-building_2_sum/vi[2].length)
+        room3.push(1-building_3_sum/vi[4].length)
+        console.log("Room 1:",building_1_sum/vi[0].length)
+        console.log("Room 2:",building_2_sum/vi[2].length)
+        console.log("Room 3:",building_3_sum/vi[4].length)
+    }
+    const ctx = document.getElementById('visibilityChart').getContext('2d');
+    const visibilityChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: OKB,
+        datasets: [
+            {
+                label: 'Upper-left room',
+                data: room1,
+                borderColor: 'rgba(0, 128, 0, 1)',
+                backgroundColor: 'rgba(0, 128, 0, .5)',
+                borderWidth: 2,
+                fill: false,
+                tension: 0.1
+            },
+            {
+                label: 'Lower-left room',
+                data: room3,
+                borderColor: 'rgba(0, 0, 128, 1)',
+                backgroundColor: 'rgba(0, 0, 128, .5)',
+                borderWidth: 2,
+                fill: false,
+                tension: 0.1
+            },
+            {
+                label: 'Right room',
+                data: room2,
+                borderColor: 'rgba(255, 165, 0, 1)',
+                backgroundColor: 'rgba(255, 165, 0, .5)',
+                borderWidth: 2,
+                fill: false,
+                tension: 0.1
+            }
+        ]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                position: 'bottom',
+                labels: {
+                    usePointStyle: true,
+                    boxWidth: 30,
+                    boxHeight: 4,
+                    padding: 5,
+                    font: {
+                        family: 'Times New Roman',
+                        size: 16
+                    }
+                }
+            }
+        },
+        scales: {
+            x: {
+                title: {
+                    display: true,
+                    text: 'Window Height from Floor (m)',
+                    font: {
+                        family: 'Times New Roman',
+                        size: 16
+                    }
+                }
+            },
+            y: {
+                title: {
+                    display: true,
+                    text: 'Privacy Index',
+                    font: {
+                        family: 'Times New Roman',
+                        size: 18
+                    }
+                },
+                min: 0,
+                max: 1
+            }
+        }
+    }
+});
+
+
+    </script>
+</body>
+</html>

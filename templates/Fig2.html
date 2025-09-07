@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fig. 2</title>
+    <!--<script src="{{ url_for('static', filename='js/three.min.js') }}"></script>!-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        .container {
+            width: 33vw;
+            height: 50vh;
+            display: inline-block;
+            border: 1px solid #ccc;
+            margin: 5px;
+            vertical-align: top; /* Ensures containers are aligned */
+        }
+
+        .label {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.5em;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #containers {
+            position: absolute;
+            top: 70px;
+            width: 100%;
+            display: flex;
+            justify-content: center; /* Evenly spaces the containers */
+        }
+
+        .container-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+      </style>
+</head>
+<body>
+    <header></header>
+    <div id="containers">
+        <div class="container-wrapper">
+            <div id="container1" class="container"></div>
+            <div class="label">(a)</div>
+        </div>
+        <div class="container-wrapper">
+            <div id="container2" class="container"></div>
+            <div class="label">(b)</div>
+        </div>
+    </div>
+    <script type="module">
+        // Basic Three.js scene setup
+        import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/build/three.module.js';
+        import * as OBIMcreate from './static/js/OBIM_create.js'
+        const response = await fetch('./static/buildings_by_envelope.json');
+        const data = await response.json();
+
+        const containers = [
+       document.getElementById('container1'),
+       document.getElementById('container2')
+        ];
+
+        const renderers=[]
+        const envs=[]
+        containers.forEach((element)=>
+        {
+            const renderer = new THREE.WebGLRenderer();
+            renderer.setSize(element.clientWidth, element.clientHeight);
+            element.appendChild(renderer.domElement);
+            renderers.push(renderer)
+        });
+   
+        envs.push(OBIMcreate.create_buildings_from_json(data,renderers[0],"Fig2a"))   
+        envs.push(OBIMcreate.create_buildings_from_json(data,renderers[1],"Fig2b"))
+
+        // Create a sphere and add it to the scene
+        const sphereRadius = .05; // Radius of the sphere
+        const sphereWidthSegments = 32; // Number of horizontal segments
+        const sphereHeightSegments = 16; // Number of vertical segments
+        const sphereGeometry = new THREE.SphereGeometry(sphereRadius, sphereWidthSegments, sphereHeightSegments); // Create sphere geometry
+        const sphereMaterial = new THREE.MeshPhongMaterial({ color: 0x111111 }); // Material for the sphere
+        
+        const X1s=data.buildings[0].xCoords;
+        const Z1s=data.buildings[0].zCoords;
+        const l1s=data.buildings[0].levels;
+        const inner_wall_xz=data.buildings[0].walls[0].xzCoords;
+
+        //create a grid points in the space of one room 
+        let room1_xz_boundary=[inner_wall_xz,[X1s[0],Z1s[0]],[X1s[-1],Z1s[-1]]]
+        let y_bourndary=[l1s[1],l1s[2]]
+        let minx=X1s[0]
+        let maxx=X1s[1]
+        let minz=Z1s[0]
+        let maxz=Z1s[3]
+        console.log("*****************************")
+        let room1=[]
+        let grid_width=1
+        for(let x=minx+grid_width/2;x<maxx-grid_width/2;x+=grid_width)
+        {
+            for (let z=minz+grid_width/2;z<=maxz-grid_width/2;z+=grid_width)
+            {
+                
+                for(let y=y_bourndary[0]+grid_width/2;y<y_bourndary[0]+2;y+=grid_width)
+                {console.log(x,y,z)
+                      
+        const sphereMesh = new THREE.Mesh(sphereGeometry, sphereMaterial); // Create the sphere mesh
+        // Position the sphere in the scene
+        sphereMesh.position.set(x,y,z); // Set the position of the sphere (adjust as needed)
+
+        // Add the sphere to the built object or environment
+        envs[0].add(sphereMesh); // Assuming env1 is a THREE.Object3D or similar
+        envs[1].add(sphereMesh.clone());
+                }
+            }
+        }
+        
+    </script>
+</body>
+</html>

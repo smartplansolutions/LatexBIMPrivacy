@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask and Three.js</title>
+    <title>Fig. 3</title>
     <!--<script src="{{ url_for('static', filename='js/three.min.js') }}"></script>!-->
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
@@ -14,35 +14,28 @@
         import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/build/three.module.js';
         import * as OBIM from './static/js/main.js'
         import * as families from './static/js/families.js'
-        const env1=new OBIM.BuiltEnvironment("Environment1",OBIM.renderer)
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+        const env1=new OBIM.BuiltEnvironment("Environment1",renderer)
         env1.remove(env1.gh);
+        // // Define the starting point and length of each arrow
+        
+        const arrowLength = 2;
 
-
-// // Define the starting point and length of each arrow
-// const startPoint = new THREE.Vector3(0, 0, 0);
-// const arrowLength = 5;
-
-// // Create arrows every 5 degrees in the XY plane
-// for (let phi = 0; phi < 2*Math.PI; phi += .6) {
-//     // Convert angle to radians
-//     for (let z=-1;z<=1;z+=.2){
- 
-//         const x = Math.cos(phi) * Math.sqrt(1 - z * z);
-//         const y = Math.sin(phi) * Math.sqrt(1 - z * z);
-//         const direction = new THREE.Vector3(x, y, z)
-//         const arrow = new THREE.ArrowHelper(direction, startPoint, arrowLength, 0x000000);
-//         env1.add(arrow);}
-//}
-
-// Parameters
-const radius = 3;       // Sphere radius
-const subdivisions = 5; // Number of subdivisions for the icosahedron (higher = more points)
-const geometry = new THREE.IcosahedronGeometry(radius, subdivisions);
-geometry.vertices.forEach(vertex => {
-    const direction = new THREE.Vector3(vertex.x, vertex.y, vertex.z);  // Position at vertex
-    const arrow = new THREE.ArrowHelper(direction, startPoint, 5, 0x000000);
-    env1.add(arrow);
-});
+        // Parameters
+        for(let subdivisions=2;subdivisions<9;subdivisions+=2)
+        {
+        const radius = 1;       // Sphere radius
+        const geometry = new THREE.IcosahedronGeometry(radius, subdivisions);
+        const startPoint = new THREE.Vector3(-40+subdivisions*3, 5, 0);
+        console.log("subdivisions:",subdivisions,"number of isovists:",geometry.vertices.length)
+        geometry.vertices.forEach(vertex => {
+            const direction = new THREE.Vector3(vertex.x, vertex.y, vertex.z);  // Position at vertex
+            const arrow = new THREE.ArrowHelper(direction, startPoint, arrowLength, 0x000000);
+            env1.add(arrow);
+        });
+        }
     </script>
 </body>
 </html>
