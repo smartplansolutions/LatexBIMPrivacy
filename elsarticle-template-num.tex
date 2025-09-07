@@ -387,10 +387,10 @@ We use back-face culling on opaque triangles and a hit tolerance of $10^{-6}$\,m
 
 \subsection{Assigning Visibility Indices to Rays}
 \label{sec:rvi}
-Each visible ray is scored by a \emph{Ray Visibility Index} $\mathrm{RVI}\in[0,1]$ that depends on two geometric factors: (i) the separation distance $d$ between the occupant point and the opposing window along the ray path, and (ii) the view angle $\theta$ between the ray and the occupant’s forward direction. Time-varying photometric factors (weather, daylight, blinds) are excluded to isolate design geometry. Perception is assumed to decline monotonically with increasing $d$ or $\theta$.
+Each visible ray is scored by a \emph{Ray Visibility Index} $\mathrm{RVI}\in[0,1]$ that depends on two geometric factors: (i) the separation distance $d$ between the occupant point and the opposing window along the ray path, and (ii) the view angle $\theta$ between the ray and the opposing window. Time-varying photometric factors (weather, daylight, blinds) are excluded to isolate design geometry. Perception is assumed to decline monotonically with increasing $d$ or $\theta$ because distant or oblique views subtend less detail and are more easily occluded.
 
 \paragraph{Geometric definitions.}
-Let a ray from grid point $\mathbf{x}_0$ have unit direction $\hat{\mathbf{r}}$ and intersect the scene at parameters $t_1<t_2<\cdots$ along $\mathbf{x}(t)=\mathbf{x}_0+t\hat{\mathbf{r}}$. For window–through–window paths, $t_1$ is the interior pane and $t_2$ the external pane. We define the separation distance as $d = t_2$, i.e., the distance from the occupant point to the opposite window along the sightline. Given the grid’s forward unit vector $\hat{\mathbf{u}}_j$, the view angle is $\theta = \arccos\!\big(\max\{0,\;\hat{\mathbf{r}}\!\cdot\!\hat{\mathbf{u}}_j\}\big)$, clamped to $[0,\pi/2]$ so that backward directions do not contribute.
+Let a ray from grid point $\mathbf{x}_0$ have unit direction $\hat{\mathbf{r}}$ and intersect the scene at parameters $t_1<t_2<\cdots$ along $\mathbf{x}(t)=\mathbf{x}_0+t\hat{\mathbf{r}}$. For window–through–window paths, $t_1$ is the interior pane and $t_2$ the external pane. We define the separation distance as $d = t_2$, i.e., the distance from the occupant point to the outside of the opposite window along the sightline; measuring to $t_2$ captures the shortest unobstructed path to the exterior. Let $\hat{\mathbf{n}}$ denote the outward unit normal of the intersected window; the view angle is then $\theta = \arccos\!\big(|\hat{\mathbf{r}}\!\cdot\!\hat{\mathbf{n}}|\big)$, clamped to $[0,\pi/2]$ so that backward directions do not contribute.
 
 \paragraph{Stimuli and task (ratings).}
 Perceptual judgments are elicited with standardized stimuli from the BIM scene. For the \emph{distance} series, only $d$ varies while $\theta$ and all other variables remain fixed; for the \emph{angle} series, only $\theta$ varies while $d$ is fixed. Stimuli are presented as photorealistic renders or VR snapshots at eye heights $z\in\{0.7,1.7\}$\,m, with unobstructed windows and consistent lighting. The observer context (e.g., a person at a facing window, a pedestrian at sidewalk height, or a driver at lane centerline) is fixed within a series to frame a single viewing situation. Each respondent $r$ rates “how easily someone in this context could see you clearly” on a 1–5 Likert scale (1 = not at all, 5 = very easily). Ratings $r^{(r)}$ are normalized to $H^{(r)}\in[0,1]$ by
@@ -401,41 +401,12 @@ H^{(r)} \;=\; \frac{r^{(r)}-1}{4}\,.
 This normalization scales the raw 1--5 rating onto the unit interval so that 0 denotes minimal perceived visibility and 1 represents maximal visibility.
 
 \paragraph{Monotone, non-parametric memberships (respondent-specific or pooled).}
-Let $\{(x_i,H^{(r)}_i)\}_{i=1}^{n}$ be the ordered levels for a single factor $x\!\in\!\{d,\theta\}$ rated by respondent $r$. We estimate a bounded, non-increasing sequence $\mu^{(r)}_1,\dots,\mu^{(r)}_n$ by isotonic regression,
-\begin{equation}
-\min_{\mu^{(r)}_1\ge \mu^{(r)}_2 \ge \cdots \ge \mu^{(r)}_n}\;\; \sum_{i=1}^{n} \big(\mu^{(r)}_i - H^{(r)}_i\big)^2
-\quad \text{subject to} \quad 0 \le \mu^{(r)}_i \le 1 \,,
-\label{eq:isotonic-individual}
-\end{equation}
-This constrained least-squares fit finds a monotone sequence of membership values that best matches respondent ratings while staying within [0,1].
-solved by the pool-adjacent-violators algorithm (PAVA). Endpoints are enforced by projection,
-\begin{equation}
-\mu^{(r)}(x_{\min}) = 1 \,, \qquad \mu^{(r)}(x_{\max}) = 0 \,,
-\label{eq:anchors}
-\end{equation}
-These anchor conditions force the membership function to be one at the nearest level and zero at the farthest.
-and a continuous membership function is obtained by piecewise-linear interpolation between fitted knots:
-\begin{equation}
-\mu^{(r)}(x) \;=\; \mu^{(r)}_i \;+\; \frac{\mu^{(r)}_{i+1}-\mu^{(r)}_i}{\,x_{i+1}-x_i\,}\,\big(x-x_i\big)
-\quad \text{for } x\in[x_i,x_{i+1}] \,.
-\label{eq:interp}
-\end{equation}
-Linear interpolation between successive knots yields a continuous membership curve over the factor $x$.
-When a representative curve is preferred, we form pooled targets by averaging ratings across respondents at each level,
+Let $\{(x_i,H^{(r)}_i)\}_{i=1}^{n}$ be the ordered levels for a single factor $x\!\in\!\{d,\theta\}$ rated by respondent $r$. Because visibility is expected to decrease monotonically, we fit a bounded, non-increasing membership curve $\mu^{(r)}(x)$ by passing a monotone, shape-preserving interpolant (e.g., PCHIP) through these points. Endpoint projections enforce $\mu^{(r)}(x_{\min}) = 1$ and $\mu^{(r)}(x_{\max}) = 0$, yielding a continuous function over $x$. When a representative curve is preferred, we form pooled targets by averaging ratings across respondents at each level,
 \begin{equation}
 \bar{H}_i \;=\; \frac{1}{M}\sum_{r=1}^{M} H^{(r)}_i \,,
 \label{eq:pooled-mean}
 \end{equation}
-Averaging the normalized ratings over all $M$ respondents produces a pooled estimate for level $i$.
-and fit pooled monotone sequences $\bar{\mu}_1,\ldots,\bar{\mu}_n$ using the same isotonic formulation,
-\begin{equation}
-\min_{\bar{\mu}_1\ge \cdots \ge \bar{\mu}_n}\;\; \sum_{i=1}^{n} (\bar{\mu}_i - \bar{H}_i)^2
-\quad \text{subject to} \quad 0 \le \bar{\mu}_i \le 1 \,,
-\label{eq:isotonic-pooled}
-\end{equation}
-Applying the same isotonic regression to the pooled ratings yields group-level membership functions that remain monotone and bounded.
-yielding $\bar{\mu}_d(d)$ and $\bar{\mu}_\theta(\theta)$. If smoother profiles are desired, a monotone shape-preserving interpolant (e.g., PCHIP) is applied after isotonic fitting; monotonicity and bounds are preserved. When no ratings are available, we fall back to linear defaults $(d_{\min},d_{\max})=(7,50)$\,m and $(\theta_{\min},\theta_{\max})=(10^\circ,90^\circ)$, reported explicitly in the study.
-\textit{Pooled and respondent-specific curves (with 95\% CI for the pooled model), alongside the two-parameter linear special case, are visualized in Fig.~\ref{fig:memberships}.}
+Averaging the normalized ratings over all $M$ respondents produces a pooled estimate for level $i$, and the same monotone interpolation yields group-level membership functions $\bar{\mu}_d(d)$ and $\bar{\mu}_\theta(\theta)$. The interpolant naturally provides smooth profiles while preserving monotonicity and bounds. When no ratings are available, we fall back to linear defaults $(d_{\min},d_{\max})=(7,50)$\,m and $(\theta_{\min},\theta_{\max})=(10^\circ,90^\circ)$, reported explicitly in the study. \textit{Pooled and respondent-specific curves (with 95\% CI for the pooled model), alongside the two-parameter linear special case, are visualized in Fig.~\ref{fig:memberships}.}
 
 % ==== FIGURE 2: Memberships (placed right after memberships text) ====
 \begin{figure}[t]
@@ -466,8 +437,7 @@ This piecewise curve assigns full visibility below $d_{\min}$, decreases linearl
 \end{cases}
 \label{eq:linear-angle}
 \end{equation}
-This angular membership declines linearly from the narrowest admissible angle to zero at the widest angle.
-These two-parameter curves can be used directly or as priors/anchors for the monotone fits in Eqs.~\eqref{eq:isotonic-individual}--\eqref{eq:interp} when a small number of ratings is also collected.
+This angular membership declines linearly from the narrowest admissible angle to zero at the widest angle. These two-parameter curves can be used directly or as priors/anchors for the monotone interpolant described above when a small number of ratings is also collected.
 
 \paragraph{Per-ray visibility.}
 Given respondent-specific memberships $\mu^{(r)}_d(d)$ and $\mu^{(r)}_\theta(\theta)$, the ray score for respondent $r$ is
@@ -571,7 +541,7 @@ New views with both factors varied jointly, $(d,\theta)\in\mathcal{G}$, using 3-
 All sets were randomized per participant; duplicate attention-check items were inserted. Trials failing attention checks were excluded; outliers were removed by median absolute deviation. We also timed elicitation to compare respondent burden between the monotone procedure and the linear special case (Eqs.~\eqref{eq:linear-distance}--\eqref{eq:linear-angle}).
 
 \subsection{Membership Elicitation and Fitting}
-For each respondent $r$, S1 and S2 ratings yielded the monotone memberships $\mu^{(r)}_d(d)$ and $\mu^{(r)}_\theta(\theta)$ via isotonic regression (Eqs.~\eqref{eq:isotonic-individual}--\eqref{eq:interp}). We also formed pooled curves $\bar{\mu}_d,\bar{\mu}_\theta$ (Eqs.~\eqref{eq:pooled-mean}--\eqref{eq:isotonic-pooled}). Where specified, monotone shape-preserving interpolation was applied after PAVA. In a low-burden setting we elicited only $(d_{\min},d_{\max})$ and $(\theta_{\min},\theta_{\max})$ and used the linear special case (Eqs.~\eqref{eq:linear-distance}--\eqref{eq:linear-angle}) as a baseline.
+For each respondent $r$, S1 and S2 ratings yielded the monotone memberships $\mu^{(r)}_d(d)$ and $\mu^{(r)}_\theta(\theta)$ using the smooth interpolant described above. We also formed pooled curves $\bar{\mu}_d,\bar{\mu}_\theta$ via Eq.~\eqref{eq:pooled-mean}. In a low-burden setting we elicited only $(d_{\min},d_{\max})$ and $(\theta_{\min},\theta_{\max})$ and used the linear special case (Eqs.~\eqref{eq:linear-distance}--\eqref{eq:linear-angle}) as a baseline.
 
 \subsection{Predictive Validity on Held-Out Stimuli (S3)}
 Given the fitted memberships, the predicted perceived visibility for a held-out item $(d,\theta)\in\mathcal{G}$ is (respondent-specific)
@@ -851,7 +821,7 @@ Voronoi vs.\ Uniform & \(\langle\cdot\rangle\) & \(\langle\cdot\rangle\) \\
 We quantified uncertainty in $\mu_d$ and $\mu_\theta$ by bootstrap and leave-one-level-out validation, then propagated that uncertainty to maps.
 
 \paragraph{Bootstrap propagation.}
-For each factor and respondent (or pooled), we draw $B$ resamples of elicitation data, refit isotonic curves, and propagate each draw through Eq.~\eqref{eq:softmax-weighted} to obtain a distribution of maps. Point-wise envelopes are summarized by
+For each factor and respondent (or pooled), we draw $B$ resamples of elicitation data, refit the monotone interpolant, and propagate each draw through Eq.~\eqref{eq:softmax-weighted} to obtain a distribution of maps. Point-wise envelopes are summarized by
 \begin{equation}
 \Delta \mathrm{VI}_j^{\mathrm{boot}} \;=\; \mathrm{median}\_{b=1..B}\left| \mathrm{VI}_j^{(b)} - \mathrm{VI}_j^{\mathrm{med}} \right|,
 \label{eq:boot-map-diff}
