@@ -1,0 +1,183 @@
+{
+    "environment": {
+      "name": "Environment1"
+    },
+    "materials": {
+      "wall": { "color": "#a0a0a0", "opacity": 1 },
+      "floor": { "color": "#dfdfdf", "opacity": 1 },
+      "frame": { "color": "#aa7777", "opacity": 1 },
+      "handle": { "color": "#aaaaaa", "opacity": 1 },
+      "glass": { "color": "#0000FF", "opacity": 1 }
+    },
+    "buildings": [
+      {
+        "name": "building1",
+        "xCoords": [-4, 10, 10, -4],
+        "zCoords": [3, 3, 10, 10],
+        "levels": [0, 3.5, 7, 10.5, 14],
+        "windows": [
+              {
+              "side_index":2,
+               "width": 3,
+              "height": 2.7,
+              "rel_position": [2, 0.2], 
+              "levels_index":[0,1,2,3]
+               },
+               {
+                "side_index":3,
+                 "width": 3,
+                "height": 2.7,
+                "rel_position": [9, 0.2], 
+                "levels_index":[0,1,2,3]
+                 },
+                 {
+                  "side_index":0,
+                   "width": 3,
+                  "height": 2.7,
+                  "rel_position": [2, 0.2], 
+                  "levels_index":[0,1,2,3]
+                   }
+            ],
+          "walls": [
+                {"xzCoords":[[0, 3], [0, 10]],
+                "levels":[0, 3.5, 7, 10.5, 14],
+                "doors":[
+                    {
+                        "rel_position":4 
+                    }
+                 ]
+                }
+              ]
+      },
+      {
+        "name": "building2",
+        "xCoords": [15, 26, 26, 15],
+        "zCoords": [3, 3, 10, 10],
+        "levels": [0, 3.5, 7, 10.5, 14, 17.5],
+        "windows": [
+              {
+              "side_index":0,
+               "width": 3,
+              "height": 2.7,
+              "rel_position": [2, 0.2], 
+              "levels_index":[0,1,2,3]
+               }
+            ]
+      },
+
+      {
+        "name": "building3",
+        "xCoords": [-4, 10, 10, -4],
+        "zCoords": [13, 13, 20, 20],
+        "levels": [0, 3.5, 7, 10.5, 14, 17.5],
+        "windows": [
+              {
+              "side_index":0,
+               "width": 3,
+              "height": 2.7,
+              "rel_position": [2, 0.2], 
+              "levels_index":[0,1,2,3]
+               },
+               {
+                "side_index":1,
+                 "width": 3,
+                "height": 2.7,
+                "rel_position": [2, 0.2], 
+                "levels_index":[0,1,2,3]
+                 }
+            ]
+      }
+    ],
+    "views": [
+    {
+      "name": "3D",
+      "cameraType": "perspective", 
+      "cameraPosition": [32, 13, 30],
+      "cameraLookAt": [0, -1, 0],
+      "hideRule": [
+        { "condition":"element instanceof OBIM.WALL && element.spoint[2]>7 && element.epoint[2]>7" }
+      ]
+    },
+    {
+      "name": "Fig1",
+      "cameraType": "perspective", 
+      "cameraPosition": [32, 13, 30],
+      "cameraLookAt": [0, -1, 0]
+    },
+    {
+      "name": "Fig2a",
+      "cameraType": "perspective", 
+      "cameraPosition": [14, 7, 9],
+      "cameraLookAt": [0, 0, 0]
+    },
+    {
+      "name": "Fig6",
+      "cameraType": "orthographic", 
+      "frustumSize":17, 
+      "cameraPosition": [12, 8, 9],
+      "cameraLookAt": [12, 7, 9],
+      "hideRule": [
+        { "condition":" element instanceof OBIM.FLOOR" }
+      ]
+    },
+    {
+      "name": "Fig7",
+      "cameraType": "perspective", 
+      "cameraPosition": [20, 13,17],
+      "cameraLookAt": [0, 1, 0],
+      "hideRule": [
+        { "condition":"(element instanceof OBIM.FLOOR ||  element instanceof OBIM.WALL ||  element instanceof OBIM.WINDOW ||  element instanceof OBIM.DOOR)  && new THREE.Box3().setFromObject(element).min.y>3 " }
+      ]
+
+    },
+    {
+      "name": "Fig8",
+      "cameraType": "perspective", 
+      "cameraPosition": [25, 2.2,9],
+      "cameraLookAt": [15, 1, 3]
+
+    },
+    {
+      "name": "Fig9",
+      "cameraType": "orthographic", 
+      "frustumSize":17, 
+      "cameraPosition": [17, 8, 9],
+      "cameraLookAt": [17, 7, 9],
+      "hideRule": [
+        { "condition":"element instanceof OBIM.FLOOR" }
+      ]
+    },
+
+    {
+      "name": "Fig10",
+      "cameraType": "orthographic", 
+      "frustumSize":17, 
+      "cameraPosition": [13, 8, 11],
+      "cameraLookAt": [13, 7, 11],
+      "hideRule": [
+        { "condition":"element instanceof OBIM.FLOOR" }
+      ]
+    },
+    {
+      "name": "Fig4a",
+      "cameraType": "perspective", 
+      "cameraPosition": [32, 13, 30],
+      "cameraLookAt": [0, 0, 0],
+      "hideRule": [
+        { "condition":"element instanceof OBIM.WALL && element.spoint[2]>7 && element.epoint[2]>7" }
+      ]
+    },
+    {
+      "name": "Up View",
+      "cameraType": "orthographic",  
+      "cameraLookAt": [0, -1, 0],
+      "cameraPosition": [10, 8, 10],
+      "hideRule": [
+        { "condition":"element instanceof OBIM.FLOOR && element.level<5" }
+      ]
+    }
+  ]
+
+
+  }
+  
