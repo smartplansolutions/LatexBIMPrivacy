@@ -1,10 +1,11 @@
 # Single-folder build: run code then compile LaTeX
 # Main tex file:
 TEX=elsarticle-template-num.tex
+.RECIPEPREFIX := >
 
-# latexmk options (uncomment shell-escape if you use minted)
-LATEXMK_OPTS=-pdf -interaction=nonstopmode -file-line-error
-# LATEXMK_OPTS+=-shell-escape
+# pdflatex options (uncomment shell-escape if you use minted)
+PDFLATEX_OPTS=-interaction=nonstopmode -file-line-error
+# PDFLATEX_OPTS+=-shell-escape
 
 # Python scripts that generate figures/tables/snippets into this same folder
 PY_SCRIPTS=build_results.py
@@ -12,14 +13,18 @@ PY_SCRIPTS=build_results.py
 all: results pdf
 
 results: $(PY_SCRIPTS)
-	python build_results.py
+>python build_results.py
 
 pdf:
-	latexmk $(LATEXMK_OPTS) $(TEX)
+>pdflatex $(PDFLATEX_OPTS) $(TEX)
+>bibtex $(basename $(TEX)) || true
+>pdflatex $(PDFLATEX_OPTS) $(TEX)
+>pdflatex $(PDFLATEX_OPTS) $(TEX)
 
 clean:
-	latexmk -C
-	rm -f auto_*.tex auto_*.pdf
+>rm -f *.aux *.bbl *.blg *.log *.out *.toc
+>rm -f auto_*.tex auto_*.pdf
 
 watch:
-	latexmk $(LATEXMK_OPTS) -pvc $(TEX)
+>@echo "Watch target requires latexmk and is not supported in this setup."
+>@false
