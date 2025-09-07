@@ -1,9 +1,4 @@
-import * as OBIM from './main.js'
-import * as families from './families.js'
-import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/build/three.module.js';
 
-export function create_buildings_from_json(data,renderer,view_name="3D")
-{
 
   
   const wall_material = new THREE.MeshPhongMaterial({name:"concrete", color: 0xa0a0a0,transparent:true,opacity:1,});
@@ -17,9 +12,7 @@ export function create_buildings_from_json(data,renderer,view_name="3D")
   const floor_family=[[wall_material,.4]]
 
 
-  const df=families.simple_door_family(1,2.5,.3,frame_material,handle_material)
-  
-  const env1=new OBIM.BuiltEnvironment("Environment1",renderer)
+
   //***********set view names********************/
  
 
