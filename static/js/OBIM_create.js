@@ -2,6 +2,30 @@ import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threej
 import * as OBIM from './main.js';
 import * as families from './families.js';
 
+// Mapping of hide rule condition strings to evaluator functions.
+// This avoids the use of `eval`, which is blocked by strict
+// Content Security Policies.  Each key should match the exact
+// condition string found in the JSON configuration.  The
+// corresponding value is a function that receives an element and
+// returns `true` if the element should be hidden.
+const CONDITION_EVALUATORS = {
+  'element instanceof OBIM.WALL && element.spoint[2]>7 && element.epoint[2]>7':
+    element => element instanceof OBIM.WALL &&
+               element.spoint[2] > 7 && element.epoint[2] > 7,
+  'element instanceof OBIM.FLOOR':
+    element => element instanceof OBIM.FLOOR,
+  '(element instanceof OBIM.FLOOR ||  element instanceof OBIM.WALL ||  element instanceof OBIM.WINDOW ||  element instanceof OBIM.DOOR)  && new THREE.Box3().setFromObject(element).min.y>3':
+    element => (
+      (element instanceof OBIM.FLOOR ||
+       element instanceof OBIM.WALL ||
+       element instanceof OBIM.WINDOW ||
+       element instanceof OBIM.DOOR) &&
+      new THREE.Box3().setFromObject(element).min.y > 3
+    ),
+  'element instanceof OBIM.FLOOR && element.level<5':
+    element => element instanceof OBIM.FLOOR && element.level < 5,
+};
+
 /**
  * Create an OBIM environment from a JSON description of buildings.
  *
@@ -176,7 +200,8 @@ export function set_view(env, data, view_name) {
       let shouldHide = false;
 
       view.hideRule.forEach(hideRule => {
-        if (eval(hideRule.condition)) {
+        const evaluator = CONDITION_EVALUATORS[hideRule.condition.trim()];
+        if (evaluator && evaluator(element)) {
           shouldHide = true;
         }
       });
