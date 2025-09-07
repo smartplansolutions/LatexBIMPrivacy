@@ -40,7 +40,7 @@ export function create_buildings_from_json(data,view_name="3D")
       }
       console.log(`Camera set for view: ${view.name}`);
   } else {
-      console.error(`View with name "${viewName}" not found.`);
+      console.error(`View with name "${view_name}" not found.`);
   }
 
   data.buildings.forEach(building => {
@@ -118,6 +118,10 @@ return env1
 export function set_view(env,data,view_name)
 {
     const view = data.views.find(v => v.name === view_name);
+    if (!view) {
+        console.error(`View with name "${view_name}" not found.`);
+        return;
+    }
     env.children.forEach(element => {
         let shouldHide = false; // Flag to determine if the element should be hidden
 
