@@ -331,11 +331,7 @@ To evaluate privacy within rooms, we generate a grid of occupant vantage points.
 \label{fig:griding}
 \end{figure}
 
-We denote the point-level \emph{Visibility Index} by $\mathrm{VI}_j\in[0,1]$ at grid point $j$, and its complementary \emph{Privacy Index} by
-\begin{equation}
-\mathrm{PI}_j \;=\; 1 \;-\; \mathrm{VI}_j \,.
-\label{eq:pi}
-\end{equation}
+We denote the point-level \emph{Visibility Index} by $\mathrm{VI}_j\in[0,1]$ at grid point $j$, and its complementary \emph{Privacy Index} by $\mathrm{PI}_j = 1 - \mathrm{VI}_j$.
 
 \paragraph{Occupant forward direction and boundary handling.}
 Each grid point $j$ has a forward unit vector $\hat{\mathbf{u}}_j$ used for angle computations (Sec.~\ref{sec:rvi}). By default we set $\hat{\mathbf{u}}_j$ to the outward normal of the nearest primary window of the room; if none exists, we use the room’s principal axis. Points that fall inside solids due to voxelization are pruned; ray origins are offset by $\varepsilon=5$\,mm along surface normals to prevent self-intersections.
@@ -399,17 +395,7 @@ We use back-face culling on opaque triangles and a hit tolerance of $10^{-6}$\,m
 Each visible ray is scored by a \emph{Ray Visibility Index} $\mathrm{RVI}\in[0,1]$ that depends on two geometric factors: (i) the separation distance $d$ between the occupant point and the opposing window along the ray path, and (ii) the view angle $\theta$ between the ray and the occupant’s forward direction. Time-varying photometric factors (weather, daylight, blinds) are excluded to isolate design geometry. Perception is assumed to decline monotonically with increasing $d$ or $\theta$.
 
 \paragraph{Geometric definitions.}
-Let a ray from grid point $\mathbf{x}_0$ have unit direction $\hat{\mathbf{r}}$ and intersect the scene at parameters $t_1<t_2<\cdots$ along $\mathbf{x}(t)=\mathbf{x}_0+t\hat{\mathbf{r}}$. For window–through–window paths, $t_1$ is the interior pane and $t_2$ the external pane. We define the separation distance as
-\begin{equation}
-d \;=\; t_2 \,,
-\label{eq:def-distance}
-\end{equation}
-i.e., the distance from the occupant point to the opposite window along the sightline. Given the grid’s forward unit vector $\hat{\mathbf{u}}_j$, the view angle is
-\begin{equation}
-\theta \;=\; \arccos\!\big(\max\{0,\;\hat{\mathbf{r}}\!\cdot\!\hat{\mathbf{u}}_j\}\big)\,,
-\label{eq:def-angle}
-\end{equation}
-clamped to $[0,\pi/2]$ so that backward directions do not contribute.
+Let a ray from grid point $\mathbf{x}_0$ have unit direction $\hat{\mathbf{r}}$ and intersect the scene at parameters $t_1<t_2<\cdots$ along $\mathbf{x}(t)=\mathbf{x}_0+t\hat{\mathbf{r}}$. For window–through–window paths, $t_1$ is the interior pane and $t_2$ the external pane. We define the separation distance as $d = t_2$, i.e., the distance from the occupant point to the opposite window along the sightline. Given the grid’s forward unit vector $\hat{\mathbf{u}}_j$, the view angle is $\theta = \arccos\!\big(\max\{0,\;\hat{\mathbf{r}}\!\cdot\!\hat{\mathbf{u}}_j\}\big)$, clamped to $[0,\pi/2]$ so that backward directions do not contribute.
 
 \paragraph{Stimuli and task (ratings).}
 Perceptual judgments are elicited with standardized stimuli from the BIM scene. For the \emph{distance} series, only $d$ varies while $\theta$ and all other variables remain fixed; for the \emph{angle} series, only $\theta$ varies while $d$ is fixed. Stimuli are presented as photorealistic renders or VR snapshots at eye heights $z\in\{0.7,1.7\}$\,m, with unobstructed windows and consistent lighting. The observer context (e.g., a person at a facing window, a pedestrian at sidewalk height, or a driver at lane centerline) is fixed within a series to frame a single viewing situation. Each respondent $r$ rates “how easily someone in this context could see you clearly” on a 1–5 Likert scale (1 = not at all, 5 = very easily). Ratings $r^{(r)}$ are normalized to $H^{(r)}\in[0,1]$ by
@@ -521,7 +507,7 @@ To summarize across respondents we report respondent-specific maps $\mathrm{VI}_
 \mathrm{VI}_j^{\mathrm{worst}} \;=\; \max_{r}\,\mathrm{VI}_j^{(r)}.
 \label{eq:acrossrespondents}
 \end{equation}
-Privacy follows from Eq.~\eqref{eq:pi}. Space-level privacy indices are then
+Privacy follows from $\mathrm{PI}_j = 1 - \mathrm{VI}_j$. Space-level privacy indices are then
 \begin{equation}
 \mathrm{SPI}^{(r)} \;=\; \frac{1}{N}\sum_{j=1}^{N}\!\big(1-\mathrm{VI}_j^{(r)}\big),\qquad
 \mathrm{SPI}^{\mathrm{med}} \;=\; \frac{1}{N}\sum_{j=1}^{N}\!\big(1-\mathrm{VI}_j^{\mathrm{med}}\big),
@@ -903,7 +889,7 @@ $2.0$\,m, $812$  & $\langle\cdot\rangle$ & $\langle\cdot\rangle$ & $\langle\cdot
 \end{table}
 
 \subsection{Forward Direction Definition $\hat{\mathbf{u}}_j$}
-We compared two definitions used in Eq.~\eqref{eq:def-angle}: (F1) outward normal of the nearest primary window; (F2) room principal axis (e.g., longest-wall direction).
+We compared two definitions used in the angle formula $\theta = \arccos\!\big(\max\{0,\hat{\mathbf{r}}\!\cdot\!\hat{\mathbf{u}}_j\}\big)$: (F1) outward normal of the nearest primary window; (F2) room principal axis (e.g., longest-wall direction).
 
 \paragraph{Metrics and findings.}
 Across rooms, the median absolute map difference and rankings between F1 and F2 were $\langle\cdot\rangle$ and $\rho{=}\langle\cdot\rangle$, respectively; discrepancies concentrate at interior points far from windows. We adopt F1 as default and report F2 as a robustness check.
