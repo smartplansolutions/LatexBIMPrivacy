@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask and Three.js</title>
+    <!--<script src="{{ url_for('static', filename='js/three.min.js') }}"></script>!-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header></header>
+    <script type="module">
+        import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/build/three.module.js';
+        import * as OBIMcreate from './static/js/OBIM_create.js'
+        const response = await fetch('./static/buildings_by_envelope.json');
+        const data = await response.json();
+        const env1=OBIMcreate.create_buildings_from_json(data)
+        const aspectRatio = window.innerWidth / window.innerHeight;
+        const frustumSize = 20; // Adjust this to control the zoom level
+
+        env1.camera = new THREE.OrthographicCamera(
+            frustumSize * aspectRatio / -2, // left
+            frustumSize * aspectRatio / 2,  // right
+            frustumSize / 2,                // top
+            frustumSize / -2,               // bottom
+            0.1,                            // near
+            1000                            // far
+        );
+        env1.camera.position.set(10,8,10)
+        env1.camera.lookAt(env1.camera.position.clone().add(new THREE.Vector3(0, -1, 0)));
+
+        // Create a sphere and add it to the scene
+        const sphereRadius = .05; // Radius of the sphere
+        const sphereWidthSegments = 32; // Number of horizontal segments
+        const sphereHeightSegments = 16; // Number of vertical segments
+        const sphereGeometry = new THREE.SphereGeometry(sphereRadius, sphereWidthSegments, sphereHeightSegments); // Create sphere geometry
+        const sphereMaterial = new THREE.MeshPhongMaterial({ color: 0x111111 }); // Material for the sphere
+        
+      
+
+        //create a grid points in the space of one room 
+        let room1_xz_boundary=[inner_wall_xz1,[X1s[0],Z1s[0]],[X1s[-1],Z1s[-1]]]
+        let y_bourndary=[l1s[1],l1s[2]]
+        let minx=inner_wall_xz1[0][0]
+        let maxx=X1s[1]
+        let minz=Z1s[0]
+        let maxz=Z1s[3]
+        console.log("*****************************")
+        console.log(minx)
+        let room1=[]
+        let grid_width=1
+        for(let x=minx+grid_width/2;x<=maxx-grid_width/2;x+=grid_width)
+        {
+            for (let z=minz+grid_width/2;z<=maxz-grid_width/2;z+=grid_width)
+            {
+                
+                for(let y=y_bourndary[0]+grid_width/2;y<=y_bourndary[1]-grid_width/2;y+=grid_width)
+                {
+                    console.log(x,y,z)
+                      
+        const sphereMesh = new THREE.Mesh(sphereGeometry, sphereMaterial); // Create the sphere mesh
+        // Position the sphere in the scene
+        sphereMesh.position.set(x,y,z); // Set the position of the sphere (adjust as needed)
+
+        // Add the sphere to the built object or environment
+        env1.add(sphereMesh); // Assuming env1 is a THREE.Object3D or similar
+        
+                }
+            }
+        }
+        
+    </script>
+</body>
+</html>

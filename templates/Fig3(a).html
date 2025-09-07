@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask and Three.js</title>
+    <!--<script src="{{ url_for('static', filename='js/three.min.js') }}"></script>!-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header></header>
+    <script type="module">
+        // Basic Three.js scene setup
+        import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/build/three.module.js';
+        import * as OBIM from './static/js/main.js'
+        import * as families from './static/js/families.js'
+        const env1=new OBIM.BuiltEnvironment("Environment1",OBIM.renderer)
+        //env1.remove(env1.gh);
+        env1.camera.position.set(15,10,0)
+        const target = new THREE.Vector3(0, 0, 0); // Set this to any point you want the camera to look at
+        env1.camera.lookAt(target);
+
+
+// Define the starting point and length of each arrow
+const startPoint = new THREE.Vector3(0, 0, 0);
+const arrowLength = 5;
+// Parameters
+const radius = 3;       // Sphere radius
+const subdivisions = 5; // Number of subdivisions for the icosahedron (higher = more points)
+const geometry = new THREE.IcosahedronGeometry(radius, subdivisions);
+// Create arrows every 5 degrees in the XY plane
+geometry.vertices.forEach(vertex => {
+    const direction = new THREE.Vector3(vertex.x, vertex.y, vertex.z);  // Position at vertex
+    const arrow = new THREE.ArrowHelper(direction, startPoint, 5, 0x000000);
+    env1.add(arrow);
+});
+    </script>
+</body>
+</html>

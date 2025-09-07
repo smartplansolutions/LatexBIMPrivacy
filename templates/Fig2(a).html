@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask and Three.js</title>
+    <!--<script src="{{ url_for('static', filename='js/three.min.js') }}"></script>!-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header></header>
+    <script type="module">
+        // Basic Three.js scene setup
+        import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/build/three.module.js';
+        import * as OBIM from './static/js/main.js'
+        import * as families from './static/js/families.js'
+        const env1=new OBIM.BuiltEnvironment("Environment1",OBIM.renderer)
+        env1.camera.position.set(14,7,9)
+        const target = new THREE.Vector3(0, 0, 0); // Set this to any point you want the camera to look at
+        env1.camera.lookAt(target);
+        //************Define materials***********
+        
+            const wall_material = new THREE.MeshPhongMaterial({name:"concrete", color: 0xa0a0a0,transparent:true,opacity:1,});
+            const floor_material = new THREE.MeshPhongMaterial({name:"concrete", color: 0xdfdfdf,transparent:true,opacity:1,});
+            const frame_material=new THREE.MeshPhongMaterial({name:"wood", color: 0xaa7777,transparent:true,opacity:1});
+            const handle_material=new THREE.MeshPhongMaterial({name:"metal", color: 0xaaaaaa,transparent:true,opacity:1});
+            const glass_material=new THREE.MeshPhongMaterial({name:"glass", color: 0x87CEEB,transparent:true,opacity:.7});
+            const wall_family=[[wall_material,.2]]
+            const floor_family=[[wall_material,.2],]
+        
+        //**********Define Families***************
+        
+            const width=3;
+            const height=2.5;
+            const frame_depth=.2;
+            const glass_depth=.1
+            const frameThickness=.2;
+            const wf=families.simple_window_family(width,height,frame_depth,glass_depth,frameThickness,frame_material,glass_material)
+            const df=families.simple_door_family(1,2.5,.2,frame_material,handle_material)
+        
+
+    //***********************************************/
+    //*********************building one *************/
+    //***********************************************/
+    const b1=new OBIM.BuiltObject(env1,"building1")
+    
+    let X1s=[-4,10,10,-4]//X values of floor  
+    let Z1s=[3,3,10,10]// Y values of floor
+    let l1s=[0,4,8,12,16] //levels related to floor
+    let inner_wall_xz1=[[0,3],[0,10]]
+    // //const wall=new OBIMWALL(4,4,2,10,4,4,.2,wall_material)
+    let xz;
+    let inner_wall;
+    for(let i=0;i<l1s.length;i++)
+    {
+        
+        new OBIM.FLOOR(b1,X1s,Z1s,l1s[i],floor_family)
+        xz=inner_wall_xz1
+        
+        let wall;
+        if(i!=0)
+        {
+            inner_wall=new OBIM.WALL(b1,[xz[0][0],l1s[i-1],xz[0][1]],[xz[1][0],l1s[i],xz[1][1]],wall_family)
+            new OBIM.DOOR(inner_wall,df,1)
+            for(let j=0;j<X1s.length;j++)
+            {
+            wall=new OBIM.WALL(b1,[X1s[j],l1s[i-1],Z1s[j]],[X1s.at(j-1),l1s[i],Z1s.at(j-1)],wall_family)
+            if(j==2)
+            {const w=new OBIM.WINDOW(wall,wf,2,.9)}
+            if(i==1 && j==1)
+            {
+            const d=new OBIM.DOOR(wall,df,1)
+            }
+        }
+        }}
+        
+    //***********************************************/
+    //*********************building two *************/
+    //***********************************************/
+    const b2=new OBIM.BuiltObject(env1,"building2")
+    
+    let X2s=[19,26,26,19]//X values of floor  
+    let Z2s=[3,3,10,10]// Y values of floor
+    let l2s=[0,4,8,12,16,20] //levels related to floor
+    // //const wall=new OBIMWALL(4,4,2,10,4,4,.2,wall_material)
+
+    for(let i=0;i<l2s.length;i++)
+    {
+        new OBIM.FLOOR(b1,X2s,Z2s,l2s[i],floor_family)
+        let wall;
+        if(i!=0)
+        {for(let j=0;j<X2s.length;j++)
+        {
+            wall=new OBIM.WALL(b1,[X2s[j],l2s[i-1],Z2s[j]],[X2s.at(j-1),l2s[i],Z2s.at(j-1)],wall_family)
+            if(j==0)
+            {const w=new OBIM.WINDOW(wall,wf,2,.9)}
+            if(i==1 && j==1)
+            {
+            const d=new OBIM.DOOR(wall,df,1)
+            }
+        }
+        }}
+        
+       
+        // Create a sphere and add it to the scene
+        const sphereRadius = .05; // Radius of the sphere
+        const sphereWidthSegments = 32; // Number of horizontal segments
+        const sphereHeightSegments = 16; // Number of vertical segments
+        const sphereGeometry = new THREE.SphereGeometry(sphereRadius, sphereWidthSegments, sphereHeightSegments); // Create sphere geometry
+        const sphereMaterial = new THREE.MeshPhongMaterial({ color: 0x111111 }); // Material for the sphere
+        
+      
+
+        //create a grid points in the space of one room 
+        let room1_xz_boundary=[inner_wall_xz1,[X1s[0],Z1s[0]],[X1s[-1],Z1s[-1]]]
+        let y_bourndary=[l1s[1],l1s[2]]
+        let minx=X1s[0]
+        let maxx=X1s[1]
+        let minz=Z1s[0]
+        let maxz=Z1s[3]
+        console.log("*****************************")
+        console.log(minx)
+        let room1=[]
+        let grid_width=1
+        for(let x=minx+grid_width/2;x<maxx-grid_width/2;x+=grid_width)
+        {
+            for (let z=minz+grid_width/2;z<maxz-grid_width/2;z+=grid_width)
+            {
+                
+                for(let y=y_bourndary[0]+grid_width/2;y<y_bourndary[1]-grid_width/2;y+=grid_width)
+                {console.log(x,y,z)
+                      
+        const sphereMesh = new THREE.Mesh(sphereGeometry, sphereMaterial); // Create the sphere mesh
+        // Position the sphere in the scene
+        sphereMesh.position.set(x,y,z); // Set the position of the sphere (adjust as needed)
+
+        // Add the sphere to the built object or environment
+        env1.add(sphereMesh); // Assuming env1 is a THREE.Object3D or similar
+        
+                }
+            }
+        }
+        
+    </script>
+</body>
+</html>

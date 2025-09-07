@@ -1,0 +1,26 @@
+When generating uniformly distributed points on a sphere using Three.js, one effective approach is to use an icosahedron-based method.
+ An icosahedron is a polyhedron with 20 triangular faces and 12 vertices, providing a nearly symmetrical structure that can be subdivided to
+  approximate a sphere. In Three.js, `THREE.IcosahedronGeometry(radius, subdivisions)` leverages this structure, where `radius` defines 
+  the sphere's radius, and `subdivisions` specifies how many times each triangular face should be divided. With each subdivision, 
+  each face of the icosahedron splits into four smaller triangles, adding vertices to the geometry. These vertices are then normalized 
+  (moved to lie on the surface of the sphere by scaling them to match the sphere's radius) to form a more evenly distributed point set 
+  on the sphere’s surface. The result is a dense, approximately uniform point distribution on the spherical surface without randomness.
+
+The subdivision process works as follows: at each subdivision level, new vertices are introduced in the middle of each edge 
+of the original triangles, and each new face is split into four smaller triangles. After the splitting process, each vertex coordinate 
+is normalized to match the desired radius. This means each vertex is adjusted so that its distance from the origin is equal to the specified 
+radius of the sphere. The normalization of vertices onto the spherical surface is essential for achieving a close approximation to a 
+uniform distribution, as it avoids clustering near the edges and instead distributes points evenly. 
+The normalized vertices are stored in the geometry’s `vertices` array, each representing a nearly uniform point on the sphere’s surface.
+
+
+In the context of a BIM (Building Information Modeling) model, each vertex on a sphere 
+ can represent a direction vector. Imagine each vertex as an arrow originating from a central point (One grid point).
+This arrow extends in the direction of the vertex coordinates, creating a "ray" that can be used to detect or intersect objects 
+within the BIM model.
+
+To leverage this for object detection, we treat each vertex as a unit vector defining a direction. 
+From a chosen grid point— a specific point in the model— we can create rays that extend along each 
+of these directions. As these rays move outward, they intersect with various elements in the BIM model, 
+such as walls, windows, or structural components. Using raycasting techniques, it is possible to detect
+ which objects each ray encounters and determine the order, distance, and angle of intersection.

@@ -1,0 +1,30 @@
+body { margin: 0; 
+    font-family: 'Fredoka One', cursive; /* Fun font */
+    
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff; /* Light background */}
+
+
+
+    header::before {
+content: "OBIM"; /* The text content */
+font-size: 3rem;
+font-weight: bold;
+background: linear-gradient(90deg, #16af05, #0264e4,#022be4);
+background-size: 200%;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+letter-spacing: 0.05em;
+text-align: center;
+display: inline-block; /* Ensures background-clip works */
+font-family: 'Georgia', serif; /* Classic touch */
+position: absolute;
+	top: 10px;
+	
+	text-align: left;
+	z-index: 100;
+	display:block;
+    padding-left: 10px;
+}

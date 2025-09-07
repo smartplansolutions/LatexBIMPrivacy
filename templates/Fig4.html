@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask and Three.js</title>
+    <!--<script src="{{ url_for('static', filename='js/three.min.js') }}"></script>!-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header></header>
+    <script type="module">
+       
+        import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/build/three.module.js';
+        import * as OBIM from './static/js/main.js'
+        import * as families from './static/js/families.js'
+        const env1=new OBIM.BuiltEnvironment("Environment1",OBIM.renderer)
+        // Set up orthographic camera parameters
+        // const aspectRatio = window.innerWidth / window.innerHeight;
+        // const frustumSize = 25; // Adjust this to control the zoom level
+
+        // env1.camera = new THREE.OrthographicCamera(
+        //     frustumSize * aspectRatio / -2, // left
+        //     frustumSize * aspectRatio / 2,  // right
+        //     frustumSize / 2,                // top
+        //     frustumSize / -2,               // bottom
+        //     0.1,                            // near
+        //     1000                            // far
+        // );
+        // env1.camera.position.set(15,8,20)
+        // env1.camera.lookAt(env1.camera.position.clone().add(new THREE.Vector3(0, 0, -1)));
+        //************Define materials***********
+        
+            const wall_material = new THREE.MeshPhongMaterial({name:"concrete", color: 0xa0a0a0,transparent:true,opacity:1,side: THREE.DoubleSide});
+            const floor_material = new THREE.MeshPhongMaterial({name:"concrete", color: 0xdfdfdf,transparent:true,opacity:1,side: THREE.DoubleSide});
+            const frame_material=new THREE.MeshPhongMaterial({name:"wood", color: 0xaa7777,transparent:true,opacity:1,side: THREE.DoubleSide});
+            const handle_material=new THREE.MeshPhongMaterial({name:"metal", color: 0xaaaaaa,transparent:true,opacity:1,side: THREE.DoubleSide});
+            const glass_material=new THREE.MeshPhongMaterial({name:"glass", color: 0x0000FF,transparent:true,opacity:1,side: THREE.DoubleSide});
+            const wall_family=[[wall_material,.1]]
+            const floor_family=[[wall_material,.1],]
+        
+        //**********Define Families***************
+        
+            const width=3;
+            const height=2.5;
+            const frame_depth=.2;
+            const glass_depth=.3
+            const frameThickness=.2;
+            const wf=families.simple_window_family(width,height,frame_depth,glass_depth,frameThickness,frame_material,glass_material)
+            const df=families.simple_door_family(1,2.5,.2,frame_material,handle_material)
+        
+
+    //***********************************************/
+    //*********************building one *************/
+    //***********************************************/
+    const b1=new OBIM.BuiltObject(env1,"building1")
+    
+    let X1s=[-4,10,10,-4]//X values of floor  
+    let Z1s=[3,3,10,10]// Y values of floor
+    let l1s=[0,4,8,12,16] //levels related to floor
+    let inner_wall_xz1=[[0,3],[0,10]]
+    // //const wall=new OBIMWALL(4,4,2,10,4,4,.2,wall_material)
+    let xz;
+    let inner_wall;
+    for(let i=0;i<l1s.length;i++)
+    {
+        
+        new OBIM.FLOOR(b1,X1s,Z1s,l1s[i],floor_family)
+        xz=inner_wall_xz1
+        
+        let wall;
+        if(i!=0)
+        {
+            inner_wall=new OBIM.WALL(b1,[xz[0][0],l1s[i-1],xz[0][1]],[xz[1][0],l1s[i],xz[1][1]],wall_family)
+            new OBIM.DOOR(inner_wall,df,1)
+            for(let j=0;j<X1s.length;j++)
+            {
+            wall=new OBIM.WALL(b1,[X1s[j],l1s[i-1],Z1s[j]],[X1s.at(j-1),l1s[i],Z1s.at(j-1)],wall_family)
+            wall.visible=(j%2==0)
+            if(j==2)
+            {const w=new OBIM.WINDOW(wall,wf,2,.9)}
+            if(i==1 && j==1)
+            {
+            //const d=new OBIM.DOOR(wall,df,1)
+            }
+        }
+        }}
+        
+    //***********************************************/
+    //*********************building two *************/
+    //***********************************************/
+    const b2=new OBIM.BuiltObject(env1,"building2")
+    
+    let X2s=[19,26,26,19]//X values of floor  
+    let Z2s=[3,3,10,10]// Y values of floor
+    let l2s=[0,4,8,12,16,20] //levels related to floor
+    // //const wall=new OBIMWALL(4,4,2,10,4,4,.2,wall_material)
+
+    for(let i=0;i<l2s.length;i++)
+    {
+        new OBIM.FLOOR(b1,X2s,Z2s,l2s[i],floor_family)
+        let wall;
+        if(i!=0)
+        {for(let j=0;j<X2s.length;j++)
+        {
+            
+            wall=new OBIM.WALL(b1,[X2s[j],l2s[i-1],Z2s[j]],[X2s.at(j-1),l2s[i],Z2s.at(j-1)],wall_family)
+            wall.visible=(j%2==0);
+            if(j==0)
+            {const w=new OBIM.WINDOW(wall,wf,2,.9)}
+            if(i==1 && j==1)
+            {
+            //const d=new OBIM.DOOR(wall,df,1)
+            }
+        }
+        }}
+        
+       
+        // Create a sphere and add it to the scene
+        const sphereRadius = .15; // Radius of the sphere
+        const sphereWidthSegments = 32; // Number of horizontal segments
+        const sphereHeightSegments = 16; // Number of vertical segments
+        const sphereGeometry = new THREE.SphereGeometry(sphereRadius, sphereWidthSegments, sphereHeightSegments); // Create sphere geometry
+        const sphereMaterial = new THREE.MeshPhongMaterial({ color: 0xff1111 }); // Material for the sphere
+        
+      
+
+        //create a grid points in the space of one room 
+        let room1_xz_boundary=[inner_wall_xz1,[X1s[0],Z1s[0]],[X1s[-1],Z1s[-1]]]
+        let y_bourndary=[l1s[1],l1s[2]]
+        let minx=inner_wall_xz1[0][0]
+        let maxx=X1s[1]
+        let minz=Z1s[0]
+        let maxz=Z1s[3]
+        console.log("*****************************")
+        let grid_width=1
+        let id=0;
+        let point=[4.5,10,6.5]
+        const sphereMesh = new THREE.Mesh(sphereGeometry, sphereMaterial); // Create the sphere mesh
+        sphereMesh.position.set(point[0],point[1],point[2]); // Set the position of the sphere (adjust as needed)
+        env1.add(sphereMesh); // Assuming env1 is a THREE.Object3D or similar
+     
+
+        const basePoint = new THREE.Vector3(point[0], point[1], point[2]);
+        const arrowLength = 100;
+
+        function visualizeRay(rayOrigin, rayDirection,color) {
+            const endPoint = rayOrigin.clone().add(rayDirection);
+            const geometry = new THREE.BufferGeometry().setFromPoints([rayOrigin, endPoint]);
+            const material = new THREE.LineBasicMaterial({ color: color }); // Red color for visibility
+            const line = new THREE.Line(geometry, material);
+            env1.add(line); // Add the line to the scene
+            }
+
+        // Create arrows every 20 degrees in the XY plane
+        for (let angle = -20; angle <=20; angle += 5) {  // Fixed condition to allow full rotation
+            // Convert angle to radians
+            const rad = THREE.MathUtils.degToRad(angle);
+    
+            for (let angle2 = 290; angle2 < 400; angle2 += 2) {
+                const rad2 = THREE.MathUtils.degToRad(angle2);
+                const rayOrigin = new THREE.Vector3(
+                    basePoint.x + Math.cos(rad) * 0.1, // Small shift in x
+                    basePoint.y + Math.sin(rad2) * 0.1, // Small shift in y
+                    basePoint.z + Math.sin(rad) * Math.cos(rad2) * .1 // No shift in z (or you can adjust as needed)
+                    );
+                // Calculate endPoint based on spherical coordinates
+                const rayDirection = new THREE.Vector3(
+                    Math.cos(rad) * Math.cos(rad2), // X
+                    Math.sin(rad2) ,                 // Y
+                    Math.sin(rad) * Math.cos(rad2)   // Z
+                    ).normalize().multiplyScalar(arrowLength);;
+        
+                    let raycaster = new THREE.Raycaster(rayOrigin, rayDirection);
+                    console.log(`****Checking for angles, ${angle}, ${angle2}****`);
+                    const intersections = [];
+
+                    for (let child of env1.children) {
+                        if (child instanceof OBIM.WALL || child instanceof OBIM.WINDOW || child instanceof OBIM.FLOOR) {
+                            const boundingBox = new THREE.Box3().setFromObject(child.children[0]);
+                            const intersection_Point = new THREE.Vector3();
+                            
+                            if (raycaster.ray.intersectBox(boundingBox, intersection_Point)) {
+                                console.log("Ray intersects bounding box");
+                                const distance = rayOrigin.distanceTo(intersection_Point);
+                                intersections.push({
+                                    point: intersection_Point.clone(),
+                                    distance: distance,
+                                    object: child
+                                });
+                            }
+                        }
+                    }
+                let rayColor = 0x00ff00; // Default green color
+                intersections.sort((a, b) => a.distance - b.distance);
+                if (intersections.length >= 4) {
+                   if(intersections[0].object instanceof OBIM.WINDOW)
+                    {    if(intersections[2].object instanceof OBIM.WINDOW)
+                        {rayColor = 0xff0000;}
+                        else if(intersections[3].object instanceof OBIM.WINDOW && intersections[3].object.wall==intersections[2].object)
+                        {rayColor = 0xff0000;}
+                    }
+                   else if(intersections[1].object instanceof OBIM.WINDOW && intersections[1].object.wall==intersections[0].object)
+                   {
+                    if(intersections[2].object instanceof OBIM.WINDOW)
+                        {rayColor = 0xff0000;}
+                        else if(intersections[3].object instanceof OBIM.WINDOW && intersections[3].object.wall==intersections[2].object)
+                        {rayColor = 0xff0000;}
+                   }
+                   // console.log(intersections[0])
+                    //console.log(intersections[1])
+
+                }
+
+
+                visualizeRay(rayOrigin, rayDirection.clone(), rayColor);
+        }}
+           
+
+
+    </script>
+</body>
+</html>
