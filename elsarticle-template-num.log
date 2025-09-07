@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.7)  7 SEP 2025 16:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.7)  7 SEP 2025 17:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1094,24 +1094,31 @@ File: fig6_memberships.pdf Graphic file (type pdf)
 Package pdftex.def Info: fig6_memberships.pdf  used on input line 414.
 (pdftex.def)             Requested size: 468.0pt x 233.99911pt.
  [12{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}] [13 <./fig6_membership
-s.pdf>] [14]
+s.pdf>]
+<fig_softmax_p.pdf, id=110, 867.24pt x 216.81pt>
+File: fig_softmax_p.pdf Graphic file (type pdf)
+<use fig_softmax_p.pdf>
+Package pdftex.def Info: fig_softmax_p.pdf  used on input line 470.
+(pdftex.def)             Requested size: 468.0pt x 116.99956pt.
+ [14 <./fig_softmax_p.pdf>]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 5
-17.
- (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+13.
+
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-./elsarticle-template-num.tex:517: Missing $ inserted.
+./elsarticle-template-num.tex:513: Missing $ inserted.
 <inserted text> 
                 $
-l.517 \texttt{build_results.py}
+l.513 \texttt{build_results.py}
                                .
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./elsarticle-template-num.tex:517: Extra }, or forgotten $.
+./elsarticle-template-num.tex:513: Extra }, or forgotten $.
 <recently read> \egroup 
                         
-l.517 \texttt{build_results.py}
+l.513 \texttt{build_results.py}
                                .
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1119,75 +1126,75 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./elsarticle-template-num.tex:518: Missing $ inserted.
+./elsarticle-template-num.tex:514: Missing $ inserted.
 <inserted text> 
                 $
-l.518 
+l.514 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (3.74867pt too wide) in paragraph at lines 519--522
+Overfull \hbox (3.74867pt too wide) in paragraph at lines 515--518
 []\T1/lmtt/m/n/10 The resulting Privacy Index (PI) values are evaluated in Sec.
  5[] using case studies with
  []
 
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 523.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 519.
 
-Overfull \hbox (29.9986pt too wide) in paragraph at lines 524--525
+Overfull \hbox (29.9986pt too wide) in paragraph at lines 520--521
 []\T1/lmtt/m/n/10 We evaluated the framework along three axes: (i) whether elic
 ited, monotonically decreasing
  []
 
 
-Overfull \hbox (83.2484pt too wide) in paragraph at lines 524--525
+Overfull \hbox (83.2484pt too wide) in paragraph at lines 520--521
 \T1/lmtt/m/n/10 memberships predict perceived visibility for held-out stimuli; 
 (ii) whether room-scale visibility/privacy
  []
 
 
-Overfull \hbox (56.99847pt too wide) in paragraph at lines 524--525
+Overfull \hbox (56.99847pt too wide) in paragraph at lines 520--521
 \T1/lmtt/m/n/10 maps align with human judgments; and (iii) robustness to modeli
 ng choices. Unless stated otherwise,
  []
 
 
-Overfull \hbox (34.48538pt too wide) in paragraph at lines 527--528
+Overfull \hbox (34.48538pt too wide) in paragraph at lines 523--524
 []\T1/lmtt/m/n/10 We recruited $\OML/lmm/m/it/10 M \OT1/lmr/m/n/10 = \OMS/lmsy/
 m/n/10 h[]i$ \T1/lmtt/m/n/10 adults (normal or corrected-to-normal vision; age 
 $\OMS/lmsy/m/n/10 h[]i ^^F h[]i$\T1/lmtt/m/n/10 years)
  []
 
 
-Overfull \hbox (30.5542pt too wide) in paragraph at lines 527--528
+Overfull \hbox (30.5542pt too wide) in paragraph at lines 523--524
 \T1/lmtt/m/n/10 via $\OMS/lmsy/m/n/10 h[]i$\T1/lmtt/m/n/10 . The study was appr
 oved by $\OMS/lmsy/m/n/10 h[]i$\T1/lmtt/m/n/10 ; all participants provided info
 rmed
  []
 
 
-Overfull \hbox (45.63794pt too wide) in paragraph at lines 527--528
+Overfull \hbox (45.63794pt too wide) in paragraph at lines 523--524
 \T1/lmtt/m/n/10 consent. Stimuli were viewed on $\OMS/lmsy/m/n/10 h[]i$ \T1/lmt
 t/m/n/10 at resolution $\OMS/lmsy/m/n/10 h^^Ai$\T1/lmtt/m/n/10 , refresh $\OMS/
 lmsy/m/n/10 h^^Ai$\T1/lmtt/m/n/10 Hz; viewing distance
  []
 
 
-Overfull \hbox (43.0545pt too wide) in paragraph at lines 527--528
+Overfull \hbox (43.0545pt too wide) in paragraph at lines 523--524
 \T1/lmtt/m/n/10 was $\OMS/lmsy/m/n/10 h^^Ai$\T1/lmtt/m/n/10 cm for monitors. Sc
 enes were generated from the BIM models in Sec. 4.3[] with fixed lighting
  []
 
 
-Overfull \hbox (8.99866pt too wide) in paragraph at lines 530--531
+Overfull \hbox (8.99866pt too wide) in paragraph at lines 526--527
 []\T1/lmtt/m/n/10 We created three stimulus sets, varying one factor at a time 
 for elicitation and holding
  []
 
 
-Overfull \hbox (19.83073pt too wide) in paragraph at lines 533--534
+Overfull \hbox (19.83073pt too wide) in paragraph at lines 529--530
  \T1/lmr/m/it/10 S1: Dis-tance se-ries (elic-i-ta-tion)..[] \T1/lmtt/m/n/10 A f
 ixed grid point at eye height $\OML/lmm/m/it/10 z \OMS/lmsy/m/n/10 2 f\OT1/lmr/
 m/n/10 0\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 7\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 1
@@ -1196,7 +1203,7 @@ lmm/m/it/10 ^^R \OT1/lmr/m/n/10 = 0[]$\T1/lmtt/m/n/10 . Distances
  []
 
 
-Overfull \hbox (22.74323pt too wide) in paragraph at lines 533--534
+Overfull \hbox (22.74323pt too wide) in paragraph at lines 529--530
 \OML/lmm/m/it/10 d \OMS/lmsy/m/n/10 2 f\OT1/lmr/m/n/10 4\OML/lmm/m/it/10 ; \OT1
 /lmr/m/n/10 8\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 12\OML/lmm/m/it/10 ; \OT1/lmr/m
 /n/10 20\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 30\OMS/lmsy/m/n/10 g$\T1/lmtt/m/n/10
@@ -1205,38 +1212,38 @@ ceived visibility on a 1--5 Likert
  []
 
 
-Overfull \hbox (0.2815pt too wide) in paragraph at lines 536--537
+Overfull \hbox (0.2815pt too wide) in paragraph at lines 532--533
  \T1/lmr/m/it/10 S2: An-gle se-ries (elic-i-ta-tion)..[] \T1/lmtt/m/n/10 Same g
 rid point; fixed separation distance $\OML/lmm/m/it/10 d \OT1/lmr/m/n/10 = \OMS
 /lmsy/m/n/10 h[]i$\T1/lmtt/m/n/10 m. Angles
  []
 
-
-Overfull \hbox (21.54028pt too wide) in paragraph at lines 539--540
+[15]
+Overfull \hbox (21.54028pt too wide) in paragraph at lines 535--536
 \OMS/lmsy/m/n/10 G$\T1/lmtt/m/n/10 , using 3--4 distances and 3--4 angles |   [
 ]   |   [] in S1/S2. These were used only for predictive
  []
 
-[15]
-Overfull \hbox (8.99866pt too wide) in paragraph at lines 541--542
+
+Overfull \hbox (8.99866pt too wide) in paragraph at lines 537--538
 []\T1/lmtt/m/n/10 All sets were randomized per participant; duplicate attention
 -check items were inserted.
  []
 
 
-Overfull \hbox (46.4985pt too wide) in paragraph at lines 541--542
+Overfull \hbox (46.4985pt too wide) in paragraph at lines 537--538
 \T1/lmtt/m/n/10 Trials failing attention checks were excluded; outliers were re
 moved by median absolute deviation.
  []
 
 
-Overfull \hbox (20.24858pt too wide) in paragraph at lines 541--542
+Overfull \hbox (20.24858pt too wide) in paragraph at lines 537--538
 \T1/lmtt/m/n/10 We also timed elicitation to compare respondent burden between 
 the monotone procedure and the
  []
 
 
-Overfull \hbox (20.42871pt too wide) in paragraph at lines 544--545
+Overfull \hbox (20.42871pt too wide) in paragraph at lines 540--541
 []\T1/lmtt/m/n/10 For each respondent $\OML/lmm/m/it/10 r$\T1/lmtt/m/n/10 , S1 
 and S2 ratings yielded the monotone memberships $\OML/lmm/m/it/10 ^^V[]\OT1/lmr
 /m/n/10 (\OML/lmm/m/it/10 d\OT1/lmr/m/n/10 )$ \T1/lmtt/m/n/10 and $\OML/lmm/m/i
@@ -1244,13 +1251,13 @@ t/10 ^^V[]\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 ^^R\OT1/lmr/m/n/10 )$
  []
 
 
-Overfull \hbox (21.95923pt too wide) in paragraph at lines 544--545
+Overfull \hbox (21.95923pt too wide) in paragraph at lines 540--541
 \T1/lmtt/m/n/10 using the smooth interpolant described above. We also formed po
 oled curves $[]\OML/lmm/m/it/10 ; []$ \T1/lmtt/m/n/10 via Eq. [].
  []
 
 
-Overfull \hbox (22.77869pt too wide) in paragraph at lines 544--545
+Overfull \hbox (22.77869pt too wide) in paragraph at lines 540--541
 \T1/lmtt/m/n/10 In a low-burden setting we elicited only $\OT1/lmr/m/n/10 (\OML
 /lmm/m/it/10 d[]; d[]\OT1/lmr/m/n/10 )$ \T1/lmtt/m/n/10 and $\OT1/lmr/m/n/10 (\
 OML/lmm/m/it/10 ^^R[]; ^^R[]\OT1/lmr/m/n/10 )$ \T1/lmtt/m/n/10 and used the lin
@@ -1258,20 +1265,20 @@ ear special
  []
 
 
-Overfull \hbox (25.09262pt too wide) in paragraph at lines 547--548
+Overfull \hbox (25.09262pt too wide) in paragraph at lines 543--544
 []\T1/lmtt/m/n/10 Given the fitted memberships, the predicted perceived visibil
 ity for a held-out item $\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 d; ^^R\OT1/lmr/m/n/1
 0 ) \OMS/lmsy/m/n/10 2
  []
 
 
-Overfull \hbox (25.49857pt too wide) in paragraph at lines 551--554
+Overfull \hbox (25.49857pt too wide) in paragraph at lines 547--550
 \T1/lmtt/m/n/10 This prediction multiplies the distance and angle memberships t
 o estimate perceived visibility
  []
 
 
-Overfull \hbox (19.07785pt too wide) in paragraph at lines 551--554
+Overfull \hbox (19.07785pt too wide) in paragraph at lines 547--550
 \T1/lmtt/m/n/10 for a new stimulus. or pooled $[]\OT1/lmr/m/n/10 (\OML/lmm/m/it
 /10 d; ^^R\OT1/lmr/m/n/10 ) = [](\OML/lmm/m/it/10 d\OT1/lmr/m/n/10 ) [](\OML/lm
 m/m/it/10 ^^R\OT1/lmr/m/n/10 )$\T1/lmtt/m/n/10 . We evaluated agreement using r
@@ -1279,160 +1286,160 @@ oot mean
  []
 
 
-Overfull \hbox (4.49863pt too wide) in paragraph at lines 560--562
+Overfull \hbox (4.49863pt too wide) in paragraph at lines 556--558
 \T1/lmtt/m/n/10 RMSE penalizes large discrepancies whereas MAE reports the aver
 age absolute error over the
  []
 
 
-Overfull \hbox (14.9986pt too wide) in paragraph at lines 568--571
+Overfull \hbox (14.9986pt too wide) in paragraph at lines 564--567
 \T1/lmtt/m/n/10 Spearman's rank correlation evaluates how well the predicted an
 d observed visibilities order
  []
 
 
-Overfull \hbox (17.86005pt too wide) in paragraph at lines 568--571
+Overfull \hbox (17.86005pt too wide) in paragraph at lines 564--567
 \T1/lmtt/m/n/10 the held-out stimuli. with $\OML/lmm/m/it/10 S[]\OMS/lmsy/m/n/1
 0 hjGji$ \T1/lmtt/m/n/10 held-out items. For an optional binary ^^Phigh-visibil
 ity^^Q
  []
 
 
-Overfull \hbox (83.2484pt too wide) in paragraph at lines 574--576
+Overfull \hbox (83.2484pt too wide) in paragraph at lines 570--572
 \T1/lmtt/m/n/10 The area under the ROC curve summarizes binary classification p
 erformance for identifying high-visibility
  []
 
 [16]
-Overfull \hbox (24.24867pt too wide) in paragraph at lines 602--603
+Overfull \hbox (24.24867pt too wide) in paragraph at lines 598--599
 []\T1/lmtt/b/n/10 Monotone trend with mild saturation. \T1/lmtt/m/n/10 Points r
 ise with the identity line, indicating that
  []
 
 
-Overfull \hbox (10.52678pt too wide) in paragraph at lines 602--603
+Overfull \hbox (10.52678pt too wide) in paragraph at lines 598--599
 \T1/lmtt/m/n/10 the multiplicative combination in Eq. [] tracks perceived visib
 ility. Any flattening
  []
 
 
-Overfull \hbox (13.7487pt too wide) in paragraph at lines 603--604
+Overfull \hbox (13.7487pt too wide) in paragraph at lines 599--600
 []\T1/lmtt/b/n/10 Heteroscedastic residuals (expected). \T1/lmtt/m/n/10 Varianc
 e is typically larger in the mid-range of
  []
 
 
-Overfull \hbox (40.02321pt too wide) in paragraph at lines 603--604
+Overfull \hbox (40.02321pt too wide) in paragraph at lines 599--600
 \OML/lmm/m/it/10 H$ \T1/lmtt/m/n/10 where multiple $\OT1/lmr/m/n/10 (\OML/lmm/m
 /it/10 d; ^^R\OT1/lmr/m/n/10 )$ \T1/lmtt/m/n/10 pairs feel similarly visible; n
 ear 0/1 the response is more decisive,
  []
 
 
-Overfull \hbox (8.49872pt too wide) in paragraph at lines 604--605
+Overfull \hbox (8.49872pt too wide) in paragraph at lines 600--601
 []\T1/lmtt/b/n/10 Pooled vs. respondent-specific. \T1/lmtt/m/n/10 Pooled marker
 s sit on the central trend, showing good
  []
 
 
-Overfull \hbox (3.24873pt too wide) in paragraph at lines 604--605
+Overfull \hbox (3.24873pt too wide) in paragraph at lines 600--601
 \T1/lmtt/m/n/10 average calibration. Respondent-specific clouds reveal individu
 al differences (e.g.,
  []
 
 
-Overfull \hbox (8.49872pt too wide) in paragraph at lines 605--606
+Overfull \hbox (8.49872pt too wide) in paragraph at lines 601--602
 []\T1/lmtt/b/n/10 Linear special case compresses extremes. \T1/lmtt/m/n/10 When
  included, its points cluster toward the
  []
 
 
-Overfull \hbox (29.49866pt too wide) in paragraph at lines 605--606
+Overfull \hbox (29.49866pt too wide) in paragraph at lines 601--602
 \T1/lmtt/m/n/10 center, under-estimating high-visibility and over-estimating lo
 w-visibility items (smaller
  []
 
 
-Overfull \hbox (35.99854pt too wide) in paragraph at lines 607--608
+Overfull \hbox (35.99854pt too wide) in paragraph at lines 603--604
 \T1/lmtt/m/n/10 These visual patterns align with Table 4[]: monotone fits typic
 ally outperform the linear special
  []
 
 
-Overfull \hbox (14.91876pt too wide) in paragraph at lines 607--608
+Overfull \hbox (14.91876pt too wide) in paragraph at lines 603--604
 \T1/lmtt/m/n/10 case, while the pooled model approaches respondent-specific per
 formance for ranking (high $\OML/lmm/m/it/10 ^^Z$\T1/lmtt/m/n/10 )
  []
 
 
-Overfull \hbox (174.276pt too wide) in paragraph at lines 610--611
+Overfull \hbox (174.276pt too wide) in paragraph at lines 606--607
 []\T1/lmtt/m/n/10 We compared our pooled model against a published geometric vi
 sibility metric $\OMS/lmsy/m/n/10 h[]i$
  []
 
 
-Overfull \hbox (64.77628pt too wide) in paragraph at lines 610--611
+Overfull \hbox (64.77628pt too wide) in paragraph at lines 606--607
 \T1/lmtt/m/n/10 implemented on the |   [] rooms, grids, and ray budgets. Baseli
 ne parameters followed $\OMS/lmsy/m/n/10 h[]i$\T1/lmtt/m/n/10 .
  []
 
 
-Overfull \hbox (7.58163pt too wide) in paragraph at lines 610--611
+Overfull \hbox (7.58163pt too wide) in paragraph at lines 606--607
 \T1/lmtt/m/n/10 We report absolute metrics and improvements $\OT1/lmr/m/n/10 ^^
 A$ \T1/lmtt/m/n/10 relative to the baseline, aggregating across
  []
 
 [17]
-Overfull \hbox (108.24843pt too wide) in paragraph at lines 641--642
+Overfull \hbox (108.24843pt too wide) in paragraph at lines 637--638
 []\T1/lmtt/b/n/10 Hotspot localization. \T1/lmtt/m/n/10 By enforcing the window
 -through-window rule and weighting by respondent-calibrated
  []
 
 
-Overfull \hbox (39.99863pt too wide) in paragraph at lines 641--642
+Overfull \hbox (39.99863pt too wide) in paragraph at lines 637--638
 \T1/lmtt/m/n/10 memberships, our maps (Fig. 9[], left) concentrate exposure whe
 re a real line-of-sight exists.
  []
 
 
-Overfull \hbox (3.24873pt too wide) in paragraph at lines 641--642
+Overfull \hbox (3.24873pt too wide) in paragraph at lines 637--638
 \T1/lmtt/m/n/10 Baselines that integrate generic view openness often ``smear'' 
 exposure across façades,
  []
 
 
-Overfull \hbox (29.41882pt too wide) in paragraph at lines 642--643
+Overfull \hbox (29.41882pt too wide) in paragraph at lines 638--639
 []\T1/lmtt/b/n/10 Ranking vs. absolute error. \T1/lmtt/m/n/10 Table 5[] typical
 ly shows higher $\OML/lmm/m/it/10 ^^Z$ \T1/lmtt/m/n/10 and lower RMSE/MAE for o
 urs,
  []
 
 
-Overfull \hbox (24.24867pt too wide) in paragraph at lines 642--643
+Overfull \hbox (24.24867pt too wide) in paragraph at lines 638--639
 \T1/lmtt/m/n/10 especially in rooms with competing apertures or oblique approac
 hes. In simple one-window
  []
 
 
-Overfull \hbox (24.24867pt too wide) in paragraph at lines 643--644
+Overfull \hbox (24.24867pt too wide) in paragraph at lines 639--640
 []\T1/lmtt/b/n/10 Failure modes to watch. \T1/lmtt/m/n/10 If human ratings are 
 driven by non-geometric cues (glare, social
  []
 
 
-Overfull \hbox (24.24867pt too wide) in paragraph at lines 643--644
+Overfull \hbox (24.24867pt too wide) in paragraph at lines 639--640
 \T1/lmtt/m/n/10 cues), both methods underperform. We flag these rooms in the su
 pplement and exclude them
  []
 
 
-Overfull \hbox (16.98714pt too wide) in paragraph at lines 647--648
+Overfull \hbox (16.98714pt too wide) in paragraph at lines 643--644
  \T1/lmr/m/it/10 Sta-tis-ti-cal test-ing..[] \T1/lmtt/m/n/10 For each metric, w
 e compute paired differences per room/respondent and apply
  []
 
 
-Overfull \hbox (8.50716pt too wide) in paragraph at lines 647--648
+Overfull \hbox (8.50716pt too wide) in paragraph at lines 643--644
 \T1/lmtt/m/n/10 a Wilcoxon signed-rank test (two-sided, $\OML/lmm/m/it/10 []\O
 T1/lmr/m/n/10 0\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 05$\T1/lmtt/m/n/10 ). Report $
 \OML/lmm/m/it/10 p$\T1/lmtt/m/n/10 -values and effect sizes ($\OML/lmm/m/it/10 
@@ -1440,69 +1447,68 @@ r[][]$\T1/lmtt/m/n/10 )
  []
 
 
-Overfull \hbox (10.23483pt too wide) in paragraph at lines 650--651
+Overfull \hbox (10.23483pt too wide) in paragraph at lines 646--647
 []\T1/lmtt/m/n/10 We selected $\OMS/lmsy/m/n/10 h\OML/lmm/m/it/10 K\OMS/lmsy/m/
 n/10 i$ \T1/lmtt/m/n/10 rooms across the BIM examples in Fig. 2[], computed poi
 nt-level visibility
  []
 
 
-Overfull \hbox (15.8517pt too wide) in paragraph at lines 650--651
+Overfull \hbox (15.8517pt too wide) in paragraph at lines 646--647
 [][]$ \T1/lmtt/m/n/10 using Eq. [], and derived space privacy $[]$ per Eq. []. 
 Respondents viewed a 10s video
  []
 
 
-Overfull \hbox (51.74849pt too wide) in paragraph at lines 650--651
+Overfull \hbox (51.74849pt too wide) in paragraph at lines 646--647
 \T1/lmtt/m/n/10 fly-through of each room and rated overall perceived visibility
  on the same 1--5 scale (normalized).
  []
 
-
-Overfull \hbox (41.24852pt too wide) in paragraph at lines 654--657
+[18]
+Overfull \hbox (41.24852pt too wide) in paragraph at lines 650--653
 \T1/lmtt/m/n/10 Taking one minus the privacy index provides a room-level visibi
 lity estimate for each respondent.
  []
 
-[18]
-<fuzzy_membership_functions.png, id=131, 835.6821pt x 287.1528pt>
+<fuzzy_membership_functions.png, id=156, 835.6821pt x 287.1528pt>
 File: fuzzy_membership_functions.png Graphic file (type png)
 <use fuzzy_membership_functions.png>
-Package pdftex.def Info: fuzzy_membership_functions.png  used on input line 677
+Package pdftex.def Info: fuzzy_membership_functions.png  used on input line 673
 .
 (pdftex.def)             Requested size: 444.59857pt x 152.773pt.
 
-Overfull \hbox (31.10931pt too wide) in paragraph at lines 684--685
+Overfull \hbox (31.10931pt too wide) in paragraph at lines 680--681
  \T1/lmr/m/it/10 Read-ing Fig. 10[]..[] \T1/lmtt/m/n/10 The left map reveals lo
 calized ^^Phot^^Q directions (e.g., a narrow opposing window)
  []
 
 
-Overfull \hbox (41.24852pt too wide) in paragraph at lines 684--685
+Overfull \hbox (41.24852pt too wide) in paragraph at lines 680--681
 \T1/lmtt/m/n/10 that drive the room-level rating on the right. Agreement is bes
 t where hotspots are concentrated
  []
 
 
-Overfull \hbox (25.49857pt too wide) in paragraph at lines 684--685
+Overfull \hbox (25.49857pt too wide) in paragraph at lines 680--681
 \T1/lmtt/m/n/10 and weakest where exposure is diffuse or multi-source; this is 
 reflected in the rank agreement
  []
 
 
-Overfull \hbox (29.77986pt too wide) in paragraph at lines 688--689
+Overfull \hbox (29.77986pt too wide) in paragraph at lines 684--685
 []\T1/lmtt/m/n/10 We examined robustness with respect to (i) the soft-max expon
 ent $\OML/lmm/m/it/10 p$\T1/lmtt/m/n/10 , (ii) directional weights
  []
 
 
-Overfull \hbox (45.55235pt too wide) in paragraph at lines 688--689
+Overfull \hbox (45.55235pt too wide) in paragraph at lines 684--685
 \OML/lmm/m/it/10 ![]$\T1/lmtt/m/n/10 , (iii) uncertainty in the elicited monoto
 ne memberships, and (iv) discretization (grid spacing,
  []
 
 
-Overfull \hbox (35.35555pt too wide) in paragraph at lines 691--692
+Overfull \hbox (35.35555pt too wide) in paragraph at lines 687--688
  \T1/lmr/m/it/10 Soft-max ex-po-nent $\OML/lmm/m/it/10 p$\T1/lmr/m/it/10 ..[] \
 T1/lmtt/m/n/10 We swept $\OML/lmm/m/it/10 p \OMS/lmsy/m/n/10 2 f\OT1/lmr/m/n/10
  1\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 5\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 10\OML
@@ -1511,58 +1517,59 @@ T1/lmtt/m/n/10 We swept $\OML/lmm/m/it/10 p \OMS/lmsy/m/n/10 2 f\OT1/lmr/m/n/10
  []
 
 
-Overfull \hbox (19.95001pt too wide) in paragraph at lines 691--692
+Overfull \hbox (19.95001pt too wide) in paragraph at lines 687--688
 \T1/lmtt/m/n/10 (b) room ranking stability (Spearman $\OML/lmm/m/it/10 ^^Z$ \T1
 /lmtt/m/n/10 across $\OML/lmm/m/it/10 p$\T1/lmtt/m/n/10 ); and (c) within-room 
 differentiation via the
  []
 
 
-Overfull \hbox (15.66382pt too wide) in paragraph at lines 691--692
+Overfull \hbox (15.66382pt too wide) in paragraph at lines 687--688
 \T1/lmtt/m/n/10 coefficient of variation of $\OMS/lmsy/m/n/10 f[][]g$\T1/lmtt/m
 /n/10 . We observe a knee near $\OML/lmm/m/it/10 p[]\OT1/lmr/m/n/10 10$\T1/lmtt
 /m/n/10 : larger $\OML/lmm/m/it/10 p$ \T1/lmtt/m/n/10 yields negligible
  []
 
-<P-value-impacts.jpg, id=132, 536.0025pt x 533.89462pt>
+[19 <./fuzzy_membership_functions.png>]
+<P-value-impacts.jpg, id=164, 536.0025pt x 533.89462pt>
 File: P-value-impacts.jpg Graphic file (type jpg)
 <use P-value-impacts.jpg>
-Package pdftex.def Info: P-value-impacts.jpg  used on input line 695.
+Package pdftex.def Info: P-value-impacts.jpg  used on input line 691.
 (pdftex.def)             Requested size: 468.0pt x 466.15462pt.
-[19 <./fuzzy_membership_functions.png>] [20 <./P-value-impacts.jpg>]
-Overfull \hbox (1.6118pt too wide) in paragraph at lines 718--719
+ [20 <./P-value-impacts.jpg>]
+Overfull \hbox (1.6118pt too wide) in paragraph at lines 714--715
  \T1/lmr/m/it/10 Di-rec-tional weights $\OML/lmm/m/it/10 ![]$\T1/lmr/m/it/10 ..
 [] \T1/lmtt/m/n/10 We compared uniform weights ($\OML/lmm/m/it/10 ![][]\OT1/lmr
 /m/n/10 1$\T1/lmtt/m/n/10 ) with spherical-Voronoi solid-angle
  []
 
 
-Overfull \hbox (35.81606pt too wide) in paragraph at lines 718--719
+Overfull \hbox (35.81606pt too wide) in paragraph at lines 714--715
 \T1/lmtt/m/n/10 areas. Median absolute change in room-level $[]$ (Eq. []) was $
 \OMS/lmsy/m/n/10 h^^Ai$\T1/lmtt/m/n/10 , with room rankings virtually
  []
 
 
-Overfull \hbox (8.4363pt too wide) in paragraph at lines 721--722
+Overfull \hbox (8.4363pt too wide) in paragraph at lines 717--718
  \T1/lmr/m/it/10 Un-cer-tainty in mono-tone mem-ber-ships..[] \T1/lmtt/m/n/10 W
 e computed 95% CIs for $[]\OML/lmm/m/it/10 ; []$ \T1/lmtt/m/n/10 via nonparamet
 ric bootstrap
  []
 
 
-Overfull \hbox (1.52669pt too wide) in paragraph at lines 721--722
+Overfull \hbox (1.52669pt too wide) in paragraph at lines 717--718
 \T1/lmtt/m/n/10 over trials/levels and propagated draws through Eq. [] to obtai
 n VI map envelopes (median
  []
 
 
-Overfull \hbox (15.05421pt too wide) in paragraph at lines 721--722
+Overfull \hbox (15.05421pt too wide) in paragraph at lines 717--718
 \T1/lmtt/m/n/10 absolute map difference $\OMS/lmsy/m/n/10 h^^Ai$\T1/lmtt/m/n/10
  ). Leave-one-level-out validation for S1/S2 kept S3 errors within
  []
 
 
-Overfull \hbox (26.09161pt too wide) in paragraph at lines 724--725
+Overfull \hbox (26.09161pt too wide) in paragraph at lines 720--721
  \T1/lmr/m/it/10 Dis-cretiza-tion: grid spac-ing and rays per point..[] \T1/lmt
 t/m/n/10 We varied grid spacing $\OT1/lmr/m/n/10 ^^A \OMS/lmsy/m/n/10 2 f\OT1/l
 mr/m/n/10 0\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 5\OML/lmm/m/it/10 ; \OT1/lmr/m/n/1
@@ -1572,21 +1579,21 @@ nt
  []
 
 
-Overfull \hbox (7.30766pt too wide) in paragraph at lines 724--725
+Overfull \hbox (7.30766pt too wide) in paragraph at lines 720--721
 \T1/lmtt/m/n/10 (VI units); room rankings remained stable ($\OML/lmm/m/it/10 ^^
 Z \OMS/lmsy/m/n/10 ^^U h^^Ai$\T1/lmtt/m/n/10 ). Throughput and runtime are repo
 rted in
  []
 
 
-Overfull \hbox (132.2688pt too wide) in paragraph at lines 727--728
+Overfull \hbox (132.2688pt too wide) in paragraph at lines 723--724
  \T1/lmr/m/it/10 In-ter-pre-ta-tion bands (vi-su-al-iza-tion only)..[] \T1/lmtt
 /m/n/10 For figures we map continuous $[]$ to five bands (very low/low/moderate
 /high/very
  []
 
 
-Overfull \hbox (45.33202pt too wide) in paragraph at lines 727--728
+Overfull \hbox (45.33202pt too wide) in paragraph at lines 723--724
 \T1/lmtt/m/n/10 high) using $\OMS/lmsy/m/n/10 f\OT1/lmr/m/n/10 0\OML/lmm/m/it/1
 0 ; \OT1/lmr/m/n/10 0\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 2\OML/lmm/m/it/10 ; \OT1
 /lmr/m/n/10 0\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 4\OML/lmm/m/it/10 ; \OT1/lmr/m/n
@@ -1597,20 +1604,20 @@ on; analyses
  []
 
 
-Overfull \hbox (2.51965pt too wide) in paragraph at lines 730--731
+Overfull \hbox (2.51965pt too wide) in paragraph at lines 726--727
 []\T1/lmtt/m/n/10 Figure 6[] (Methods) illustrates $\OML/lmm/m/it/10 ^^V[]$ \T1
 /lmtt/m/n/10 for a representative participant $\OML/lmm/m/it/10 r[]$\T1/lmtt/m/
 n/10 , with a steeper
  []
 
 
-Overfull \hbox (4.38298pt too wide) in paragraph at lines 730--731
+Overfull \hbox (4.38298pt too wide) in paragraph at lines 726--727
 \T1/lmtt/m/n/10 early drop-off than the pooled curve; $\OML/lmm/m/it/10 ^^V[]$ 
 \T1/lmtt/m/n/10 shows higher sensitivity to oblique angles. On
  []
 
 
-Overfull \hbox (9.35783pt too wide) in paragraph at lines 730--731
+Overfull \hbox (9.35783pt too wide) in paragraph at lines 726--727
 \T1/lmtt/m/n/10 S3, this participant achieved $[][][]\OMS/lmsy/m/n/10 h^^Ai$\T1
 /lmtt/m/n/10 , $[][][]\OMS/lmsy/m/n/10 h^^Ai$\T1/lmtt/m/n/10 , and $\OML/lmm/m/
 it/10 ^^Z[][]\OMS/lmsy/m/n/10 h^^Ai$ \T1/lmtt/m/n/10 (Eqs. 11[]--12[]). At room
@@ -1618,64 +1625,64 @@ it/10 ^^Z[][]\OMS/lmsy/m/n/10 h^^Ai$ \T1/lmtt/m/n/10 (Eqs. 11[]--12[]). At room
  []
 
 
-Overfull \hbox (45.74855pt too wide) in paragraph at lines 733--734
+Overfull \hbox (45.74855pt too wide) in paragraph at lines 729--730
 []\T1/lmtt/m/n/10 To quantify the trade-off between respondent burden and accur
 acy, we compared the two-parameter
  []
 
 
-Overfull \hbox (25.49857pt too wide) in paragraph at lines 733--734
+Overfull \hbox (25.49857pt too wide) in paragraph at lines 729--730
 \T1/lmtt/m/n/10 linear memberships (Eqs. 3[]--4[]) against monotone fits using 
 identical S3 held-out items. Linear
  []
 
 
-Overfull \hbox (32.61015pt too wide) in paragraph at lines 733--734
+Overfull \hbox (32.61015pt too wide) in paragraph at lines 729--730
 \T1/lmtt/m/n/10 elicitation reduced per-respondent time by $\OMS/lmsy/m/n/10 h^
 ^Ai$\T1/lmtt/m/n/10 % (median) but increased S3 RMSE by $\OMS/lmsy/m/n/10 h^^Ai
 $ \T1/lmtt/m/n/10 and reduced
  []
 
 
-Overfull \hbox (35.97432pt too wide) in paragraph at lines 733--734
+Overfull \hbox (35.97432pt too wide) in paragraph at lines 729--730
 \T1/lmtt/m/n/10 Spearman $\OML/lmm/m/it/10 ^^Z$ \T1/lmtt/m/n/10 by $\OMS/lmsy/m
 /n/10 h^^Ai$ \T1/lmtt/m/n/10 (Table 4[]). In room-level validation (Table 6[]) 
 the pooled linear model remained
  []
 
 
-Overfull \hbox (41.24852pt too wide) in paragraph at lines 733--734
+Overfull \hbox (41.24852pt too wide) in paragraph at lines 729--730
 \T1/lmtt/m/n/10 competitive for ranking but under-estimated hotspots in rooms w
 ith multiple competing sightlines. 
  []
 
 [21]
-Overfull \hbox (3.74867pt too wide) in paragraph at lines 737--738
+Overfull \hbox (3.74867pt too wide) in paragraph at lines 733--734
 []\T1/lmtt/m/n/10 We assessed robustness to modeling and discretization choices
  along five axes: (i) the
  []
 
 
-Overfull \hbox (21.36174pt too wide) in paragraph at lines 737--738
+Overfull \hbox (21.36174pt too wide) in paragraph at lines 733--734
 \T1/lmtt/m/n/10 soft-max exponent $\OML/lmm/m/it/10 p$ \T1/lmtt/m/n/10 in Eq. [
 ]; (ii) directional weights $\OML/lmm/m/it/10 ![]$\T1/lmtt/m/n/10 ; (iii) uncer
 tainty in the elicited
  []
 
 
-Overfull \hbox (14.9986pt too wide) in paragraph at lines 737--738
+Overfull \hbox (14.9986pt too wide) in paragraph at lines 733--734
 \T1/lmtt/m/n/10 monotone memberships; (iv) discretization choices (grid spacing
  and rays per point); and (v)
  []
 
 
-Overfull \hbox (15.1012pt too wide) in paragraph at lines 737--738
+Overfull \hbox (15.1012pt too wide) in paragraph at lines 733--734
 \T1/lmtt/m/n/10 the definition of the forward direction $[]$. Unless stated oth
 erwise, summaries are reported
  []
 
 
-Overfull \hbox (12.30798pt too wide) in paragraph at lines 740--741
+Overfull \hbox (12.30798pt too wide) in paragraph at lines 736--737
 []\T1/lmtt/m/n/10 We varied $\OML/lmm/m/it/10 p \OMS/lmsy/m/n/10 2 f\OT1/lmr/m/
 n/10 1\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 5\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 10
 \OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 20\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 50\OMS/
@@ -1684,63 +1691,63 @@ iction error
  []
 
 
-Overfull \hbox (30.74855pt too wide) in paragraph at lines 740--741
+Overfull \hbox (30.74855pt too wide) in paragraph at lines 736--737
 \T1/lmtt/m/n/10 on held-out stimuli; (b) stability of room rankings; (c) within
 -room differentiation. Figure 7[]
  []
 
 
-Overfull \hbox (41.02156pt too wide) in paragraph at lines 743--744
+Overfull \hbox (41.02156pt too wide) in paragraph at lines 739--740
  \T1/lmr/m/it/10 Met-rics..[] \T1/lmtt/m/n/10 Prediction error follows Eq. []. 
 Ranking stability is the Spearman correlation between
  []
 
 
-Overfull \hbox (9.52988pt too wide) in paragraph at lines 743--744
+Overfull \hbox (9.52988pt too wide) in paragraph at lines 739--740
 \T1/lmtt/m/n/10 room-level visibilities across $\OML/lmm/m/it/10 p$ \T1/lmtt/m/
 n/10 values. Within-room differentiation is the coefficient of
  []
 
 
-Overfull \hbox (25.49857pt too wide) in paragraph at lines 749--752
+Overfull \hbox (25.49857pt too wide) in paragraph at lines 745--748
 \T1/lmtt/m/n/10 This coefficient of variation measures the relative spread of v
 isibility values within a room.
  []
 
 
-Overfull \hbox (26.67244pt too wide) in paragraph at lines 749--752
+Overfull \hbox (26.67244pt too wide) in paragraph at lines 745--748
 \T1/lmtt/m/n/10 We also quantify |   []   |   [] via Jaccard overlap between th
 e top-$\OML/lmm/m/it/10 q$\T1/lmtt/m/n/10 % points (we use $\OML/lmm/m/it/10 q[
 ]\OT1/lmr/m/n/10 10$\T1/lmtt/m/n/10 )
  []
 
 
-Overfull \hbox (41.02979pt too wide) in paragraph at lines 757--759
+Overfull \hbox (41.02979pt too wide) in paragraph at lines 753--755
 \T1/lmtt/m/n/10 The Jaccard index quantifies the overlap between hotspot sets p
 roduced by two different $\OML/lmm/m/it/10 p$ \T1/lmtt/m/n/10 values. 
  []
 
 
-Overfull \hbox (29.67763pt too wide) in paragraph at lines 761--762
+Overfull \hbox (29.67763pt too wide) in paragraph at lines 757--758
  \T1/lmr/m/it/10 Find-ings..[] \T1/lmtt/m/n/10 A clear knee appears near $\OML/
 lmm/m/it/10 p[]\OT1/lmr/m/n/10 10$\T1/lmtt/m/n/10 : larger $\OML/lmm/m/it/10 p$
  \T1/lmtt/m/n/10 offers negligible ranking gains but reduces
  []
 
 
-Overfull \hbox (16.80789pt too wide) in paragraph at lines 761--762
+Overfull \hbox (16.80789pt too wide) in paragraph at lines 757--758
 \T1/lmtt/m/n/10 within-room differentiation (hotspot saturation). Top-10% Jacca
 rd overlaps between $\OML/lmm/m/it/10 p[]\OT1/lmr/m/n/10 10$ \T1/lmtt/m/n/10 an
 d
  []
 
 
-Overfull \hbox (8.36809pt too wide) in paragraph at lines 775--786
+Overfull \hbox (8.36809pt too wide) in paragraph at lines 771--782
  [][] 
  []
 
 [22]
-Overfull \hbox (13.0925pt too wide) in paragraph at lines 789--790
+Overfull \hbox (13.0925pt too wide) in paragraph at lines 785--786
  \T1/lmr/m/it/10 Prac-ti-cal de-fault..[] \T1/lmtt/m/n/10 Use $\OML/lmm/m/it/10
  p[]\OT1/lmr/m/n/10 10$ \T1/lmtt/m/n/10 by default; consider $\OML/lmm/m/it/10 
 p[]\OT1/lmr/m/n/10 20$ \T1/lmtt/m/n/10 for single-aperture dominance and $\OML/
@@ -1748,78 +1755,78 @@ lmm/m/it/10 p[]\OT1/lmr/m/n/10 4$\T1/lmtt/m/n/10 --$\OT1/lmr/m/n/10 10$
  []
 
 
-Overfull \hbox (47.08041pt too wide) in paragraph at lines 792--793
+Overfull \hbox (47.08041pt too wide) in paragraph at lines 788--789
 []\T1/lmtt/m/n/10 We compared uniform weights ($\OML/lmm/m/it/10 ![][]\OT1/lmr/
 m/n/10 1$\T1/lmtt/m/n/10 ) with spherical-Voronoi solid-angle areas for our ico
 sahedral
  []
 
 
-Overfull \hbox (36.48924pt too wide) in paragraph at lines 795--796
+Overfull \hbox (36.48924pt too wide) in paragraph at lines 791--792
  \T1/lmr/m/it/10 Met-rics..[] \T1/lmtt/m/n/10 Let $[]$ and $[]$ be room-level v
 isibilities (Eq. []) under the two choices. We report
  []
 
 
-Overfull \hbox (41.24852pt too wide) in paragraph at lines 799--802
+Overfull \hbox (41.24852pt too wide) in paragraph at lines 795--798
 \T1/lmtt/m/n/10 This statistic reports the median absolute change in room-level
  visibility when replacing uniform
  []
 
 
-Overfull \hbox (20.12047pt too wide) in paragraph at lines 799--802
+Overfull \hbox (20.12047pt too wide) in paragraph at lines 795--798
 \T1/lmtt/m/n/10 directional weights with Voronoi-based areas. and ranking stabi
 lity $\OML/lmm/m/it/10 ^^Z\OT1/lmr/m/n/10 ([]\OML/lmm/m/it/10 ; []\OT1/lmr/m/n/
 10 )$ \T1/lmtt/m/n/10 across rooms. 
  []
 
 
-Overfull \hbox (9.89288pt too wide) in paragraph at lines 804--805
+Overfull \hbox (9.89288pt too wide) in paragraph at lines 800--801
  \T1/lmr/m/it/10 Find-ings..[] \T1/lmtt/m/n/10 Directional weights made only sm
 all changes to $[]$ and left room rankings virtually
  []
 
 
-Overfull \hbox (3.98685pt too wide) in paragraph at lines 821--822
+Overfull \hbox (3.98685pt too wide) in paragraph at lines 817--818
 []\T1/lmtt/m/n/10 We quantified uncertainty in $\OML/lmm/m/it/10 ^^V[]$ \T1/lmt
 t/m/n/10 and $\OML/lmm/m/it/10 ^^V[]$ \T1/lmtt/m/n/10 by bootstrap and leave-on
 e-level-out validation,
  []
 
 
-Overfull \hbox (50.90645pt too wide) in paragraph at lines 824--825
+Overfull \hbox (50.90645pt too wide) in paragraph at lines 820--821
  \T1/lmr/m/it/10 Boot-strap prop-a-ga-tion..[] \T1/lmtt/m/n/10 For each factor 
 and respondent (or pooled), we draw $\OML/lmm/m/it/10 B$ \T1/lmtt/m/n/10 resamp
 les of elicitation
  []
 
 
-Overfull \hbox (64.5265pt too wide) in paragraph at lines 824--825
+Overfull \hbox (64.5265pt too wide) in paragraph at lines 820--821
 \T1/lmtt/m/n/10 data, refit the monotone interpolant, and propagate each draw t
 hrough Eq. [] to obtain a distribution
  []
 
 [23]
-Overfull \hbox (51.74849pt too wide) in paragraph at lines 828--831
+Overfull \hbox (51.74849pt too wide) in paragraph at lines 824--827
 \T1/lmtt/m/n/10 This median absolute difference captures how much the visibilit
 y at a point varies across bootstrap
  []
 
 
-Overfull \hbox (22.26987pt too wide) in paragraph at lines 833--834
+Overfull \hbox (22.26987pt too wide) in paragraph at lines 829--830
  \T1/lmr/m/it/10 Find-ings..[] \T1/lmtt/m/n/10 Pooled $[]\OML/lmm/m/it/10 ; []$
  \T1/lmtt/m/n/10 exhibit narrow CIs; propagated variation produces small map di
 fferences
  []
 
 
-Overfull \hbox (14.9986pt too wide) in paragraph at lines 833--834
+Overfull \hbox (14.9986pt too wide) in paragraph at lines 829--830
 \T1/lmtt/m/n/10 and stable room rankings. Leave-one-level-out errors remain clo
 se to S3 results, indicating
  []
 
 
-Overfull \hbox (3.80797pt too wide) in paragraph at lines 843--844
+Overfull \hbox (3.80797pt too wide) in paragraph at lines 839--840
 []\T1/lmtt/m/n/10 We varied grid spacing $\OT1/lmr/m/n/10 ^^A \OMS/lmsy/m/n/10 
 2 f\OT1/lmr/m/n/10 0\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 5\OML/lmm/m/it/10 ; \OT1/
 lmr/m/n/10 1\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; \OT1/lmr/m/n/
@@ -1830,26 +1837,26 @@ lmsy/m/n/10 g$ \T1/lmtt/m/n/10 (Table 2[])
  []
 
 
-Overfull \hbox (5.30315pt too wide) in paragraph at lines 846--847
+Overfull \hbox (5.30315pt too wide) in paragraph at lines 842--843
  \T1/lmr/m/it/10 Met-rics..[] \T1/lmtt/m/n/10 Relative to $\OT1/lmr/m/n/10 (^^A
 []1\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 0[]\OML/lmm/m/it/10 ; R[]\OT1/lmr/m/n/10 1
 212)$\T1/lmtt/m/n/10 , we report the median point-wise absolute difference 
  []
 
 
-Overfull \hbox (4.49863pt too wide) in paragraph at lines 850--853
+Overfull \hbox (4.49863pt too wide) in paragraph at lines 846--849
 \T1/lmtt/m/n/10 Comparing each setting with the reference using this median dif
 ference reveals sensitivity
  []
 
 
-Overfull \hbox (25.41873pt too wide) in paragraph at lines 850--853
+Overfull \hbox (25.41873pt too wide) in paragraph at lines 846--849
 \T1/lmtt/m/n/10 to grid spacing and ray count. Spearman $\OML/lmm/m/it/10 ^^Z$ 
 \T1/lmtt/m/n/10 of room rankings, and runtime (Table 3[]). Figure 14[]
  []
 
 
-Overfull \hbox (17.04424pt too wide) in paragraph at lines 855--856
+Overfull \hbox (17.04424pt too wide) in paragraph at lines 851--852
 \T1/lmtt/m/n/10 runtime scales roughly linearly with $\OML/lmm/m/it/10 N[] \OMS
 /lmsy/m/n/10 ^^B \OML/lmm/m/it/10 R$\T1/lmtt/m/n/10 . The $\OT1/lmr/m/n/10 (1\O
 ML/lmm/m/it/10 :\OT1/lmr/m/n/10 0[]\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 1212)$ \T
@@ -1857,7 +1864,7 @@ ML/lmm/m/it/10 :\OT1/lmr/m/n/10 0[]\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 1212)$ \T
  []
 
 
-Overfull \hbox (18.13661pt too wide) in paragraph at lines 880--881
+Overfull \hbox (18.13661pt too wide) in paragraph at lines 876--877
 []\T1/lmtt/m/n/10 We compared two definitions used in the angle formula $\OML/l
 mm/m/it/10 ^^R \OT1/lmr/m/n/10 = []  [] []\OMS/lmsy/m/n/10 f\OT1/lmr/m/n/10 0\O
 ML/lmm/m/it/10 ; []  \OMS/lmsy/m/n/10 ^^A  []g[]$\T1/lmtt/m/n/10 : (F1) outward
@@ -1865,363 +1872,363 @@ ML/lmm/m/it/10 ; []  \OMS/lmsy/m/n/10 ^^A  []g[]$\T1/lmtt/m/n/10 : (F1) outward
  []
 
 
-Overfull \hbox (25.49857pt too wide) in paragraph at lines 880--881
+Overfull \hbox (25.49857pt too wide) in paragraph at lines 876--877
 \T1/lmtt/m/n/10 normal of the nearest primary window; (F2) room principal axis 
 (e.g., longest-wall direction). 
  []
 
 [24]
-Overfull \hbox (9.68144pt too wide) in paragraph at lines 883--884
+Overfull \hbox (9.68144pt too wide) in paragraph at lines 879--880
  \T1/lmr/m/it/10 Met-rics and find-ings..[] \T1/lmtt/m/n/10 Across rooms, the m
 edian absolute map difference and rankings between F1
  []
 
 
-Overfull \hbox (17.558pt too wide) in paragraph at lines 883--884
+Overfull \hbox (17.558pt too wide) in paragraph at lines 879--880
 \T1/lmtt/m/n/10 and F2 were $\OMS/lmsy/m/n/10 h^^Ai$ \T1/lmtt/m/n/10 and $\OML/
 lmm/m/it/10 ^^Z[]\OMS/lmsy/m/n/10 h^^Ai$\T1/lmtt/m/n/10 , respectively; discrep
 ancies concentrate at interior points far from
  []
 
 
-Overfull \hbox (3.74867pt too wide) in paragraph at lines 893--898
+Overfull \hbox (3.74867pt too wide) in paragraph at lines 889--894
 []\T1/lmtt/m/n/10 To complement parameter sweeps without repeating factor elici
 tation (Sec. 4.4[]), we show
  []
 
 
-Overfull \hbox (20.24858pt too wide) in paragraph at lines 893--898
+Overfull \hbox (20.24858pt too wide) in paragraph at lines 889--894
 \T1/lmtt/m/n/10 how |   [] interventions alter privacy in a specific space (Roo
 m R12), recomputed with the
  []
 
 
-Overfull \hbox (18.2806pt too wide) in paragraph at lines 893--898
+Overfull \hbox (18.2806pt too wide) in paragraph at lines 889--894
 \T1/lmtt/m/n/10 same sampling and $\OML/lmm/m/it/10 p$\T1/lmtt/m/n/10 : (i) |  
  [] of the most exposed window by +1.5m, (ii) a |   []   |   [] (0.6m
  []
 
 
-Overfull \hbox (32.49892pt too wide) in paragraph at lines 893--898
+Overfull \hbox (32.49892pt too wide) in paragraph at lines 889--894
 \T1/lmtt/m/n/10 depth) added to the dominant window, and (iii) |   []   |   [] 
 (+0.2m parapet) to partially occlude
  []
 
 
-Overfull \hbox (4.49863pt too wide) in paragraph at lines 893--898
+Overfull \hbox (4.49863pt too wide) in paragraph at lines 889--894
 \T1/lmtt/m/n/10 eye-height sightlines. Figure 16[] overlays baseline vs. interv
 ention SPI maps with hotspot
  []
 
 
-Overfull \hbox (3.55942pt too wide) in paragraph at lines 924--925
+Overfull \hbox (3.55942pt too wide) in paragraph at lines 920--921
  \T1/lmr/m/it/10 De-sign take-away..[] \T1/lmtt/m/n/10 Small geometric controls
  (setback/fin/sill height) curb localized hotspots
  []
 
 
-Overfull \hbox (35.99854pt too wide) in paragraph at lines 924--925
+Overfull \hbox (35.99854pt too wide) in paragraph at lines 920--921
 \T1/lmtt/m/n/10 with minimal impact on average exposure. For privacy-critical r
 ooms, combining a modest setback
  []
 
 
-Overfull \hbox (8.99866pt too wide) in paragraph at lines 928--929
+Overfull \hbox (8.99866pt too wide) in paragraph at lines 924--925
 []\T1/lmtt/m/n/10 As urbanization accelerates and cities become denser, balanci
 ng privacy and view quality
  []
 
 
-Overfull \hbox (20.24858pt too wide) in paragraph at lines 928--929
+Overfull \hbox (20.24858pt too wide) in paragraph at lines 924--925
 \T1/lmtt/m/n/10 in architectural design has become increasingly important. High
 -rise developments, mixed-use
  []
 
 
-Overfull \hbox (25.49857pt too wide) in paragraph at lines 928--929
+Overfull \hbox (25.49857pt too wide) in paragraph at lines 924--925
 \T1/lmtt/m/n/10 buildings, and compact residential spaces bring diverse occupan
 ts into close proximity, making
  []
 
 
-Overfull \hbox (14.9986pt too wide) in paragraph at lines 928--929
+Overfull \hbox (14.9986pt too wide) in paragraph at lines 924--925
 \T1/lmtt/m/n/10 privacy crucial for maintaining comfort and well-being. This st
 udy presents a framework for
  []
 
 
-Overfull \hbox (35.99854pt too wide) in paragraph at lines 928--929
+Overfull \hbox (35.99854pt too wide) in paragraph at lines 924--925
 \T1/lmtt/m/n/10 quantifying the subjective perception of privacy in buildings b
 y integrating visibility analysis
  []
 
 [25]
-Overfull \hbox (35.24858pt too wide) in paragraph at lines 930--931
+Overfull \hbox (35.24858pt too wide) in paragraph at lines 926--927
 []\T1/lmtt/m/n/10 The framework is innovative in its approach to privacy assess
 ment. It combines 3D grid-based
  []
 
 
-Overfull \hbox (4.49863pt too wide) in paragraph at lines 930--931
+Overfull \hbox (4.49863pt too wide) in paragraph at lines 926--927
 \T1/lmtt/m/n/10 visibility maps with fuzzy membership functions, accounting for
  both physical factors such
  []
 
 
-Overfull \hbox (20.24858pt too wide) in paragraph at lines 930--931
+Overfull \hbox (20.24858pt too wide) in paragraph at lines 926--927
 \T1/lmtt/m/n/10 as distance and angle, and user perceptions of privacy. Each gr
 id point is used to calculate
  []
 
 
-Overfull \hbox (41.24852pt too wide) in paragraph at lines 930--931
+Overfull \hbox (41.24852pt too wide) in paragraph at lines 926--927
 \T1/lmtt/m/n/10 privacy, reflecting the diverse perceptions of privacy that may
  arise depending on the occupant's
  []
 
 
-Overfull \hbox (41.24852pt too wide) in paragraph at lines 930--931
+Overfull \hbox (41.24852pt too wide) in paragraph at lines 926--927
 \T1/lmtt/m/n/10 position within the room. The methodology explicitly considers 
 spatial configurations in privacy
  []
 
 
-Overfull \hbox (62.24846pt too wide) in paragraph at lines 930--931
+Overfull \hbox (62.24846pt too wide) in paragraph at lines 926--927
 \T1/lmtt/m/n/10 evaluations, ensuring that the layout and design of each buildi
 ng are considered into the assessment.
  []
 
 
-Overfull \hbox (35.99854pt too wide) in paragraph at lines 930--931
+Overfull \hbox (35.99854pt too wide) in paragraph at lines 926--927
 \T1/lmtt/m/n/10 BIM-based 3D analysis allows the simulation of visibility acros
 s different points in a building,
  []
 
 
-Overfull \hbox (4.49863pt too wide) in paragraph at lines 930--931
+Overfull \hbox (4.49863pt too wide) in paragraph at lines 926--927
 \T1/lmtt/m/n/10 using rays cast from grid locations to generate privacy indices
 . Experiments validate the
  []
 
 
-Overfull \hbox (83.2484pt too wide) in paragraph at lines 930--931
+Overfull \hbox (83.2484pt too wide) in paragraph at lines 926--927
 \T1/lmtt/m/n/10 framework's effectiveness, showing how design elements^^Vsuch a
 s window size and room configurations^^Vaffect
  []
 
 
-Overfull \hbox (61.4985pt too wide) in paragraph at lines 932--933
+Overfull \hbox (61.4985pt too wide) in paragraph at lines 928--929
 []\T1/lmtt/m/n/10 This study contributes to architectural design in several way
 s. It introduces a novel integration
  []
 
 
-Overfull \hbox (4.49863pt too wide) in paragraph at lines 932--933
+Overfull \hbox (4.49863pt too wide) in paragraph at lines 928--929
 \T1/lmtt/m/n/10 of grid-based visibility maps and fuzzy logic, offering a more 
 comprehensive framework for
  []
 
 
-Overfull \hbox (14.9986pt too wide) in paragraph at lines 932--933
+Overfull \hbox (14.9986pt too wide) in paragraph at lines 928--929
 \T1/lmtt/m/n/10 understanding how design choices impact privacy. The methodolog
 y also incorporates building
  []
 
 
-Overfull \hbox (35.99854pt too wide) in paragraph at lines 932--933
+Overfull \hbox (35.99854pt too wide) in paragraph at lines 928--929
 \T1/lmtt/m/n/10 spatial configurations into privacy evaluations, marking a sign
 ificant improvement over previous
  []
 
 
-Overfull \hbox (62.24846pt too wide) in paragraph at lines 932--933
+Overfull \hbox (62.24846pt too wide) in paragraph at lines 928--929
 \T1/lmtt/m/n/10 models. Additionally, the use of user-centric fuzzy membership 
 functions and the softmax aggregation
  []
 
 
-Overfull \hbox (20.24858pt too wide) in paragraph at lines 932--933
+Overfull \hbox (20.24858pt too wide) in paragraph at lines 928--929
 \T1/lmtt/m/n/10 technique for raycast evaluations enhances modeling perception 
 and subjectivity in visibility
  []
 
 
-Overfull \hbox (14.9986pt too wide) in paragraph at lines 932--933
+Overfull \hbox (14.9986pt too wide) in paragraph at lines 928--929
 \T1/lmtt/m/n/10 analysis methods. By leveraging BIM's hierarchical structure an
 d bounding boxes, the method
  []
 
 
-Overfull \hbox (30.74855pt too wide) in paragraph at lines 932--933
+Overfull \hbox (30.74855pt too wide) in paragraph at lines 928--929
 \T1/lmtt/m/n/10 improves the efficiency of raycast evaluations, making it appli
 cable to large-scale, real-world
  []
 
 
-Overfull \hbox (41.24852pt too wide) in paragraph at lines 932--933
+Overfull \hbox (41.24852pt too wide) in paragraph at lines 928--929
 \T1/lmtt/m/n/10 projects. The data-driven nature of this approach empowers desi
 gners to optimize spatial layouts
  []
 
 
-Overfull \hbox (56.99847pt too wide) in paragraph at lines 932--933
+Overfull \hbox (56.99847pt too wide) in paragraph at lines 928--929
 \T1/lmtt/m/n/10 and window placements while balancing privacy with other archit
 ectural qualities such as aesthetics,
  []
 
 
-Overfull \hbox (30.74855pt too wide) in paragraph at lines 932--933
+Overfull \hbox (30.74855pt too wide) in paragraph at lines 928--929
 \T1/lmtt/m/n/10 light access, and ventilation. Its versatility makes it a valua
 ble tool for architects working
  []
 
 
-Overfull \hbox (13.30365pt too wide) in paragraph at lines 935--937
+Overfull \hbox (13.30365pt too wide) in paragraph at lines 931--933
  \T1/lmr/m/it/10 Con-tri-bu-tions..[] \T1/lmtt/m/n/10 This work introduces a pe
 rception-grounded, BIM-native framework for assessing
  []
 
 
-Overfull \hbox (13.7487pt too wide) in paragraph at lines 937--938
+Overfull \hbox (13.7487pt too wide) in paragraph at lines 933--934
 []\T1/lmtt/b/n/10 Window-through-window visibility metric. \T1/lmtt/m/n/10 We f
 ormalize a ray-based pipeline that counts
  []
 
 
-Overfull \hbox (18.99869pt too wide) in paragraph at lines 937--938
+Overfull \hbox (18.99869pt too wide) in paragraph at lines 933--934
 \T1/lmtt/m/n/10 only |   [] lines of sight, converting per-ray hits into a Ray 
 Visibility
  []
 
 
-Overfull \hbox (18.99869pt too wide) in paragraph at lines 937--938
+Overfull \hbox (18.99869pt too wide) in paragraph at lines 933--934
 \T1/lmtt/m/n/10 Index (RVI) and aggregating to point- and space-level indices (
 VI, SPI) suited to design
  []
 
 [26]
-Overfull \hbox (3.24873pt too wide) in paragraph at lines 938--939
+Overfull \hbox (3.24873pt too wide) in paragraph at lines 934--935
 []\T1/lmtt/b/n/10 Human-elicited monotone memberships. \T1/lmtt/m/n/10 We elici
 t respondent judgments for |   [] and
  []
 
 
-Overfull \hbox (8.49872pt too wide) in paragraph at lines 938--939
+Overfull \hbox (8.49872pt too wide) in paragraph at lines 934--935
 |   []   |   [] \T1/lmtt/m/n/10 and fit monotone (piecewise) functions to obtai
 n (i) |   []
  []
 
 
-Overfull \hbox (13.7487pt too wide) in paragraph at lines 939--940
+Overfull \hbox (13.7487pt too wide) in paragraph at lines 935--936
 []\T1/lmtt/b/n/10 Soft-max pooling for ^^Photspot vs. average^^Q control. \T1/l
 mtt/m/n/10 We propose a soft-max aggregation
  []
 
 
-Overfull \hbox (8.06125pt too wide) in paragraph at lines 939--940
+Overfull \hbox (8.06125pt too wide) in paragraph at lines 935--936
 \T1/lmtt/m/n/10 with exponent $\OML/lmm/m/it/10 p$ \T1/lmtt/m/n/10 to balance s
 ensitivity to localized hotspots (higher $\OML/lmm/m/it/10 p$\T1/lmtt/m/n/10 ) 
 versus overall
  []
 
 
-Overfull \hbox (24.24867pt too wide) in paragraph at lines 940--941
+Overfull \hbox (24.24867pt too wide) in paragraph at lines 936--937
 []\T1/lmtt/b/n/10 Predictive validation against held-out human ratings. \T1/lmt
 t/m/n/10 Using a held-out set (S3), we show
  []
 
 
-Overfull \hbox (37.47438pt too wide) in paragraph at lines 940--941
+Overfull \hbox (37.47438pt too wide) in paragraph at lines 936--937
 \T1/lmtt/m/n/10 that our privacy proxy $[]$ predicts perceived privacy with str
 ong agreement (RMSE/MAE/$\OML/lmm/m/it/10 ^^Z$\T1/lmtt/m/n/10 /AUC),
  []
 
 
-Overfull \hbox (3.03pt too wide) in paragraph at lines 941--942
+Overfull \hbox (3.03pt too wide) in paragraph at lines 937--938
 []\T1/lmtt/b/n/10 Sensitivity, ablations, and practical guidance. \T1/lmtt/m/n/
 10 We quantify impacts of $\OML/lmm/m/it/10 p$\T1/lmtt/m/n/10 , membership
  []
 
 
-Overfull \hbox (34.74864pt too wide) in paragraph at lines 941--942
+Overfull \hbox (34.74864pt too wide) in paragraph at lines 937--938
 \T1/lmtt/m/n/10 weights, ray count, grid scheme, and discretization; we also co
 mpare a two-parameter |   []
  []
 
 
-Overfull \hbox (13.7487pt too wide) in paragraph at lines 941--942
+Overfull \hbox (13.7487pt too wide) in paragraph at lines 937--938
 \T1/lmtt/m/n/10 elicitation (faster) versus full monotone fits (more accurate),
  providing time^^Uaccuracy
  []
 
 
-Overfull \hbox (8.49872pt too wide) in paragraph at lines 942--943
+Overfull \hbox (8.49872pt too wide) in paragraph at lines 938--939
 []\T1/lmtt/b/n/10 Reproducible BIM/Three.js implementation and scalability temp
 late. \T1/lmtt/m/n/10 We report runtimes
  []
 
 
-Overfull \hbox (13.7487pt too wide) in paragraph at lines 942--943
+Overfull \hbox (13.7487pt too wide) in paragraph at lines 938--939
 \T1/lmtt/m/n/10 and scaling (rays, elements, scene size) and provide a minimal 
 reproduction pack (scene
  []
 
 
-Overfull \hbox (66.74849pt too wide) in paragraph at lines 946--947
+Overfull \hbox (66.74849pt too wide) in paragraph at lines 942--943
 []\T1/lmtt/m/n/10 Several promising directions for future research can further 
 enhance the framework's applicability.
  []
 
 
-Overfull \hbox (62.24846pt too wide) in paragraph at lines 946--947
+Overfull \hbox (62.24846pt too wide) in paragraph at lines 942--943
 \T1/lmtt/m/n/10 One key area is the development of culturally specific membersh
 ip functions, enabling region-specific
  []
 
 
-Overfull \hbox (25.49857pt too wide) in paragraph at lines 946--947
+Overfull \hbox (25.49857pt too wide) in paragraph at lines 942--943
 \T1/lmtt/m/n/10 privacy assessments and architectural guidelines. Another avenu
 e involves integrating privacy
  []
 
 
-Overfull \hbox (51.74849pt too wide) in paragraph at lines 946--947
+Overfull \hbox (51.74849pt too wide) in paragraph at lines 942--943
 \T1/lmtt/m/n/10 metrics with building layout optimization algorithms to balance
  privacy with other design features,
  []
 
 
-Overfull \hbox (51.74849pt too wide) in paragraph at lines 946--947
+Overfull \hbox (51.74849pt too wide) in paragraph at lines 942--943
 \T1/lmtt/m/n/10 such as natural light, ventilation, and spatial efficiency, esp
 ecially in dense urban environments.
  []
 
 
-Overfull \hbox (9.74861pt too wide) in paragraph at lines 946--947
+Overfull \hbox (9.74861pt too wide) in paragraph at lines 942--943
 \T1/lmtt/m/n/10 Finally, advancing user-centric fuzzy logic approaches to evalu
 ate other subjective aspects
  []
 
 
-Overfull \hbox (14.9986pt too wide) in paragraph at lines 946--947
+Overfull \hbox (14.9986pt too wide) in paragraph at lines 942--943
 \T1/lmtt/m/n/10 of architecture---such as view quality, aesthetic preferences, 
 and noise levels---can pave the
  []
 
 
-Overfull \hbox (4.49863pt too wide) in paragraph at lines 946--947
+Overfull \hbox (4.49863pt too wide) in paragraph at lines 942--943
 \T1/lmtt/m/n/10 way for a comprehensive framework that optimizes designs to acc
 ommodate a diverse spectrum
  []
 
 
-Overfull \hbox (19.49863pt too wide) in paragraph at lines 950--951
+Overfull \hbox (19.49863pt too wide) in paragraph at lines 946--947
 []\T1/lmtt/m/n/10 During the preparation of this work the authors used ChatGPT 
 4 in order to improve writing
  []
 
 
-Overfull \hbox (20.24858pt too wide) in paragraph at lines 950--951
+Overfull \hbox (20.24858pt too wide) in paragraph at lines 946--947
 \T1/lmtt/m/n/10 style. After using this tool, the authors reviewed and edited t
 he content as needed and take
  []
@@ -2958,13 +2965,13 @@ LaTeX Warning: There were multiply-defined labels.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 517 ({)
+### simple group (level 1) entered at line 513 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 12669 strings out of 476106
- 198914 string characters out of 5793934
+ 12676 strings out of 476106
+ 199096 string characters out of 5793934
  1938975 words of memory out of 5000000
- 34430 multiletter control sequences out of 15000+600000
+ 34437 multiletter control sequences out of 15000+600000
  639939 words of font info for 106 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  72i,18n,79p,1506b,649s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2984,10 +2991,10 @@ public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/sha
 re/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on elsarticle-template-num.pdf (32 pages, 1227660 bytes).
+Output written on elsarticle-template-num.pdf (32 pages, 1241809 bytes).
 PDF statistics:
- 299 PDF objects out of 1000 (max. 8388607)
- 166 compressed objects within 2 object streams
+ 324 PDF objects out of 1000 (max. 8388607)
+ 176 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
