@@ -7,45 +7,47 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('Fig6.html')
 
 @app.route('/Fig1')
 def fig1():
     return render_template('Fig1.html')
 
-@app.route('/Fig2a')
-def fig2a():
-    return render_template('Fig2(a).html')
-
-@app.route('/Fig2b')
-def fig2b():
-    return render_template('Fig2(b).html')
+@app.route('/Fig2')
+def fig2():
+    return render_template('Fig2.html')
 
 @app.route('/Fig3')
 def fig3():
     return render_template('Fig3.html')
 
-@app.route('/Fig3a')
-def fig3a():
-    return render_template('Fig3(a).html')
-
-@app.route('/Fig3b')
-def fig3b():
-    return render_template('Fig3(b).html')
-
 @app.route('/Fig4')
 def fig4():
     return render_template('Fig4.html')
 
-@app.route('/Fig4a')
-def fig4a():
-    return render_template('Fig4(a).html')
+@app.route('/Fig6')
+def fig6():
+    return render_template('Fig6.html')
 
-@app.route('/Fig4b')
-def fig4b():
-    return render_template('Fig4(b).html')
-@app.route('/Fig5')
-def fig5():
-    return render_template('Fig5.html')
+@app.route('/window_height_impact')
+def window_height_impact():
+    return render_template('window_height_impact.html')
+
+@app.route('/window_width_impact')
+def window_width_impact():
+    return render_template('window_width_impact.html')
+    
+@app.route('/Distance_impact2')
+def Distance_impact2():
+    return render_template('Distance_impact2.html')
+
+@app.route('/Distance_impact')
+def Distance_impact():
+    return render_template('Distance_impact.html')
+
+@app.route('/Angle_impact')
+def Angle_impact():
+    return render_template('Angle_impact.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
