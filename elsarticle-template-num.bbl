@@ -6,318 +6,548 @@
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
 \bibitem{hariram2023}
-N.~Hariram, K.~Mekha, V.~Suganthan, K.~Sudhakar, Sustainalism: An integrated socio-economic-environmental model to address sustainable development and sustainability, Sustainability 15~(13) (2023) 10682.
-\newblock \href {https://doi.org/10.3390/su151310682} {\path{doi:10.3390/su151310682}}.
+N.~Hariram, K.~Mekha, V.~Suganthan, K.~Sudhakar, Sustainalism: An integrated
+  socio-economic-environmental model to address sustainable development and
+  sustainability, Sustainability 15~(13) (2023) 10682.
+\newblock \href {https://doi.org/10.3390/su151310682}
+  {\path{doi:10.3390/su151310682}}.
 
 \bibitem{mensah2019}
-J.~Mensah, Sustainable development: Meaning, history, principles, pillars, and implications for human action: Literature review, Cogent social sciences 5~(1) (2019) 1653531.
-\newblock \href {https://doi.org/10.1080/23311886.2019.1653531} {\path{doi:10.1080/23311886.2019.1653531}}.
+J.~Mensah, Sustainable development: Meaning, history, principles, pillars, and
+  implications for human action: Literature review, Cogent social sciences
+  5~(1) (2019) 1653531.
+\newblock \href {https://doi.org/10.1080/23311886.2019.1653531}
+  {\path{doi:10.1080/23311886.2019.1653531}}.
 
 \bibitem{lima2021}
-L.~Lima, E.~Trindade, L.~Alencar, M.~Alencar, L.~Silva, Sustainability in the construction industry: A systematic review of the literature, Journal of Cleaner Production 289 (2021) 125730.
-\newblock \href {https://doi.org/10.1016/j.jclepro.2020.125730} {\path{doi:10.1016/j.jclepro.2020.125730}}.
+L.~Lima, E.~Trindade, L.~Alencar, M.~Alencar, L.~Silva, Sustainability in the
+  construction industry: A systematic review of the literature, Journal of
+  Cleaner Production 289 (2021) 125730.
+\newblock \href {https://doi.org/10.1016/j.jclepro.2020.125730}
+  {\path{doi:10.1016/j.jclepro.2020.125730}}.
 
 \bibitem{negash2021}
-Y.~T. Negash, A.~M. Hassan, M.-L. Tseng, K.-J. Wu, M.~H. Ali, Sustainable construction and demolition waste management in somaliland: Regulatory barriers lead to technical and environmental barriers, Journal of Cleaner Production 297 (2021) 126717.
-\newblock \href {https://doi.org/10.1016/j.jclepro.2021.126717} {\path{doi:10.1016/j.jclepro.2021.126717}}.
+Y.~T. Negash, A.~M. Hassan, M.-L. Tseng, K.-J. Wu, M.~H. Ali, Sustainable
+  construction and demolition waste management in somaliland: Regulatory
+  barriers lead to technical and environmental barriers, Journal of Cleaner
+  Production 297 (2021) 126717.
+\newblock \href {https://doi.org/10.1016/j.jclepro.2021.126717}
+  {\path{doi:10.1016/j.jclepro.2021.126717}}.
 
 \bibitem{mousavi2023}
-S.~Mousavi, M.~G. Villarreal-Marroqu{\'\i}n, M.~Hajiaghaei-Keshteli, N.~R. Smith, Data-driven prediction and optimization toward net-zero and positive-energy buildings: A systematic review, Building and Environment 242 (2023) 110578.
-\newblock \href {https://doi.org/10.1016/j.buildenv.2023.110578} {\path{doi:10.1016/j.buildenv.2023.110578}}.
+S.~Mousavi, M.~G. Villarreal-Marroqu{\'\i}n, M.~Hajiaghaei-Keshteli, N.~R.
+  Smith, Data-driven prediction and optimization toward net-zero and
+  positive-energy buildings: A systematic review, Building and Environment 242
+  (2023) 110578.
+\newblock \href {https://doi.org/10.1016/j.buildenv.2023.110578}
+  {\path{doi:10.1016/j.buildenv.2023.110578}}.
 
 \bibitem{arman2021}
-N.~S.~N. Arman, R.~S. Chen, S.~Ahmad, Review of state-of-the-art studies on the water absorption capacity of agricultural fiber-reinforced polymer composites for sustainable construction, Construction and Building Materials 302 (2021) 124174.
-\newblock \href {https://doi.org/10.1016/j.conbuildmat.2021.124174} {\path{doi:10.1016/j.conbuildmat.2021.124174}}.
+N.~S.~N. Arman, R.~S. Chen, S.~Ahmad, Review of state-of-the-art studies on the
+  water absorption capacity of agricultural fiber-reinforced polymer composites
+  for sustainable construction, Construction and Building Materials 302 (2021)
+  124174.
+\newblock \href {https://doi.org/10.1016/j.conbuildmat.2021.124174}
+  {\path{doi:10.1016/j.conbuildmat.2021.124174}}.
 
 \bibitem{debrah2022}
-C.~Debrah, A.~P.~C. Chan, A.~Darko, Green finance gap in green buildings: A scoping review and future research needs, Building and Environment 207 (2022) 108443.
-\newblock \href {https://doi.org/10.1016/j.buildenv.2021.108443} {\path{doi:10.1016/j.buildenv.2021.108443}}.
+C.~Debrah, A.~P.~C. Chan, A.~Darko, Green finance gap in green buildings: A
+  scoping review and future research needs, Building and Environment 207 (2022)
+  108443.
+\newblock \href {https://doi.org/10.1016/j.buildenv.2021.108443}
+  {\path{doi:10.1016/j.buildenv.2021.108443}}.
 
 \bibitem{yildiz2020}
-S.~Y{\i}ld{\i}z, S.~K{\i}vrak, A.~B. G{\"u}ltekin, G.~Arslan, Built environment design-social sustainability relation in urban renewal, Sustainable Cities and Society 60 (2020) 102173.
-\newblock \href {https://doi.org/10.1016/j.scs.2020.102173} {\path{doi:10.1016/j.scs.2020.102173}}.
+S.~Y{\i}ld{\i}z, S.~K{\i}vrak, A.~B. G{\"u}ltekin, G.~Arslan, Built environment
+  design-social sustainability relation in urban renewal, Sustainable Cities
+  and Society 60 (2020) 102173.
+\newblock \href {https://doi.org/10.1016/j.scs.2020.102173}
+  {\path{doi:10.1016/j.scs.2020.102173}}.
 
 \bibitem{faraji2023}
-A.~Faraji, M.~Rashidi, F.~Rezaei, P.~Rahnamayiezekavat, A meta-synthesis review of occupant comfort assessment in buildings (2002--2022), Sustainability 15~(5) (2023) 4303.
-\newblock \href {https://doi.org/10.3390/su15054303} {\path{doi:10.3390/su15054303}}.
+A.~Faraji, M.~Rashidi, F.~Rezaei, P.~Rahnamayiezekavat, A meta-synthesis review
+  of occupant comfort assessment in buildings (2002--2022), Sustainability
+  15~(5) (2023) 4303.
+\newblock \href {https://doi.org/10.3390/su15054303}
+  {\path{doi:10.3390/su15054303}}.
 
 \bibitem{abd2023}
-F.~Abd-Alhamid, M.~Kent, Y.~Wu, Quantifying window view quality: A review on view perception assessment and representation methods, Building and Environment 227 (2023) 109742.
-\newblock \href {https://doi.org/10.1016/j.buildenv.2022.109742} {\path{doi:10.1016/j.buildenv.2022.109742}}.
+F.~Abd-Alhamid, M.~Kent, Y.~Wu, Quantifying window view quality: A review on
+  view perception assessment and representation methods, Building and
+  Environment 227 (2023) 109742.
+\newblock \href {https://doi.org/10.1016/j.buildenv.2022.109742}
+  {\path{doi:10.1016/j.buildenv.2022.109742}}.
 
 \bibitem{lis2021}
-A.~Lis, P.~Iwankowski, Where do we want to see other people while relaxing in a city park? visual relationships with park users and their impact on preferences, safety and privacy, Journal of Environmental Psychology 73 (2021) 101532.
-\newblock \href {https://doi.org/10.1016/j.jenvp.2020.101532} {\path{doi:10.1016/j.jenvp.2020.101532}}.
+A.~Lis, P.~Iwankowski, Where do we want to see other people while relaxing in a
+  city park? visual relationships with park users and their impact on
+  preferences, safety and privacy, Journal of Environmental Psychology 73
+  (2021) 101532.
+\newblock \href {https://doi.org/10.1016/j.jenvp.2020.101532}
+  {\path{doi:10.1016/j.jenvp.2020.101532}}.
 
 \bibitem{mansor2020}
-R.~Mansor, L.~Sheau-Ting, Criteria for occupant well-being: A qualitative study of malaysian office buildings, Building and environment 186 (2020) 107364.
-\newblock \href {https://doi.org/10.1016/j.buildenv.2020.107364} {\path{doi:10.1016/j.buildenv.2020.107364}}.
+R.~Mansor, L.~Sheau-Ting, Criteria for occupant well-being: A qualitative study
+  of malaysian office buildings, Building and environment 186 (2020) 107364.
+\newblock \href {https://doi.org/10.1016/j.buildenv.2020.107364}
+  {\path{doi:10.1016/j.buildenv.2020.107364}}.
 
 \bibitem{elgadra2023}
-I.~Elgadra, S.~Fotios, Examining female visual privacy as a function of window treatments, Lighting Research \& Technology 55~(4-5) (2023) 447--458.
-\newblock \href {https://doi.org/10.1177/14771535221143973} {\path{doi:10.1177/14771535221143973}}.
+I.~Elgadra, S.~Fotios, Examining female visual privacy as a function of window
+  treatments, Lighting Research \& Technology 55~(4-5) (2023) 447--458.
+\newblock \href {https://doi.org/10.1177/14771535221143973}
+  {\path{doi:10.1177/14771535221143973}}.
 
 \bibitem{gago2015}
-E.~Gago, T.~Muneer, M.~Knez, H.~K{\"o}ster, Natural light controls and guides in buildings. energy saving for electrical lighting, reduction of cooling load, Renewable and Sustainable Energy Reviews 41 (2015) 1--13.
-\newblock \href {https://doi.org/10.1016/j.rser.2014.08.002} {\path{doi:10.1016/j.rser.2014.08.002}}.
+E.~Gago, T.~Muneer, M.~Knez, H.~K{\"o}ster, Natural light controls and guides
+  in buildings. energy saving for electrical lighting, reduction of cooling
+  load, Renewable and Sustainable Energy Reviews 41 (2015) 1--13.
+\newblock \href {https://doi.org/10.1016/j.rser.2014.08.002}
+  {\path{doi:10.1016/j.rser.2014.08.002}}.
 
 \bibitem{elbatran2021}
-R.~M. ElBatran, W.~S. Ismaeel, Applying a parametric design approach for optimizing daylighting and visual comfort in office buildings, Ain Shams Engineering Journal 12~(3) (2021) 3275--3284.
-\newblock \href {https://doi.org/10.1016/j.asej.2021.02.014} {\path{doi:10.1016/j.asej.2021.02.014}}.
+R.~M. ElBatran, W.~S. Ismaeel, Applying a parametric design approach for
+  optimizing daylighting and visual comfort in office buildings, Ain Shams
+  Engineering Journal 12~(3) (2021) 3275--3284.
+\newblock \href {https://doi.org/10.1016/j.asej.2021.02.014}
+  {\path{doi:10.1016/j.asej.2021.02.014}}.
 
 \bibitem{bahdad2021}
-A.~A.~S. Bahdad, S.~F.~S. Fadzil, H.~O. Onubi, S.~A. BenLasod, Sensitivity analysis linked to multi-objective optimization for adjustments of light-shelves design parameters in response to visual comfort and thermal energy performance, Journal of Building Engineering 44 (2021) 102996.
-\newblock \href {https://doi.org/10.1016/j.jobe.2021.102996} {\path{doi:10.1016/j.jobe.2021.102996}}.
+A.~A.~S. Bahdad, S.~F.~S. Fadzil, H.~O. Onubi, S.~A. BenLasod, Sensitivity
+  analysis linked to multi-objective optimization for adjustments of
+  light-shelves design parameters in response to visual comfort and thermal
+  energy performance, Journal of Building Engineering 44 (2021) 102996.
+\newblock \href {https://doi.org/10.1016/j.jobe.2021.102996}
+  {\path{doi:10.1016/j.jobe.2021.102996}}.
 
 \bibitem{khani2022}
-A.~Khani, M.~Khakzand, M.~Faizi, Multi-objective optimization for energy consumption, visual and thermal comfort performance of educational building (case study: Qeshm island, iran), Sustainable Energy Technologies and Assessments 54 (2022) 102872.
-\newblock \href {https://doi.org/10.1016/j.seta.2022.102872} {\path{doi:10.1016/j.seta.2022.102872}}.
+A.~Khani, M.~Khakzand, M.~Faizi, Multi-objective optimization for energy
+  consumption, visual and thermal comfort performance of educational building
+  (case study: Qeshm island, iran), Sustainable Energy Technologies and
+  Assessments 54 (2022) 102872.
+\newblock \href {https://doi.org/10.1016/j.seta.2022.102872}
+  {\path{doi:10.1016/j.seta.2022.102872}}.
 
 \bibitem{lotfabadi2023}
-P.~Lotfabadi, P.~Han{\c{c}}er, Optimization of visual comfort: Building openings, Journal of Building Engineering 72 (2023) 106598.
-\newblock \href {https://doi.org/10.1016/j.jobe.2023.106598} {\path{doi:10.1016/j.jobe.2023.106598}}.
+P.~Lotfabadi, P.~Han{\c{c}}er, Optimization of visual comfort: Building
+  openings, Journal of Building Engineering 72 (2023) 106598.
+\newblock \href {https://doi.org/10.1016/j.jobe.2023.106598}
+  {\path{doi:10.1016/j.jobe.2023.106598}}.
 
 \bibitem{day2020}
-J.~K. Day, S.~Ruiz, W.~O’Brien, M.~Schweiker, Seeing is believing: An innovative approach to post-occupancy evaluation, Energy Efficiency 13~(3) (2020) 473--486.
-\newblock \href {https://doi.org/10.1007/s12053-019-09817-8} {\path{doi:10.1007/s12053-019-09817-8}}.
+J.~K. Day, S.~Ruiz, W.~O’Brien, M.~Schweiker, Seeing is believing: An
+  innovative approach to post-occupancy evaluation, Energy Efficiency 13~(3)
+  (2020) 473--486.
+\newblock \href {https://doi.org/10.1007/s12053-019-09817-8}
+  {\path{doi:10.1007/s12053-019-09817-8}}.
 
 \bibitem{kwong2020}
-Q.~J. Kwong, Light level, visual comfort and lighting energy savings potential in a green-certified high-rise building, Journal of Building Engineering 29 (2020) 101198.
-\newblock \href {https://doi.org/10.1016/j.jobe.2020.101198} {\path{doi:10.1016/j.jobe.2020.101198}}.
+Q.~J. Kwong, Light level, visual comfort and lighting energy savings potential
+  in a green-certified high-rise building, Journal of Building Engineering 29
+  (2020) 101198.
+\newblock \href {https://doi.org/10.1016/j.jobe.2020.101198}
+  {\path{doi:10.1016/j.jobe.2020.101198}}.
 
 \bibitem{peng2024}
-Y.-L. Peng, Y.~Li, W.-Y. Cheng, K.~Wang, Evaluation and optimization of sense of security during the day and night in campus public spaces based on physical environment and psychological perception, Sustainability 16~(3) (2024) 1256.
-\newblock \href {https://doi.org/10.3390/su16031256} {\path{doi:10.3390/su16031256}}.
+Y.-L. Peng, Y.~Li, W.-Y. Cheng, K.~Wang, Evaluation and optimization of sense
+  of security during the day and night in campus public spaces based on
+  physical environment and psychological perception, Sustainability 16~(3)
+  (2024) 1256.
+\newblock \href {https://doi.org/10.3390/su16031256}
+  {\path{doi:10.3390/su16031256}}.
 
 \bibitem{kent2020}
-M.~Kent, S.~Schiavon, Evaluation of the effect of landscape distance seen in window views on visual satisfaction, Building and Environment 183 (2020) 107160.
-\newblock \href {https://doi.org/10.1016/j.buildenv.2020.107160} {\path{doi:10.1016/j.buildenv.2020.107160}}.
+M.~Kent, S.~Schiavon, Evaluation of the effect of landscape distance seen in
+  window views on visual satisfaction, Building and Environment 183 (2020)
+  107160.
+\newblock \href {https://doi.org/10.1016/j.buildenv.2020.107160}
+  {\path{doi:10.1016/j.buildenv.2020.107160}}.
 
 \bibitem{kim2013}
-J.~Kim, R.~de~Dear, C.~Candido, H.~Zhang, E.~Arens, Gender differences in office occupant perception of indoor environmental quality (ieq), Building and environment 70 (2013) 245--256.
-\newblock \href {https://doi.org/10.1016/j.buildenv.2013.08.022} {\path{doi:10.1016/j.buildenv.2013.08.022}}.
+J.~Kim, R.~de~Dear, C.~Candido, H.~Zhang, E.~Arens, Gender differences in
+  office occupant perception of indoor environmental quality (ieq), Building
+  and environment 70 (2013) 245--256.
+\newblock \href {https://doi.org/10.1016/j.buildenv.2013.08.022}
+  {\path{doi:10.1016/j.buildenv.2013.08.022}}.
 
 \bibitem{zadeh1996}
-L.~A. Zadeh, Fuzzy logic= computing with words, IEEE transactions on fuzzy systems 4~(2) (1996) 103--111.
-\newblock \href {https://doi.org/10.1109/91.493904} {\path{doi:10.1109/91.493904}}.
+L.~A. Zadeh, Fuzzy logic= computing with words, IEEE transactions on fuzzy
+  systems 4~(2) (1996) 103--111.
+\newblock \href {https://doi.org/10.1109/91.493904}
+  {\path{doi:10.1109/91.493904}}.
 
 \bibitem{shepard2005}
-R.~B. Shepard, Quantifying environmental impact assessments using fuzzy logic, Springer, 2005.
-\newblock \href {https://doi.org/10.1007/0-387-28098-7} {\path{doi:10.1007/0-387-28098-7}}.
+R.~B. Shepard, Quantifying environmental impact assessments using fuzzy logic,
+  Springer, 2005.
+\newblock \href {https://doi.org/10.1007/0-387-28098-7}
+  {\path{doi:10.1007/0-387-28098-7}}.
 
 \bibitem{zadeh2015}
-L.~A. Zadeh, Fuzzy logic—a personal perspective, Fuzzy sets and systems 281 (2015) 4--20.
-\newblock \href {https://doi.org/10.1016/j.fss.2015.05.009} {\path{doi:10.1016/j.fss.2015.05.009}}.
+L.~A. Zadeh, Fuzzy logic—a personal perspective, Fuzzy sets and systems 281
+  (2015) 4--20.
+\newblock \href {https://doi.org/10.1016/j.fss.2015.05.009}
+  {\path{doi:10.1016/j.fss.2015.05.009}}.
 
 \bibitem{liu2015}
-S.~Liu, X.~Meng, C.~Tam, Building information modeling based building design optimization for sustainability, Energy and buildings 105 (2015) 139--153.
-\newblock \href {https://doi.org/10.1016/j.enbuild.2015.06.037} {\path{doi:10.1016/j.enbuild.2015.06.037}}.
+S.~Liu, X.~Meng, C.~Tam, Building information modeling based building design
+  optimization for sustainability, Energy and buildings 105 (2015) 139--153.
+\newblock \href {https://doi.org/10.1016/j.enbuild.2015.06.037}
+  {\path{doi:10.1016/j.enbuild.2015.06.037}}.
 
 \bibitem{lu2017}
-Y.~Lu, Z.~Wu, R.~Chang, Y.~Li, Building information modeling (bim) for green buildings: A critical review and future directions, Automation in Construction 83 (2017) 134--148.
-\newblock \href {https://doi.org/10.1016/j.autcon.2017.08.024} {\path{doi:10.1016/j.autcon.2017.08.024}}.
+Y.~Lu, Z.~Wu, R.~Chang, Y.~Li, Building information modeling (bim) for green
+  buildings: A critical review and future directions, Automation in
+  Construction 83 (2017) 134--148.
+\newblock \href {https://doi.org/10.1016/j.autcon.2017.08.024}
+  {\path{doi:10.1016/j.autcon.2017.08.024}}.
 
 \bibitem{chong2017}
-H.-Y. Chong, C.-Y. Lee, X.~Wang, A mixed review of the adoption of building information modelling (bim) for sustainability, Journal of cleaner production 142 (2017) 4114--4126.
-\newblock \href {https://doi.org/10.1016/j.jclepro.2016.09.222} {\path{doi:10.1016/j.jclepro.2016.09.222}}.
+H.-Y. Chong, C.-Y. Lee, X.~Wang, A mixed review of the adoption of building
+  information modelling (bim) for sustainability, Journal of cleaner production
+  142 (2017) 4114--4126.
+\newblock \href {https://doi.org/10.1016/j.jclepro.2016.09.222}
+  {\path{doi:10.1016/j.jclepro.2016.09.222}}.
 
 \bibitem{llatas2020}
-C.~Llatas, B.~Soust-Verdaguer, A.~Passer, Implementing life cycle sustainability assessment during design stages in building information modelling: From systematic literature review to a methodological approach, Building and Environment 182 (2020) 107164.
-\newblock \href {https://doi.org/10.1016/j.buildenv.2020.107164} {\path{doi:10.1016/j.buildenv.2020.107164}}.
+C.~Llatas, B.~Soust-Verdaguer, A.~Passer, Implementing life cycle
+  sustainability assessment during design stages in building information
+  modelling: From systematic literature review to a methodological approach,
+  Building and Environment 182 (2020) 107164.
+\newblock \href {https://doi.org/10.1016/j.buildenv.2020.107164}
+  {\path{doi:10.1016/j.buildenv.2020.107164}}.
 
 \bibitem{olanrewaju2022}
-O.~I. Olanrewaju, A.~F. Kineber, N.~Chileshe, D.~J. Edwards, Modelling the relationship between building information modelling (bim) implementation barriers, usage and awareness on building project lifecycle, Building and Environment 207 (2022) 108556.
-\newblock \href {https://doi.org/10.1016/j.buildenv.2021.108556} {\path{doi:10.1016/j.buildenv.2021.108556}}.
+O.~I. Olanrewaju, A.~F. Kineber, N.~Chileshe, D.~J. Edwards, Modelling the
+  relationship between building information modelling (bim) implementation
+  barriers, usage and awareness on building project lifecycle, Building and
+  Environment 207 (2022) 108556.
+\newblock \href {https://doi.org/10.1016/j.buildenv.2021.108556}
+  {\path{doi:10.1016/j.buildenv.2021.108556}}.
 
 \bibitem{askarizad2020}
-R.~Askarizad, H.~Safari, The influence of social interactions on the behavioral patterns of the people in urban spaces (case study: The pedestrian zone of rasht municipality square, iran), Cities 101 (2020) 102687.
-\newblock \href {https://doi.org/10.1016/j.cities.2020.102687} {\path{doi:10.1016/j.cities.2020.102687}}.
+R.~Askarizad, H.~Safari, The influence of social interactions on the behavioral
+  patterns of the people in urban spaces (case study: The pedestrian zone of
+  rasht municipality square, iran), Cities 101 (2020) 102687.
+\newblock \href {https://doi.org/10.1016/j.cities.2020.102687}
+  {\path{doi:10.1016/j.cities.2020.102687}}.
 
 \bibitem{inglis2022}
-N.~C. Inglis, J.~Vukomanovic, J.~Costanza, K.~K. Singh, From viewsheds to viewscapes: Trends in landscape visibility and visual quality research, Landscape and Urban Planning 224 (2022) 104424.
-\newblock \href {https://doi.org/10.1016/j.landurbplan.2022.104424} {\path{doi:10.1016/j.landurbplan.2022.104424}}.
+N.~C. Inglis, J.~Vukomanovic, J.~Costanza, K.~K. Singh, From viewsheds to
+  viewscapes: Trends in landscape visibility and visual quality research,
+  Landscape and Urban Planning 224 (2022) 104424.
+\newblock \href {https://doi.org/10.1016/j.landurbplan.2022.104424}
+  {\path{doi:10.1016/j.landurbplan.2022.104424}}.
 
 \bibitem{benedikt1979}
-M.~L. Benedikt, To take hold of space: isovists and isovist fields, Environment and Planning B: Planning and design 6~(1) (1979) 47--65.
+M.~L. Benedikt, To take hold of space: isovists and isovist fields, Environment
+  and Planning B: Planning and design 6~(1) (1979) 47--65.
 \newblock \href {https://doi.org/10.1068/b060047} {\path{doi:10.1068/b060047}}.
 
 \bibitem{turner2001}
-A.~Turner, M.~Doxa, D.~O'sullivan, A.~Penn, From isovists to visibility graphs: a methodology for the analysis of architectural space, Environment and Planning B: Planning and design 28~(1) (2001) 103--121.
+A.~Turner, M.~Doxa, D.~O'sullivan, A.~Penn, From isovists to visibility graphs:
+  a methodology for the analysis of architectural space, Environment and
+  Planning B: Planning and design 28~(1) (2001) 103--121.
 \newblock \href {https://doi.org/10.1068/b2684} {\path{doi:10.1068/b2684}}.
 
 \bibitem{hosseini2022}
-A.~Hosseini~Alamdari, K.~Daneshjoo, M.~Yeganeh, New algorithms for generating isovist field and isovist measurements, Environment and Planning B: Urban Analytics and City Science 49~(9) (2022) 2331--2344.
-\newblock \href {https://doi.org/10.1177/23998083221083680} {\path{doi:10.1177/23998083221083680}}.
+A.~Hosseini~Alamdari, K.~Daneshjoo, M.~Yeganeh, New algorithms for generating
+  isovist field and isovist measurements, Environment and Planning B: Urban
+  Analytics and City Science 49~(9) (2022) 2331--2344.
+\newblock \href {https://doi.org/10.1177/23998083221083680}
+  {\path{doi:10.1177/23998083221083680}}.
 
 \bibitem{misthos2019}
-L.-M. Misthos, B.~Nakos, V.~Krassanakis, M.~Menegaki, The effect of topography and elevation on viewsheds in mountain landscapes using geovisualization, International Journal of Cartography 5~(1) (2019) 44--66.
-\newblock \href {https://doi.org/10.1080/23729333.2018.1477569} {\path{doi:10.1080/23729333.2018.1477569}}.
+L.-M. Misthos, B.~Nakos, V.~Krassanakis, M.~Menegaki, The effect of topography
+  and elevation on viewsheds in mountain landscapes using geovisualization,
+  International Journal of Cartography 5~(1) (2019) 44--66.
+\newblock \href {https://doi.org/10.1080/23729333.2018.1477569}
+  {\path{doi:10.1080/23729333.2018.1477569}}.
 
 \bibitem{gillings2020}
-M.~Gillings, D.~Wheatley, Gis-based visibility analysis, in: Archaeological Spatial Analysis, Routledge, 2020, pp. 313--332.
-\newblock \href {https://doi.org/10.4324/9781351243858-17} {\path{doi:10.4324/9781351243858-17}}.
+M.~Gillings, D.~Wheatley, Gis-based visibility analysis, in: Archaeological
+  Spatial Analysis, Routledge, 2020, pp. 313--332.
+\newblock \href {https://doi.org/10.4324/9781351243858-17}
+  {\path{doi:10.4324/9781351243858-17}}.
 
 \bibitem{stein2022}
-R.~M. Stein, B.~Lecigne, J.~U. Eitel, T.~R. Johnson, C.~McGowan, J.~L. Rachlow, Vegetation and vantage point influence visibility across diverse ecosystems: Implications for animal ecology, Frontiers in Ecology and Evolution 10 (2022) 911051.
-\newblock \href {https://doi.org/10.3389/fevo.2022.911051} {\path{doi:10.3389/fevo.2022.911051}}.
+R.~M. Stein, B.~Lecigne, J.~U. Eitel, T.~R. Johnson, C.~McGowan, J.~L. Rachlow,
+  Vegetation and vantage point influence visibility across diverse ecosystems:
+  Implications for animal ecology, Frontiers in Ecology and Evolution 10 (2022)
+  911051.
+\newblock \href {https://doi.org/10.3389/fevo.2022.911051}
+  {\path{doi:10.3389/fevo.2022.911051}}.
 
 \bibitem{cavaglia2024}
-M.~Cavagli{\`a}, A.~Speroni, J.~D. Blanco~Cadena, A.~G. Mainini, T.~Poli, Exploring built environment visual interactions: A softbim data-driven approach for a database about the outdoor view, Buildings 14~(11) (2024) 3340.
+M.~Cavagli{\`a}, A.~Speroni, J.~D. Blanco~Cadena, A.~G. Mainini, T.~Poli,
+  Exploring built environment visual interactions: A softbim data-driven
+  approach for a database about the outdoor view, Buildings 14~(11) (2024)
+  3340.
 
 \bibitem{fisher1992}
-P.~F. Fisher, First experiments in viewshed uncertainty: simulating fuzzy viewsheds, Photogrammetric engineering and remote sensing 58 (1992) 345--345.
-\newblock \href {https://doi.org/10.1201/9781420006377.ch10} {\path{doi:10.1201/9781420006377.ch10}}.
+P.~F. Fisher, First experiments in viewshed uncertainty: simulating fuzzy
+  viewsheds, Photogrammetric engineering and remote sensing 58 (1992) 345--345.
+\newblock \href {https://doi.org/10.1201/9781420006377.ch10}
+  {\path{doi:10.1201/9781420006377.ch10}}.
 
 \bibitem{fisher1994}
-P.~Fisher, Probable and fuzzy models of the viewshed operation, in: Innovations in GIS, CRC Press, 1994, pp. 169--184.
-\newblock \href {https://doi.org/10.1201/9781003572800-15} {\path{doi:10.1201/9781003572800-15}}.
+P.~Fisher, Probable and fuzzy models of the viewshed operation, in: Innovations
+  in GIS, CRC Press, 1994, pp. 169--184.
+\newblock \href {https://doi.org/10.1201/9781003572800-15}
+  {\path{doi:10.1201/9781003572800-15}}.
 
 \bibitem{alberti2017}
 G.~Alberti, Fuzzy viewshed arcgis toolbox, Retrieved from (2017).
-\newblock \href {https://doi.org/10.17128/9781589483651\_15.1} {\path{doi:10.17128/9781589483651\_15.1}}.
+\newblock \href {https://doi.org/10.17128/9781589483651\_15.1}
+  {\path{doi:10.17128/9781589483651\_15.1}}.
 
 \bibitem{cimburova2022}
-Z.~Cimburova, S.~Blumentrath, Viewshed-based modelling of visual exposure to urban greenery--an efficient gis tool for practical planning applications, Landscape and Urban Planning 222 (2022) 104395.
-\newblock \href {https://doi.org/10.1016/j.landurbplan.2022.104395} {\path{doi:10.1016/j.landurbplan.2022.104395}}.
+Z.~Cimburova, S.~Blumentrath, Viewshed-based modelling of visual exposure to
+  urban greenery--an efficient gis tool for practical planning applications,
+  Landscape and Urban Planning 222 (2022) 104395.
+\newblock \href {https://doi.org/10.1016/j.landurbplan.2022.104395}
+  {\path{doi:10.1016/j.landurbplan.2022.104395}}.
 
 \bibitem{fisher2024}
-P.~F. Fisher, Probable and fuzzy models of the viewshed, Innovations In GIS (2024) 161\href {https://doi.org/10.1201/9781003572800-15} {\path{doi:10.1201/9781003572800-15}}.
+P.~F. Fisher, Probable and fuzzy models of the viewshed, Innovations In GIS
+  (2024) 161\href {https://doi.org/10.1201/9781003572800-15}
+  {\path{doi:10.1201/9781003572800-15}}.
 
 \bibitem{biljecki2021}
-F.~Biljecki, K.~Ito, Street view imagery in urban analytics and gis: A review, Landscape and Urban Planning 215 (2021) 104217.
-\newblock \href {https://doi.org/10.1016/j.landurbplan.2021.104217} {\path{doi:10.1016/j.landurbplan.2021.104217}}.
+F.~Biljecki, K.~Ito, Street view imagery in urban analytics and gis: A review,
+  Landscape and Urban Planning 215 (2021) 104217.
+\newblock \href {https://doi.org/10.1016/j.landurbplan.2021.104217}
+  {\path{doi:10.1016/j.landurbplan.2021.104217}}.
 
 \bibitem{abdelrahman2023}
-M.~Abdelrahman, P.~Coates, T.~Poppelreuter, Visible outside view as a facilitation tool to evaluate view quality and shading systems through building openings, Journal of Building Engineering 80 (2023) 108049.
-\newblock \href {https://doi.org/10.1016/j.jobe.2023.108049} {\path{doi:10.1016/j.jobe.2023.108049}}.
+M.~Abdelrahman, P.~Coates, T.~Poppelreuter, Visible outside view as a
+  facilitation tool to evaluate view quality and shading systems through
+  building openings, Journal of Building Engineering 80 (2023) 108049.
+\newblock \href {https://doi.org/10.1016/j.jobe.2023.108049}
+  {\path{doi:10.1016/j.jobe.2023.108049}}.
 
 \bibitem{morello2009}
-E.~Morello, C.~Ratti, A digital image of the city: 3d isovists in lynch's urban analysis, Environment and Planning B: Planning and design 36~(5) (2009) 837--853.
+E.~Morello, C.~Ratti, A digital image of the city: 3d isovists in lynch's urban
+  analysis, Environment and Planning B: Planning and design 36~(5) (2009)
+  837--853.
 \newblock \href {https://doi.org/10.1068/b34144t} {\path{doi:10.1068/b34144t}}.
 
 \bibitem{suleiman2013}
-W.~Suleiman, T.~Joliveau, E.~Favier, A new algorithm for 3d isovists, Advances in Spatial Data Handling: Geospatial Dynamics, Geosimulation and Exploratory Visualization (2013) 157--173\href {https://doi.org/10.1007/978-3-642-32316-4\_11} {\path{doi:10.1007/978-3-642-32316-4\_11}}.
+W.~Suleiman, T.~Joliveau, E.~Favier, A new algorithm for 3d isovists, Advances
+  in Spatial Data Handling: Geospatial Dynamics, Geosimulation and Exploratory
+  Visualization (2013) 157--173\href
+  {https://doi.org/10.1007/978-3-642-32316-4\_11}
+  {\path{doi:10.1007/978-3-642-32316-4\_11}}.
 
 \bibitem{chen2021}
-Y.~Chen, J.~Chen, A parallel multipoint viewshed analysis method for urban 3d building scenes, Transactions in GIS 25~(4) (2021) 2010--2028.
-\newblock \href {https://doi.org/10.1111/tgis.12759} {\path{doi:10.1111/tgis.12759}}.
+Y.~Chen, J.~Chen, A parallel multipoint viewshed analysis method for urban 3d
+  building scenes, Transactions in GIS 25~(4) (2021) 2010--2028.
+\newblock \href {https://doi.org/10.1111/tgis.12759}
+  {\path{doi:10.1111/tgis.12759}}.
 
 \bibitem{krukar2021}
-J.~Krukar, C.~Manivannan, M.~Bhatt, C.~Schultz, Embodied 3d isovists: A method to model the visual perception of space, Environment and Planning B: Urban Analytics and City Science 48~(8) (2021) 2307--2325.
-\newblock \href {https://doi.org/10.1177/2399808320974533} {\path{doi:10.1177/2399808320974533}}.
+J.~Krukar, C.~Manivannan, M.~Bhatt, C.~Schultz, Embodied 3d isovists: A method
+  to model the visual perception of space, Environment and Planning B: Urban
+  Analytics and City Science 48~(8) (2021) 2307--2325.
+\newblock \href {https://doi.org/10.1177/2399808320974533}
+  {\path{doi:10.1177/2399808320974533}}.
 
 \bibitem{parent2023}
-J.~R. Parent, Q.~Lei-Parent, Rapid viewshed analyses: A case study with visibilities limited by trees and buildings, Applied geography 154 (2023) 102942.
-\newblock \href {https://doi.org/10.1016/j.apgeog.2023.102942} {\path{doi:10.1016/j.apgeog.2023.102942}}.
+J.~R. Parent, Q.~Lei-Parent, Rapid viewshed analyses: A case study with
+  visibilities limited by trees and buildings, Applied geography 154 (2023)
+  102942.
+\newblock \href {https://doi.org/10.1016/j.apgeog.2023.102942}
+  {\path{doi:10.1016/j.apgeog.2023.102942}}.
 
 \bibitem{othman2019}
-F.~Othman, Z.~M. Yusoff, A.~A. Rasam, Isovist and visibility graph analysis (vga): Strategies to evaluate visibility along movement pattern for safe space, in: IOP Conference Series: Earth and Environmental Science, Vol. 385, IOP Publishing, 2019, p. 012024.
-\newblock \href {https://doi.org/10.1088/1755-1315/385/1/012024} {\path{doi:10.1088/1755-1315/385/1/012024}}.
+F.~Othman, Z.~M. Yusoff, A.~A. Rasam, Isovist and visibility graph analysis
+  (vga): Strategies to evaluate visibility along movement pattern for safe
+  space, in: IOP Conference Series: Earth and Environmental Science, Vol. 385,
+  IOP Publishing, 2019, p. 012024.
+\newblock \href {https://doi.org/10.1088/1755-1315/385/1/012024}
+  {\path{doi:10.1088/1755-1315/385/1/012024}}.
 
 \bibitem{snopkova2023}
-D.~Snopkov{\'a}, L.~De~Cock, V.~Ju{\v{r}}{\'\i}k, O.~Kvarda, M.~Tanco{\v{s}}, L.~Herman, P.~Kub{\'\i}{\v{c}}ek, Isovists compactness and stairs as predictors of evacuation route choice, Scientific Reports 13~(1) (2023) 2970.
-\newblock \href {https://doi.org/10.1038/s41598-023-29944-8} {\path{doi:10.1038/s41598-023-29944-8}}.
+D.~Snopkov{\'a}, L.~De~Cock, V.~Ju{\v{r}}{\'\i}k, O.~Kvarda, M.~Tanco{\v{s}},
+  L.~Herman, P.~Kub{\'\i}{\v{c}}ek, Isovists compactness and stairs as
+  predictors of evacuation route choice, Scientific Reports 13~(1) (2023) 2970.
+\newblock \href {https://doi.org/10.1038/s41598-023-29944-8}
+  {\path{doi:10.1038/s41598-023-29944-8}}.
 
 \bibitem{wu2023}
-Z.~Wu, Y.~Wang, W.~Gan, Y.~Zou, W.~Dong, S.~Zhou, M.~Wang, A survey of the landscape visibility analysis tools and technical improvements, International Journal of Environmental Research and Public Health 20~(3) (2023) 1788.
-\newblock \href {https://doi.org/10.3390/ijerph20031788} {\path{doi:10.3390/ijerph20031788}}.
+Z.~Wu, Y.~Wang, W.~Gan, Y.~Zou, W.~Dong, S.~Zhou, M.~Wang, A survey of the
+  landscape visibility analysis tools and technical improvements, International
+  Journal of Environmental Research and Public Health 20~(3) (2023) 1788.
+\newblock \href {https://doi.org/10.3390/ijerph20031788}
+  {\path{doi:10.3390/ijerph20031788}}.
 
 \bibitem{khaleel2023}
-M.~H.~G. Khaleel, A.~M. Assem, The utilization of algorithms in the evaluation of space layout planning in inpatient departments, International Journal of Architectural Engineering and Urban Research 6~(2) (2023) 220--247.
-\newblock \href {https://doi.org/10.21608/ijaeur.2024.234655.1048} {\path{doi:10.21608/ijaeur.2024.234655.1048}}.
+M.~H.~G. Khaleel, A.~M. Assem, The utilization of algorithms in the evaluation
+  of space layout planning in inpatient departments, International Journal of
+  Architectural Engineering and Urban Research 6~(2) (2023) 220--247.
+\newblock \href {https://doi.org/10.21608/ijaeur.2024.234655.1048}
+  {\path{doi:10.21608/ijaeur.2024.234655.1048}}.
 
 \bibitem{guo2023}
-Y.~Guo, D.~Lai, X.~Hu, Measuring river-view visibilities of individual dwellings for planning of compact urban riverside neighborhood blocks, Sustainability 15~(9) (2023) 7059.
-\newblock \href {https://doi.org/10.3390/su15097059} {\path{doi:10.3390/su15097059}}.
+Y.~Guo, D.~Lai, X.~Hu, Measuring river-view visibilities of individual
+  dwellings for planning of compact urban riverside neighborhood blocks,
+  Sustainability 15~(9) (2023) 7059.
+\newblock \href {https://doi.org/10.3390/su15097059}
+  {\path{doi:10.3390/su15097059}}.
 
 \bibitem{Kodmany1999}
-K.~Al‐Kodmany, Residential visual privacy: Traditional and modern architecture and urban design, Journal of Urban Design 4~(3) (1999) 283--311.
-\newblock \href {https://doi.org/10.1080/13574809908724452} {\path{doi:10.1080/13574809908724452}}.
+K.~Al‐Kodmany, Residential visual privacy: Traditional and modern
+  architecture and urban design, Journal of Urban Design 4~(3) (1999) 283--311.
+\newblock \href {https://doi.org/10.1080/13574809908724452}
+  {\path{doi:10.1080/13574809908724452}}.
 
 \bibitem{rahim2015}
-Z.~A. Rahim, The influence of culture and religion on visual privacy, Procedia-Social and Behavioral Sciences 170 (2015) 537--544.
-\newblock \href {https://doi.org/10.1016/j.sbspro.2015.01.055} {\path{doi:10.1016/j.sbspro.2015.01.055}}.
+Z.~A. Rahim, The influence of culture and religion on visual privacy,
+  Procedia-Social and Behavioral Sciences 170 (2015) 537--544.
+\newblock \href {https://doi.org/10.1016/j.sbspro.2015.01.055}
+  {\path{doi:10.1016/j.sbspro.2015.01.055}}.
 
 \bibitem{Altomonte2013}
-S.~Altomonte, S.~Schiavon, Occupant satisfaction in leed and non-leed certified buildings, Building and Environment 68 (2013) 66--76.
-\newblock \href {https://doi.org/https://doi.org/10.1016/j.buildenv.2013.06.008} {\path{doi:https://doi.org/10.1016/j.buildenv.2013.06.008}}.
+S.~Altomonte, S.~Schiavon, Occupant satisfaction in leed and non-leed certified
+  buildings, Building and Environment 68 (2013) 66--76.
+\newblock \href
+  {https://doi.org/https://doi.org/10.1016/j.buildenv.2013.06.008}
+  {\path{doi:https://doi.org/10.1016/j.buildenv.2013.06.008}}.
 
 \bibitem{Schiavon2014}
-S.~Schiavon, S.~Altomonte, Influence of factors unrelated to environmental quality on occupant satisfaction in leed and non-leed certified buildings, Building and Environment 77 (2014) 148--159.
-\newblock \href {https://doi.org/https://doi.org/10.1016/j.buildenv.2014.03.028} {\path{doi:https://doi.org/10.1016/j.buildenv.2014.03.028}}.
+S.~Schiavon, S.~Altomonte, Influence of factors unrelated to environmental
+  quality on occupant satisfaction in leed and non-leed certified buildings,
+  Building and Environment 77 (2014) 148--159.
+\newblock \href
+  {https://doi.org/https://doi.org/10.1016/j.buildenv.2014.03.028}
+  {\path{doi:https://doi.org/10.1016/j.buildenv.2014.03.028}}.
 
 \bibitem{Guo2021}
-X.~Guo, K.~Lee, Z.~Wang, S.~Liu, \href{https://www.sciencedirect.com/science/article/pii/S0360132321006879}{Occupants’ satisfaction with leed- and non-leed-certified apartments using social media data}, Building and Environment 206 (2021) 108288.
-\newblock \href {https://doi.org/https://doi.org/10.1016/j.buildenv.2021.108288} {\path{doi:https://doi.org/10.1016/j.buildenv.2021.108288}}.
+X.~Guo, K.~Lee, Z.~Wang, S.~Liu,
+  \href{https://www.sciencedirect.com/science/article/pii/S0360132321006879}{Occupants’
+  satisfaction with leed- and non-leed-certified apartments using social media
+  data}, Building and Environment 206 (2021) 108288.
+\newblock \href
+  {https://doi.org/https://doi.org/10.1016/j.buildenv.2021.108288}
+  {\path{doi:https://doi.org/10.1016/j.buildenv.2021.108288}}.
 \newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S0360132321006879}
 
 \bibitem{LondonGuidelines}
-{London Borough Council}, \href{https://www.london.gov.uk/what-we-do/planning}{London borough residential design guidelines}, typical guidelines for residential building separation in London Boroughs. (2024).
-\newblock \href {https://doi.org/10.4324/9780203360958-20} {\path{doi:10.4324/9780203360958-20}}.
+{London Borough Council},
+  \href{https://www.london.gov.uk/what-we-do/planning}{London borough
+  residential design guidelines}, typical guidelines for residential building
+  separation in London Boroughs. (2024).
+\newblock \href {https://doi.org/10.4324/9780203360958-20}
+  {\path{doi:10.4324/9780203360958-20}}.
 \newline\urlprefix\url{https://www.london.gov.uk/what-we-do/planning}
 
 \bibitem{ManchesterGuidelines}
-{Manchester City Council}, \href{https://www.manchester.gov.uk/info/200074/planning/6268/planning\_guidance}{Manchester residential quality guide}, guidelines for minimum separation distances in residential developments in Manchester. (2024).
-\newblock \href {https://doi.org/10.1017/s0956618x00002544} {\path{doi:10.1017/s0956618x00002544}}.
+{Manchester City Council},
+  \href{https://www.manchester.gov.uk/info/200074/planning/6268/planning\_guidance}{Manchester
+  residential quality guide}, guidelines for minimum separation distances in
+  residential developments in Manchester. (2024).
+\newblock \href {https://doi.org/10.1017/s0956618x00002544}
+  {\path{doi:10.1017/s0956618x00002544}}.
 \newline\urlprefix\url{https://www.manchester.gov.uk/info/200074/planning/6268/planning\_guidance}
 
 \bibitem{NSWApartmentDesign}
-{New South Wales Government}, \href{https://www.planning.nsw.gov.au/Policy-and-Legislation/Housing/Apartment-Design-Guide}{Apartment design guide - nsw}, guidelines for separation distances based on building height in New South Wales. (2024).
-\newblock \href {https://doi.org/10.1177/0013916581136002} {\path{doi:10.1177/0013916581136002}}.
+{New South Wales Government},
+  \href{https://www.planning.nsw.gov.au/Policy-and-Legislation/Housing/Apartment-Design-Guide}{Apartment
+  design guide - nsw}, guidelines for separation distances based on building
+  height in New South Wales. (2024).
+\newblock \href {https://doi.org/10.1177/0013916581136002}
+  {\path{doi:10.1177/0013916581136002}}.
 \newline\urlprefix\url{https://www.planning.nsw.gov.au/Policy-and-Legislation/Housing/Apartment-Design-Guide}
 
 \bibitem{TorontoTallBuildings}
-{City of Toronto}, \href{https://www.toronto.ca/legdocs/mmis/2016/te/bgrd/backgroundfile-94933.pdf}{Tall building design guidelines}, separation distance recommendations for tall buildings in Toronto. (2016).
-\newblock \href {https://doi.org/10.1680/978-1-83549-560-520241005} {\path{doi:10.1680/978-1-83549-560-520241005}}.
+{City of Toronto},
+  \href{https://www.toronto.ca/legdocs/mmis/2016/te/bgrd/backgroundfile-94933.pdf}{Tall
+  building design guidelines}, separation distance recommendations for tall
+  buildings in Toronto. (2016).
+\newblock \href {https://doi.org/10.1680/978-1-83549-560-520241005}
+  {\path{doi:10.1680/978-1-83549-560-520241005}}.
 \newline\urlprefix\url{https://www.toronto.ca/legdocs/mmis/2016/te/bgrd/backgroundfile-94933.pdf}
 
 \bibitem{NYCZoning}
-{New York City Department of City Planning}, \href{https://www1.nyc.gov/site/planning/zoning/zoning.page}{New york city zoning handbook}, zoning regulations including setbacks and separation distances in New York City. (2024).
-\newblock \href {https://doi.org/10.4324/9781003419006} {\path{doi:10.4324/9781003419006}}.
+{New York City Department of City Planning},
+  \href{https://www1.nyc.gov/site/planning/zoning/zoning.page}{New york city
+  zoning handbook}, zoning regulations including setbacks and separation
+  distances in New York City. (2024).
+\newblock \href {https://doi.org/10.4324/9781003419006}
+  {\path{doi:10.4324/9781003419006}}.
 \newline\urlprefix\url{https://www1.nyc.gov/site/planning/zoning/zoning.page}
 
 \bibitem{alkhalili2018}
-N.~Alkhalili, T.~Kesik, W.~O'Brien, T.~Peters, Developing and testing visual privacy metrics, in: Proceedings of the 7th International Building Physics Conference (IBPC 2018), Syracuse, NY, 2018, pp. 703--708, start Date: 26-9-2018 10:30 AM, End Date: 26-9-2018 12:00 PM.
-\newblock \href {https://doi.org/10.14305/ibpc.2018.hf-4.02} {\path{doi:10.14305/ibpc.2018.hf-4.02}}.
+N.~Alkhalili, T.~Kesik, W.~O'Brien, T.~Peters, Developing and testing visual
+  privacy metrics, in: Proceedings of the 7th International Building Physics
+  Conference (IBPC 2018), Syracuse, NY, 2018, pp. 703--708, start Date:
+  26-9-2018 10:30 AM, End Date: 26-9-2018 12:00 PM.
+\newblock \href {https://doi.org/10.14305/ibpc.2018.hf-4.02}
+  {\path{doi:10.14305/ibpc.2018.hf-4.02}}.
 
 \bibitem{zheng2021}
-H.~Zheng, B.~Wu, H.~Wei, J.~Yan, J.~Zhu, A quantitative method for evaluation of visual privacy in residential environments, Buildings 11~(7) (2021) 272.
-\newblock \href {https://doi.org/10.3390/buildings11070272} {\path{doi:10.3390/buildings11070272}}.
+H.~Zheng, B.~Wu, H.~Wei, J.~Yan, J.~Zhu, A quantitative method for evaluation
+  of visual privacy in residential environments, Buildings 11~(7) (2021) 272.
+\newblock \href {https://doi.org/10.3390/buildings11070272}
+  {\path{doi:10.3390/buildings11070272}}.
 
 \bibitem{Churchman1999}
-A.~Churchman, Disentangling the concept of density, Journal of Planning Literature 13~(4) (1999) 389--411.
-\newblock \href {https://doi.org/10.1177/08854129922092478} {\path{doi:10.1177/08854129922092478}}.
+A.~Churchman, Disentangling the concept of density, Journal of Planning
+  Literature 13~(4) (1999) 389--411.
+\newblock \href {https://doi.org/10.1177/08854129922092478}
+  {\path{doi:10.1177/08854129922092478}}.
 
 \bibitem{ShachPinsly2007}
-D.~Shach-Pinsly, D.~Fisher-Gewirtzman, M.~Burt, ‘visual exposure’ analysis model: A comparative evaluation of three case studies, Urban Design International 12 (2007) 155--168.
-\newblock \href {https://doi.org/10.1057/palgrave.udi.9000204} {\path{doi:10.1057/palgrave.udi.9000204}}.
+D.~Shach-Pinsly, D.~Fisher-Gewirtzman, M.~Burt, ‘visual exposure’ analysis
+  model: A comparative evaluation of three case studies, Urban Design
+  International 12 (2007) 155--168.
+\newblock \href {https://doi.org/10.1057/palgrave.udi.9000204}
+  {\path{doi:10.1057/palgrave.udi.9000204}}.
 
 \bibitem{ShachPinsly2011}
-D.~Shach-Pinsly, D.~Fisher-Gewirtzman, M.~Burt, Visual exposure and visual openness: An integrated approach and comparative evaluation, Journal of Urban Design 16~(2) (2011) 197--220.
-\newblock \href {https://doi.org/10.1080/13574809.2011.548979} {\path{doi:10.1080/13574809.2011.548979}}.
+D.~Shach-Pinsly, D.~Fisher-Gewirtzman, M.~Burt, Visual exposure and visual
+  openness: An integrated approach and comparative evaluation, Journal of Urban
+  Design 16~(2) (2011) 197--220.
+\newblock \href {https://doi.org/10.1080/13574809.2011.548979}
+  {\path{doi:10.1080/13574809.2011.548979}}.
 
 \bibitem{FisherGewirtzman2003a}
-D.~Fisher-Gewirtzman, I.~Wagner, Spatial openness as a practical metric for evaluating built-up environments, Environment and Planning B: Planning and Design 30 (2003) 37--49.
+D.~Fisher-Gewirtzman, I.~Wagner, Spatial openness as a practical metric for
+  evaluating built-up environments, Environment and Planning B: Planning and
+  Design 30 (2003) 37--49.
 \newblock \href {https://doi.org/10.1068/b12861} {\path{doi:10.1068/b12861}}.
 
 \bibitem{FisherGewirtzman2003b}
-D.~Fisher-Gewirtzman, M.~Burt, Y.~Tzamir, A 3-d visual method for comparative evaluation of dense built-up environments, Environment and Planning B: Planning and Design 30~(4) (2003) 575--587.
+D.~Fisher-Gewirtzman, M.~Burt, Y.~Tzamir, A 3-d visual method for comparative
+  evaluation of dense built-up environments, Environment and Planning B:
+  Planning and Design 30~(4) (2003) 575--587.
 \newblock \href {https://doi.org/10.1068/b2941} {\path{doi:10.1068/b2941}}.
 
 \bibitem{FisherGewirtzman2017}
-D.~Fisher-Gewirtzman, The association between perceived density in minimum apartments and spatial openness index: three-dimensional visual analysis, Environment and Planning B: Urban Analytics and City Science 44~(4) (2017) 764--795.
-\newblock \href {https://doi.org/10.1177/0265813516657828} {\path{doi:10.1177/0265813516657828}}.
+D.~Fisher-Gewirtzman, The association between perceived density in minimum
+  apartments and spatial openness index: three-dimensional visual analysis,
+  Environment and Planning B: Urban Analytics and City Science 44~(4) (2017)
+  764--795.
+\newblock \href {https://doi.org/10.1177/0265813516657828}
+  {\path{doi:10.1177/0265813516657828}}.
 
 \bibitem{FisherGewirtzman2018}
-D.~Fisher-Gewirtzman, Integrating weighted views to quantitative 3d visibility analysis as a predictive tool for perception of space, Environment and Planning B: Urban Analytics and City Science 45~(2) (2018) 345--366.
-\newblock \href {https://doi.org/10.1177/0265813516676486} {\path{doi:10.1177/0265813516676486}}.
+D.~Fisher-Gewirtzman, Integrating weighted views to quantitative 3d visibility
+  analysis as a predictive tool for perception of space, Environment and
+  Planning B: Urban Analytics and City Science 45~(2) (2018) 345--366.
+\newblock \href {https://doi.org/10.1177/0265813516676486}
+  {\path{doi:10.1177/0265813516676486}}.
 
 \bibitem{Zheng2023_IPVEI}
-H.~Zheng, et~al., Refining the potential visual exposure index for the assessment of residential visual privacy: A three-dimensional study, Journal of Asian Architecture and Building Engineering 22~(5) (2023) 1635--1649.
-\newblock \href {https://doi.org/10.1080/13467581.2022.2085724} {\path{doi:10.1080/13467581.2022.2085724}}.
+H.~Zheng, et~al., Refining the potential visual exposure index for the
+  assessment of residential visual privacy: A three-dimensional study, Journal
+  of Asian Architecture and Building Engineering 22~(5) (2023) 1635--1649.
+\newblock \href {https://doi.org/10.1080/13467581.2022.2085724}
+  {\path{doi:10.1080/13467581.2022.2085724}}.
 
 \bibitem{AbdAlhamid2023Review}
-F.~Abd-Alhamid, et~al., Quantifying window view quality: A review on metrics, methods, and research trends, Building and Environment 225 (2023) 109757.
-\newblock \href {https://doi.org/10.1016/j.buildenv.2022.109757} {\path{doi:10.1016/j.buildenv.2022.109757}}.
+F.~Abd-Alhamid, et~al., Quantifying window view quality: A review on metrics,
+  methods, and research trends, Building and Environment 225 (2023) 109757.
+\newblock \href {https://doi.org/10.1016/j.buildenv.2022.109757}
+  {\path{doi:10.1016/j.buildenv.2022.109757}}.
 
 \end{thebibliography}

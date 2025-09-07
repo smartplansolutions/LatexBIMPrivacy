@@ -1,0 +1,2999 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.7)  7 SEP 2025 15:16
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**elsarticle-template-num.tex
+(./elsarticle-template-num.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(./elsarticle.cls
+Document Class: elsarticle 2020/11/20, 3.3: Elsevier Ltd
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2024-01-22 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count187
+\l__pdf_internal_box=\box51
+))
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2023-10-10 L3 Experimental document command parser
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count188
+)
+\@bls=\dimen140
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count189
+\c@section=\count190
+\c@subsection=\count191
+\c@subsubsection=\count192
+\c@paragraph=\count193
+\c@subparagraph=\count194
+\c@figure=\count195
+\c@table=\count196
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen141
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen142
+\Gin@req@width=\dimen143
+)
+\c@tnote=\count197
+\c@fnote=\count198
+\c@cnote=\count199
+\c@ead=\count266
+\c@author=\count267
+\@eadauthor=\toks18
+\c@affn=\count268
+\absbox=\box52
+\elsarticlehighlightsbox=\box53
+\elsarticlegrabsbox=\box54
+\keybox=\box55
+\Columnwidth=\dimen144
+\space@left=\dimen145
+\els@boxa=\box56
+\els@boxb=\box57
+\leftMargin=\dimen146
+\@enLab=\toks19
+\@sep=\skip50
+\@@sep=\skip51
+
+(./elsarticle-template-num.spl)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip52
+\bibsep=\skip53
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count269
+)
+\splwrite=\write3
+\openout3 = `elsarticle-template-num.spl'.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count270
+\Gm@cntv=\count271
+\c@Gm@tempcnt=\count272
+\Gm@bindingoffset=\dimen147
+\Gm@wd@mp=\dimen148
+\Gm@odd@mp=\dimen149
+\Gm@even@mp=\dimen150
+\Gm@layoutwidth=\dimen151
+\Gm@layoutheight=\dimen152
+\Gm@layouthoffset=\dimen153
+\Gm@layoutvoffset=\dimen154
+\Gm@dimlist=\toks20
+)
+\appnamewidth=\dimen155
+)
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/txfonts.sty
+Package: txfonts 2008/01/22 v3.2.1
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 21.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/txr/m/n on input line 21.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/txr/m/n on input line 21.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/txr/m/n --> OT1/txr/bx/n on input line 22.
+\symitalic=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `italic' in version `bold'
+(Font)                  OT1/txr/m/it --> OT1/txr/bx/it on input line 26.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/txr/bx/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/txr/bx/n on input line 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 30.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/txr/m/it on input line 30.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/txr/m/it on input line 30.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/txr/m/it --> OT1/txr/bx/it on input line 31.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/txss/m/n on input line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/txss/m/n on input line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/txss/m/n --> OT1/txss/b/n on input line 41.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/txtt/m/n on input line 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/txtt/m/n on input line 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/txtt/m/n --> OT1/txtt/b/n on input line 51.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 58.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/txmi/m/it on input line 58.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/txmi/m/it on input line 58.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/txmi/m/it --> OML/txmi/bx/it on input line 59.
+\symlettersA=\mathgroup5
+LaTeX Font Info:    Overwriting symbol font `lettersA' in version `bold'
+(Font)                  U/txmia/m/it --> U/txmia/bx/it on input line 67.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 77.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/txsy/m/n on input line 77.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/txsy/m/n on input line 77.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/txsy/m/n --> OMS/txsy/bx/n on input line 78.
+\symAMSa=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
+(Font)                  U/txsya/m/n --> U/txsya/bx/n on input line 94.
+\symAMSb=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
+(Font)                  U/txsyb/m/n --> U/txsyb/bx/n on input line 103.
+\symsymbolsC=\mathgroup8
+LaTeX Font Info:    Overwriting symbol font `symbolsC' in version `bold'
+(Font)                  U/txsyc/m/n --> U/txsyc/bx/n on input line 113.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 120.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/txex/m/n on input line 120.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/txex/m/n on input line 120.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/txex/m/n --> OMX/txex/bx/n on input line 121.
+\symlargesymbolsA=\mathgroup9
+LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `bold'
+(Font)                  U/txexa/m/n --> U/txexa/bx/n on input line 129.
+LaTeX Font Info:    Redeclaring math symbol \mathsterling on input line 164.
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 591.
+LaTeX Info: Redefining \not on input line 1043.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks21
+LaTeX Font Info:    Redeclaring symbol font `AMSa' on input line 59.
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `normal'
+(Font)                  U/txsya/m/n --> U/msa/m/n on input line 59.
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
+(Font)                  U/txsya/bx/n --> U/msa/m/n on input line 59.
+LaTeX Font Info:    Redeclaring symbol font `AMSb' on input line 60.
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `normal'
+(Font)                  U/txsyb/m/n --> U/msb/m/n on input line 60.
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
+(Font)                  U/txsyb/bx/n --> U/msb/m/n on input line 60.
+LaTeX Font Info:    Redeclaring math delimiter \ulcorner on input line 74.
+LaTeX Font Info:    Redeclaring math delimiter \urcorner on input line 75.
+LaTeX Font Info:    Redeclaring math delimiter \llcorner on input line 76.
+LaTeX Font Info:    Redeclaring math delimiter \lrcorner on input line 77.
+LaTeX Font Info:    Redeclaring math symbol \square on input line 141.
+LaTeX Font Info:    Redeclaring math symbol \lozenge on input line 142.
+)
+LaTeX Font Info:    Redeclaring math symbol \boxdot on input line 44.
+LaTeX Font Info:    Redeclaring math symbol \boxplus on input line 45.
+LaTeX Font Info:    Redeclaring math symbol \boxtimes on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \blacksquare on input line 48.
+LaTeX Font Info:    Redeclaring math symbol \centerdot on input line 49.
+LaTeX Font Info:    Redeclaring math symbol \blacklozenge on input line 51.
+LaTeX Font Info:    Redeclaring math symbol \circlearrowright on input line 52.
+
+LaTeX Font Info:    Redeclaring math symbol \circlearrowleft on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \leftrightharpoons on input line 56
+.
+LaTeX Font Info:    Redeclaring math symbol \boxminus on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \Vdash on input line 58.
+LaTeX Font Info:    Redeclaring math symbol \Vvdash on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \vDash on input line 60.
+LaTeX Font Info:    Redeclaring math symbol \twoheadrightarrow on input line 61
+.
+LaTeX Font Info:    Redeclaring math symbol \twoheadleftarrow on input line 62.
+
+LaTeX Font Info:    Redeclaring math symbol \leftleftarrows on input line 63.
+LaTeX Font Info:    Redeclaring math symbol \rightrightarrows on input line 64.
+
+LaTeX Font Info:    Redeclaring math symbol \upuparrows on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \downdownarrows on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \upharpoonright on input line 67.
+LaTeX Font Info:    Redeclaring math symbol \downharpoonright on input line 69.
+
+LaTeX Font Info:    Redeclaring math symbol \upharpoonleft on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \downharpoonleft on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \rightarrowtail on input line 72.
+LaTeX Font Info:    Redeclaring math symbol \leftarrowtail on input line 73.
+LaTeX Font Info:    Redeclaring math symbol \leftrightarrows on input line 74.
+LaTeX Font Info:    Redeclaring math symbol \rightleftarrows on input line 75.
+LaTeX Font Info:    Redeclaring math symbol \Lsh on input line 76.
+LaTeX Font Info:    Redeclaring math symbol \Rsh on input line 77.
+LaTeX Font Info:    Redeclaring math symbol \leftrightsquigarrow on input line 
+79.
+LaTeX Font Info:    Redeclaring math symbol \looparrowleft on input line 80.
+LaTeX Font Info:    Redeclaring math symbol \looparrowright on input line 81.
+LaTeX Font Info:    Redeclaring math symbol \circeq on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \succsim on input line 83.
+LaTeX Font Info:    Redeclaring math symbol \gtrsim on input line 84.
+LaTeX Font Info:    Redeclaring math symbol \gtrapprox on input line 85.
+LaTeX Font Info:    Redeclaring math symbol \multimap on input line 86.
+LaTeX Font Info:    Redeclaring math symbol \therefore on input line 87.
+LaTeX Font Info:    Redeclaring math symbol \because on input line 88.
+LaTeX Font Info:    Redeclaring math symbol \doteqdot on input line 89.
+LaTeX Font Info:    Redeclaring math symbol \triangleq on input line 91.
+LaTeX Font Info:    Redeclaring math symbol \precsim on input line 92.
+LaTeX Font Info:    Redeclaring math symbol \lesssim on input line 93.
+LaTeX Font Info:    Redeclaring math symbol \lessapprox on input line 94.
+LaTeX Font Info:    Redeclaring math symbol \eqslantless on input line 95.
+LaTeX Font Info:    Redeclaring math symbol \eqslantgtr on input line 96.
+LaTeX Font Info:    Redeclaring math symbol \curlyeqprec on input line 97.
+LaTeX Font Info:    Redeclaring math symbol \curlyeqsucc on input line 98.
+LaTeX Font Info:    Redeclaring math symbol \preccurlyeq on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \leqq on input line 100.
+LaTeX Font Info:    Redeclaring math symbol \leqslant on input line 101.
+LaTeX Font Info:    Redeclaring math symbol \lessgtr on input line 102.
+LaTeX Font Info:    Redeclaring math symbol \backprime on input line 103.
+LaTeX Font Info:    Redeclaring math symbol \risingdotseq on input line 104.
+LaTeX Font Info:    Redeclaring math symbol \fallingdotseq on input line 105.
+LaTeX Font Info:    Redeclaring math symbol \succcurlyeq on input line 106.
+LaTeX Font Info:    Redeclaring math symbol \geqq on input line 107.
+LaTeX Font Info:    Redeclaring math symbol \geqslant on input line 108.
+LaTeX Font Info:    Redeclaring math symbol \gtrless on input line 109.
+LaTeX Font Info:    Redeclaring math symbol \bigstar on input line 117.
+LaTeX Font Info:    Redeclaring math symbol \between on input line 118.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangledown on input line 11
+9.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleright on input line 1
+20.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleleft on input line 12
+1.
+LaTeX Font Info:    Redeclaring math symbol \vartriangle on input line 122.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangle on input line 123.
+LaTeX Font Info:    Redeclaring math symbol \triangledown on input line 124.
+LaTeX Font Info:    Redeclaring math symbol \eqcirc on input line 125.
+LaTeX Font Info:    Redeclaring math symbol \lesseqgtr on input line 126.
+LaTeX Font Info:    Redeclaring math symbol \gtreqless on input line 127.
+LaTeX Font Info:    Redeclaring math symbol \lesseqqgtr on input line 128.
+LaTeX Font Info:    Redeclaring math symbol \gtreqqless on input line 129.
+LaTeX Font Info:    Redeclaring math symbol \Rrightarrow on input line 130.
+LaTeX Font Info:    Redeclaring math symbol \Lleftarrow on input line 131.
+LaTeX Font Info:    Redeclaring math symbol \veebar on input line 132.
+LaTeX Font Info:    Redeclaring math symbol \barwedge on input line 133.
+LaTeX Font Info:    Redeclaring math symbol \doublebarwedge on input line 134.
+LaTeX Font Info:    Redeclaring math symbol \measuredangle on input line 137.
+LaTeX Font Info:    Redeclaring math symbol \sphericalangle on input line 138.
+LaTeX Font Info:    Redeclaring math symbol \varpropto on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \smallsmile on input line 140.
+LaTeX Font Info:    Redeclaring math symbol \smallfrown on input line 141.
+LaTeX Font Info:    Redeclaring math symbol \Subset on input line 142.
+LaTeX Font Info:    Redeclaring math symbol \Supset on input line 143.
+LaTeX Font Info:    Redeclaring math symbol \Cup on input line 144.
+LaTeX Font Info:    Redeclaring math symbol \Cap on input line 146.
+LaTeX Font Info:    Redeclaring math symbol \curlywedge on input line 148.
+LaTeX Font Info:    Redeclaring math symbol \curlyvee on input line 149.
+LaTeX Font Info:    Redeclaring math symbol \leftthreetimes on input line 150.
+LaTeX Font Info:    Redeclaring math symbol \rightthreetimes on input line 151.
+
+LaTeX Font Info:    Redeclaring math symbol \subseteqq on input line 152.
+LaTeX Font Info:    Redeclaring math symbol \supseteqq on input line 153.
+LaTeX Font Info:    Redeclaring math symbol \bumpeq on input line 154.
+LaTeX Font Info:    Redeclaring math symbol \Bumpeq on input line 155.
+LaTeX Font Info:    Redeclaring math symbol \lll on input line 156.
+LaTeX Font Info:    Redeclaring math symbol \ggg on input line 158.
+LaTeX Font Info:    Redeclaring math symbol \circledS on input line 160.
+LaTeX Font Info:    Redeclaring math symbol \pitchfork on input line 161.
+LaTeX Font Info:    Redeclaring math symbol \dotplus on input line 162.
+LaTeX Font Info:    Redeclaring math symbol \backsim on input line 163.
+LaTeX Font Info:    Redeclaring math symbol \backsimeq on input line 164.
+LaTeX Font Info:    Redeclaring math symbol \complement on input line 165.
+LaTeX Font Info:    Redeclaring math symbol \intercal on input line 166.
+LaTeX Font Info:    Redeclaring math symbol \circledcirc on input line 167.
+LaTeX Font Info:    Redeclaring math symbol \circledast on input line 168.
+LaTeX Font Info:    Redeclaring math symbol \circleddash on input line 169.
+LaTeX Font Info:    Redeclaring math symbol \lvertneqq on input line 171.
+LaTeX Font Info:    Redeclaring math symbol \gvertneqq on input line 172.
+LaTeX Font Info:    Redeclaring math symbol \nleq on input line 173.
+LaTeX Font Info:    Redeclaring math symbol \ngeq on input line 174.
+LaTeX Font Info:    Redeclaring math symbol \nless on input line 175.
+LaTeX Font Info:    Redeclaring math symbol \ngtr on input line 176.
+LaTeX Font Info:    Redeclaring math symbol \nprec on input line 177.
+LaTeX Font Info:    Redeclaring math symbol \nsucc on input line 178.
+LaTeX Font Info:    Redeclaring math symbol \lneqq on input line 179.
+LaTeX Font Info:    Redeclaring math symbol \gneqq on input line 180.
+LaTeX Font Info:    Redeclaring math symbol \nleqslant on input line 181.
+LaTeX Font Info:    Redeclaring math symbol \ngeqslant on input line 182.
+LaTeX Font Info:    Redeclaring math symbol \lneq on input line 183.
+LaTeX Font Info:    Redeclaring math symbol \gneq on input line 184.
+LaTeX Font Info:    Redeclaring math symbol \npreceq on input line 185.
+LaTeX Font Info:    Redeclaring math symbol \nsucceq on input line 186.
+LaTeX Font Info:    Redeclaring math symbol \precnsim on input line 187.
+LaTeX Font Info:    Redeclaring math symbol \succnsim on input line 188.
+LaTeX Font Info:    Redeclaring math symbol \lnsim on input line 189.
+LaTeX Font Info:    Redeclaring math symbol \gnsim on input line 190.
+LaTeX Font Info:    Redeclaring math symbol \nleqq on input line 191.
+LaTeX Font Info:    Redeclaring math symbol \ngeqq on input line 192.
+LaTeX Font Info:    Redeclaring math symbol \precneqq on input line 193.
+LaTeX Font Info:    Redeclaring math symbol \succneqq on input line 194.
+LaTeX Font Info:    Redeclaring math symbol \precnapprox on input line 195.
+LaTeX Font Info:    Redeclaring math symbol \succnapprox on input line 196.
+LaTeX Font Info:    Redeclaring math symbol \lnapprox on input line 197.
+LaTeX Font Info:    Redeclaring math symbol \gnapprox on input line 198.
+LaTeX Font Info:    Redeclaring math symbol \nsim on input line 199.
+LaTeX Font Info:    Redeclaring math symbol \ncong on input line 200.
+LaTeX Font Info:    Redeclaring math symbol \diagup on input line 201.
+LaTeX Font Info:    Redeclaring math symbol \diagdown on input line 202.
+LaTeX Font Info:    Redeclaring math symbol \varsubsetneq on input line 203.
+LaTeX Font Info:    Redeclaring math symbol \varsupsetneq on input line 204.
+LaTeX Font Info:    Redeclaring math symbol \nsubseteqq on input line 205.
+LaTeX Font Info:    Redeclaring math symbol \nsupseteqq on input line 206.
+LaTeX Font Info:    Redeclaring math symbol \subsetneqq on input line 207.
+LaTeX Font Info:    Redeclaring math symbol \supsetneqq on input line 208.
+LaTeX Font Info:    Redeclaring math symbol \varsubsetneqq on input line 209.
+LaTeX Font Info:    Redeclaring math symbol \varsupsetneqq on input line 210.
+LaTeX Font Info:    Redeclaring math symbol \subsetneq on input line 211.
+LaTeX Font Info:    Redeclaring math symbol \supsetneq on input line 212.
+LaTeX Font Info:    Redeclaring math symbol \nsubseteq on input line 213.
+LaTeX Font Info:    Redeclaring math symbol \nsupseteq on input line 214.
+LaTeX Font Info:    Redeclaring math symbol \nparallel on input line 215.
+LaTeX Font Info:    Redeclaring math symbol \nmid on input line 216.
+LaTeX Font Info:    Redeclaring math symbol \nshortmid on input line 217.
+LaTeX Font Info:    Redeclaring math symbol \nshortparallel on input line 218.
+LaTeX Font Info:    Redeclaring math symbol \nvdash on input line 219.
+LaTeX Font Info:    Redeclaring math symbol \nVdash on input line 220.
+LaTeX Font Info:    Redeclaring math symbol \nvDash on input line 221.
+LaTeX Font Info:    Redeclaring math symbol \nVDash on input line 222.
+LaTeX Font Info:    Redeclaring math symbol \ntrianglerighteq on input line 223
+.
+LaTeX Font Info:    Redeclaring math symbol \ntrianglelefteq on input line 224.
+
+LaTeX Font Info:    Redeclaring math symbol \ntriangleleft on input line 225.
+LaTeX Font Info:    Redeclaring math symbol \ntriangleright on input line 226.
+LaTeX Font Info:    Redeclaring math symbol \nleftarrow on input line 227.
+LaTeX Font Info:    Redeclaring math symbol \nrightarrow on input line 228.
+LaTeX Font Info:    Redeclaring math symbol \nLeftarrow on input line 229.
+LaTeX Font Info:    Redeclaring math symbol \nRightarrow on input line 230.
+LaTeX Font Info:    Redeclaring math symbol \nLeftrightarrow on input line 231.
+
+LaTeX Font Info:    Redeclaring math symbol \nleftrightarrow on input line 232.
+
+LaTeX Font Info:    Redeclaring math symbol \divideontimes on input line 233.
+LaTeX Font Info:    Redeclaring math symbol \varnothing on input line 234.
+LaTeX Font Info:    Redeclaring math symbol \nexists on input line 235.
+LaTeX Font Info:    Redeclaring math symbol \Finv on input line 236.
+LaTeX Font Info:    Redeclaring math symbol \Game on input line 237.
+LaTeX Font Info:    Redeclaring math symbol \eth on input line 240.
+LaTeX Font Info:    Redeclaring math symbol \eqsim on input line 241.
+LaTeX Font Info:    Redeclaring math symbol \beth on input line 242.
+LaTeX Font Info:    Redeclaring math symbol \gimel on input line 243.
+LaTeX Font Info:    Redeclaring math symbol \daleth on input line 244.
+LaTeX Font Info:    Redeclaring math symbol \lessdot on input line 245.
+LaTeX Font Info:    Redeclaring math symbol \gtrdot on input line 246.
+LaTeX Font Info:    Redeclaring math symbol \ltimes on input line 247.
+LaTeX Font Info:    Redeclaring math symbol \rtimes on input line 248.
+LaTeX Font Info:    Redeclaring math symbol \shortmid on input line 249.
+LaTeX Font Info:    Redeclaring math symbol \shortparallel on input line 250.
+LaTeX Font Info:    Redeclaring math symbol \smallsetminus on input line 251.
+LaTeX Font Info:    Redeclaring math symbol \thicksim on input line 252.
+LaTeX Font Info:    Redeclaring math symbol \thickapprox on input line 253.
+LaTeX Font Info:    Redeclaring math symbol \approxeq on input line 254.
+LaTeX Font Info:    Redeclaring math symbol \succapprox on input line 255.
+LaTeX Font Info:    Redeclaring math symbol \precapprox on input line 256.
+LaTeX Font Info:    Redeclaring math symbol \curvearrowleft on input line 257.
+LaTeX Font Info:    Redeclaring math symbol \curvearrowright on input line 258.
+
+LaTeX Font Info:    Redeclaring math symbol \digamma on input line 259.
+LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 260.
+LaTeX Font Info:    Redeclaring math symbol \Bbbk on input line 261.
+LaTeX Font Info:    Redeclaring math symbol \hslash on input line 262.
+LaTeX Font Info:    Redeclaring math symbol \backepsilon on input line 265.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip54
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks22
+\ex@=\dimen156
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen157
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count273
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count274
+\leftroot@=\count275
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count276
+\DOTSCASE@=\count277
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box58
+\strutbox@=\box59
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen158
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count278
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count279
+\dotsspace@=\muskip16
+\c@parentequation=\count280
+\dspbrk@lvl=\count281
+\tag@help=\toks23
+\row@=\count282
+\column@=\count283
+\maxfields@=\count284
+\andhelp@=\toks24
+\eqnshift@=\dimen159
+\alignsep@=\dimen160
+\tagshift@=\dimen161
+\tagwidth@=\dimen162
+\totwidth@=\dimen163
+\lineht@=\dimen164
+\@envbody=\toks25
+\multlinegap=\skip55
+\multlinetaggap=\skip56
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count285
+\float@exts=\toks27
+\float@box=\box60
+\@float@everytoks=\toks28
+\@floatcapt=\box61
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks29
+\inpenc@posthook=\toks30
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+txr on input line 11
+2.
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txr.fd
+File: t1txr.fd 2000/12/15 v3.1
+))
+(/usr/share/texmf/tex/latex/lm/lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/txr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/txmi/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/txsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/txex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/txr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/txmi/bx/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/txsy/bx/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/txex/bx/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/txr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/txss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/txr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/txtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/txr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/txss/b/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/txr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/txtt/b/n --> OT1/lmtt/m/n on input line 38.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen165
+\lightrulewidth=\dimen166
+\cmidrulewidth=\dimen167
+\belowrulesep=\dimen168
+\belowbottomsep=\dimen169
+\aboverulesep=\dimen170
+\abovetopsep=\dimen171
+\cmidrulesep=\dimen172
+\cmidrulekern=\dimen173
+\defaultaddspace=\dimen174
+\@cmidla=\count286
+\@cmidlb=\count287
+\@aboverulesep=\dimen175
+\@belowrulesep=\dimen176
+\@thisruleclass=\count288
+\@lastruleclass=\count289
+\@thisrulewidth=\dimen177
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen178
+\captionmargin=\dimen179
+\caption@leftmargin=\dimen180
+\caption@rightmargin=\dimen181
+\caption@width=\dimen182
+\caption@indent=\dimen183
+\caption@parindent=\dimen184
+\caption@hangindent=\dimen185
+Package caption Info: elsarticle document class detected.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption-elsarticle.sto
+File: caption-elsarticle.sto 2020/08/22 v2.0 Adaption of the caption package to
+ the elsarticle document class (AR)
+))
+Package caption Info: Option `figurename' requires the `newfloat' package on in
+put line 172.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newfloat/newfloat.sty
+Package: newfloat 2023/10/01 v1.2 Defining new floating environments (AR)
+)
+\c@caption@flags=\count290
+\c@continuedfloat=\count291
+Package caption Info: float package is loaded.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count292
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count293
+)
+(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2023/05/20 line numbers on paragraphs v5.3
+
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+\linenopenalty=\count294
+\output=\toks31
+\linenoprevgraf=\count295
+\linenumbersep=\dimen186
+\linenumberwidth=\dimen187
+\c@linenumber=\count296
+\c@pagewiselinenumber=\count297
+\c@LN@truepage=\count298
+\c@internallinenumber=\count299
+\c@internallinenumbers=\count300
+\quotelinenumbersep=\dimen188
+\bframerule=\dimen189
+\bframesep=\dimen190
+\bframebox=\box62
+\linenoamsmath@ams@eqpen=\count301
+LaTeX Info: Redefining \\ on input line 3180.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count302
+\lst@gtempboxa=\box63
+\lst@token=\toks32
+\lst@length=\count303
+\lst@currlwidth=\dimen191
+\lst@column=\count304
+\lst@pos=\count305
+\lst@lostspace=\dimen192
+\lst@width=\dimen193
+\lst@newlines=\count306
+\lst@lineno=\count307
+\lst@maxwidth=\dimen194
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count308
+\lst@skipnumbers=\count309
+\lst@framebox=\box64
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count310
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+\algocf@hangindent=\skip57
+
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count311
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip58
+\skiplinenumber=\skip59
+\skiprule=\skip60
+\skiphlne=\skip61
+\skiptext=\skip62
+\skiplength=\skip63
+\algomargin=\skip64
+\skipalgocfslide=\skip65
+\algowidth=\dimen195
+\inoutsize=\dimen196
+\inoutindent=\dimen197
+\interspacetitleruled=\dimen198
+\interspacealgoruled=\dimen199
+\interspacetitleboxruled=\dimen256
+\algocf@ruledwidth=\skip66
+\algocf@inoutbox=\box65
+\algocf@inputbox=\box66
+\AlCapSkip=\skip67
+\AlCapHSkip=\skip68
+\algoskipindent=\skip69
+\algocf@nlbox=\box67
+\algocf@hangingbox=\box68
+\algocf@untilbox=\box69
+\algocf@skipuntil=\skip70
+\algocf@capbox=\box70
+\algocf@lcaptionbox=\skip71
+\algoheightruledefault=\skip72
+\algoheightrule=\skip73
+\algotitleheightruledefault=\skip74
+\algotitleheightrule=\skip75
+\c@algocfline=\count312
+\c@algocfproc=\count313
+\c@algocf=\count314
+\algocf@algoframe=\box71
+\algocf@algobox=\box72
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks33
+\XKV@tempa@toks=\toks34
+)
+\XKV@depth=\count315
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box73
+)
+\tc@llx=\dimen257
+\tc@lly=\dimen258
+\tc@urx=\dimen259
+\tc@ury=\dimen260
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen261
+\adjbox@Height=\dimen262
+\adjbox@Depth=\dimen263
+\adjbox@Totalheight=\dimen264
+\adjbox@pwidth=\dimen265
+\adjbox@pheight=\dimen266
+\adjbox@pdepth=\dimen267
+\adjbox@ptotalheight=\dimen268
+
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box74
+\sift@deathcycles=\count316
+\@vwid@loff=\dimen269
+\@vwid@roff=\dimen270
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen271
+\ar@mcellbox=\box75
+\extrarowheight=\dimen272
+\NC@list=\toks35
+\extratabsurround=\skip76
+\backup@length=\skip77
+\ar@cellbox=\box76
+)
+\TX@col@width=\dimen273
+\TX@old@table=\dimen274
+\TX@old@col=\dimen275
+\TX@target=\dimen276
+\TX@delta=\dimen277
+\TX@cols=\count317
+\TX@ftn=\toks36
+)
+(/usr/share/texlive/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen278
+\c@nlinenum=\count318
+\TeXr@lab=\toks37
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box77
+\UL@hyphenbox=\box78
+\UL@skip=\skip78
+\UL@hook=\toks38
+\UL@height=\dimen279
+\UL@pe=\count319
+\UL@pixel=\dimen280
+\ULC@box=\box79
+Package: ulem 2019/11/18
+\ULdepth=\dimen281
+)
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 84
+.
+
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) (./elsarticle-template-num.aux
+
+LaTeX Warning: Label `sec:sensitivity' multiply defined.
+
+
+LaTeX Warning: Label `tab:p-sweep' multiply defined.
+
+)
+\openout1 = `elsarticle-template-num.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 84.
+LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
+84.
+ (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
+File: omltxmi.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 84.
+LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 
+84.
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxsy.fd
+File: omstxsy.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 84.
+LaTeX Font Info:    Trying to load font information for OMX+txex on input line 
+84.
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omxtxex.fd
+File: omxtxex.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 84.
+LaTeX Font Info:    Trying to load font information for U+txexa on input line 8
+4.
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxexa.fd
+File: utxexa.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 84.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count320
+\scratchdimen=\dimen282
+\scratchbox=\box80
+\nofMPsegments=\count321
+\nofMParguments=\count322
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count323
+\MPscratchDim=\dimen283
+\MPnumerator=\count324
+\makeMPintoPDFobject=\count325
+\everyMPtoPDFconversion=\toks40
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* hratio: 1:1
+* vratio: 1:1
+* modes: 
+* h-part:(L,W,R)=(64.75394pt, 468.0pt, 64.75394pt)
+* v-part:(T,H,B)=(111.52342pt, 622.0pt, 111.52342pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=468.0pt
+* \textheight=622.0pt
+* \oddsidemargin=-7.51605pt
+* \evensidemargin=-7.51605pt
+* \topmargin=-22.74657pt
+* \headheight=50.0pt
+* \headsep=12.0pt
+* \topskip=10.0pt
+* \footskip=18.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=24.0pt
+* \skip\footins=24.0pt plus 2.0pt minus 12.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package newfloat Info: `float' package detected.
+\c@lstlisting=\count326
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+52.
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+52.
+
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+152.
+
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+152.
+
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 152.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 152.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 152.
+LaTeX Font Info:    Trying to load font information for OT1+txr on input line 1
+52.
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
+File: ot1txr.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 1
+52.
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
+File: utxmia.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 152
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 152
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 1
+52.
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
+File: utxsyc.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 152.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 152.
+
+Overfull \hbox (2.22221pt too wide) has occurred while \output is active
+[] 
+ []
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/
+dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}]
+[2] [3] [4] [5]
+Overfull \hbox (9.55074pt too wide) in paragraph at lines 278--278
+|[][]
+ []
+
+
+Overfull \hbox (1.01924pt too wide) in paragraph at lines 278--278
+[]|\T1/lmr/m/n/10 Façade/opening| 
+ []
+
+
+Overfull \hbox (1.01924pt too wide) in paragraph at lines 278--278
+[]|\T1/lmr/m/n/10 Façade/opening| 
+ []
+
+
+Overfull \hbox (4.91447pt too wide) in paragraph at lines 278--278
+[]|\T1/lmr/bx/n/10 Room/interior| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\T1/lmr/bx/n/10 Yes (ex-
+ []
+
+[6]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
+90.
+ (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+<visibility.png, id=32, 735.7086pt x 537.207pt>
+File: visibility.png Graphic file (type png)
+<use visibility.png>
+Package pdftex.def Info: visibility.png  used on input line 301.
+(pdftex.def)             Requested size: 374.40143pt x 273.38995pt.
+ [7{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}]
+<bim_models.jpg, id=39, 575.751pt x 305.64188pt>
+File: bim_models.jpg Graphic file (type jpg)
+<use bim_models.jpg>
+Package pdftex.def Info: bim_models.jpg  used on input line 313.
+(pdftex.def)             Requested size: 280.80286pt x 149.07092pt.
+<Grid_based_appraoch.jpg, id=40, 576.65437pt x 301.72725pt>
+File: Grid_based_appraoch.jpg Graphic file (type jpg)
+<use Grid_based_appraoch.jpg>
+Package pdftex.def Info: Grid_based_appraoch.jpg  used on input line 324.
+(pdftex.def)             Requested size: 280.80286pt x 146.93144pt.
+ [8{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/e
+nc/dvips/lm/lm-rm.enc} <./visibility.png>] [9 <./bim_models.jpg> <./Grid_based_
+appraoch.jpg>]
+<ray-casting.jpg, id=53, 447.47176pt x 162.6075pt>
+File: ray-casting.jpg Graphic file (type jpg)
+<use ray-casting.jpg>
+Package pdftex.def Info: ray-casting.jpg  used on input line 350.
+(pdftex.def)             Requested size: 280.80286pt x 102.0413pt.
+ [10 <./ray-casting.jpg>]
+<ray-intersections.jpg, id=57, 629.9535pt x 335.45325pt>
+File: ray-intersections.jpg Graphic file (type jpg)
+<use ray-intersections.jpg>
+Package pdftex.def Info: ray-intersections.jpg  used on input line 380.
+(pdftex.def)             Requested size: 468.0pt x 249.21426pt.
+ [11 <./ray-intersections.jpg>] [12{/usr/share/texmf/fonts/enc/dvips/lm/lm-math
+ex.enc}]
+<fig_memberships.pdf, id=68, 722.7pt x 578.16pt>
+File: fig_memberships.pdf Graphic file (type pdf)
+<use fig_memberships.pdf>
+Package pdftex.def Info: fig_memberships.pdf  used on input line 443.
+(pdftex.def)             Requested size: 468.0pt x 374.39685pt.
+ [13 <./fig_memberships.pdf>] [14]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 5
+47.
+ (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+./elsarticle-template-num.tex:547: Missing $ inserted.
+<inserted text> 
+                $
+l.547 \texttt{build_results.py}
+                               .
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./elsarticle-template-num.tex:547: Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.547 \texttt{build_results.py}
+                               .
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./elsarticle-template-num.tex:548: Missing $ inserted.
+<inserted text> 
+                $
+l.548 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (3.74867pt too wide) in paragraph at lines 549--552
+[]\T1/lmtt/m/n/10 The resulting Privacy Index (PI) values are evaluated in Sec.
+ 5[] using case studies with
+ []
+
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 553.
+
+Overfull \hbox (29.9986pt too wide) in paragraph at lines 554--555
+[]\T1/lmtt/m/n/10 We evaluated the framework along three axes: (i) whether elic
+ited, monotonically decreasing
+ []
+
+
+Overfull \hbox (83.2484pt too wide) in paragraph at lines 554--555
+\T1/lmtt/m/n/10 memberships predict perceived visibility for held-out stimuli; 
+(ii) whether room-scale visibility/privacy
+ []
+
+
+Overfull \hbox (56.99847pt too wide) in paragraph at lines 554--555
+\T1/lmtt/m/n/10 maps align with human judgments; and (iii) robustness to modeli
+ng choices. Unless stated otherwise,
+ []
+
+[15]
+Overfull \hbox (34.48538pt too wide) in paragraph at lines 557--558
+[]\T1/lmtt/m/n/10 We recruited $\OML/lmm/m/it/10 M \OT1/lmr/m/n/10 = \OMS/lmsy/
+m/n/10 h[]i$ \T1/lmtt/m/n/10 adults (normal or corrected-to-normal vision; age 
+$\OMS/lmsy/m/n/10 h[]i ^^F h[]i$\T1/lmtt/m/n/10 years)
+ []
+
+
+Overfull \hbox (30.5542pt too wide) in paragraph at lines 557--558
+\T1/lmtt/m/n/10 via $\OMS/lmsy/m/n/10 h[]i$\T1/lmtt/m/n/10 . The study was appr
+oved by $\OMS/lmsy/m/n/10 h[]i$\T1/lmtt/m/n/10 ; all participants provided info
+rmed
+ []
+
+
+Overfull \hbox (45.63794pt too wide) in paragraph at lines 557--558
+\T1/lmtt/m/n/10 consent. Stimuli were viewed on $\OMS/lmsy/m/n/10 h[]i$ \T1/lmt
+t/m/n/10 at resolution $\OMS/lmsy/m/n/10 h^^Ai$\T1/lmtt/m/n/10 , refresh $\OMS/
+lmsy/m/n/10 h^^Ai$\T1/lmtt/m/n/10 Hz; viewing distance
+ []
+
+
+Overfull \hbox (43.0545pt too wide) in paragraph at lines 557--558
+\T1/lmtt/m/n/10 was $\OMS/lmsy/m/n/10 h^^Ai$\T1/lmtt/m/n/10 cm for monitors. Sc
+enes were generated from the BIM models in Sec. 4.3[] with fixed lighting
+ []
+
+
+Overfull \hbox (8.99866pt too wide) in paragraph at lines 560--561
+[]\T1/lmtt/m/n/10 We created three stimulus sets, varying one factor at a time 
+for elicitation and holding
+ []
+
+
+Overfull \hbox (19.83073pt too wide) in paragraph at lines 563--564
+ \T1/lmr/m/it/10 S1: Dis-tance se-ries (elic-i-ta-tion)..[] \T1/lmtt/m/n/10 A f
+ixed grid point at eye height $\OML/lmm/m/it/10 z \OMS/lmsy/m/n/10 2 f\OT1/lmr/
+m/n/10 0\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 7\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 1
+\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 7\OMS/lmsy/m/n/10 g$\T1/lmtt/m/n/10 m; $\OML/
+lmm/m/it/10 ^^R \OT1/lmr/m/n/10 = 0[]$\T1/lmtt/m/n/10 . Distances
+ []
+
+
+Overfull \hbox (22.74323pt too wide) in paragraph at lines 563--564
+\OML/lmm/m/it/10 d \OMS/lmsy/m/n/10 2 f\OT1/lmr/m/n/10 4\OML/lmm/m/it/10 ; \OT1
+/lmr/m/n/10 8\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 12\OML/lmm/m/it/10 ; \OT1/lmr/m
+/n/10 20\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 30\OMS/lmsy/m/n/10 g$\T1/lmtt/m/n/10
+ m (extendable). Each respondent $\OML/lmm/m/it/10 r$ \T1/lmtt/m/n/10 rated per
+ceived visibility on a 1--5 Likert
+ []
+
+
+Overfull \hbox (0.2815pt too wide) in paragraph at lines 566--567
+ \T1/lmr/m/it/10 S2: An-gle se-ries (elic-i-ta-tion)..[] \T1/lmtt/m/n/10 Same g
+rid point; fixed separation distance $\OML/lmm/m/it/10 d \OT1/lmr/m/n/10 = \OMS
+/lmsy/m/n/10 h[]i$\T1/lmtt/m/n/10 m. Angles
+ []
+
+
+Overfull \hbox (21.54028pt too wide) in paragraph at lines 569--570
+\OMS/lmsy/m/n/10 G$\T1/lmtt/m/n/10 , using 3--4 distances and 3--4 angles |   [
+]   |   [] in S1/S2. These were used only for predictive
+ []
+
+
+Overfull \hbox (8.99866pt too wide) in paragraph at lines 571--572
+[]\T1/lmtt/m/n/10 All sets were randomized per participant; duplicate attention
+-check items were inserted.
+ []
+
+
+Overfull \hbox (46.4985pt too wide) in paragraph at lines 571--572
+\T1/lmtt/m/n/10 Trials failing attention checks were excluded; outliers were re
+moved by median absolute deviation.
+ []
+
+
+Overfull \hbox (20.24858pt too wide) in paragraph at lines 571--572
+\T1/lmtt/m/n/10 We also timed elicitation to compare respondent burden between 
+the monotone procedure and the
+ []
+
+
+Overfull \hbox (20.42871pt too wide) in paragraph at lines 574--575
+[]\T1/lmtt/m/n/10 For each respondent $\OML/lmm/m/it/10 r$\T1/lmtt/m/n/10 , S1 
+and S2 ratings yielded the monotone memberships $\OML/lmm/m/it/10 ^^V[]\OT1/lmr
+/m/n/10 (\OML/lmm/m/it/10 d\OT1/lmr/m/n/10 )$ \T1/lmtt/m/n/10 and $\OML/lmm/m/i
+t/10 ^^V[]\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 ^^R\OT1/lmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (34.04335pt too wide) in paragraph at lines 574--575
+\T1/lmtt/m/n/10 via isotonic regression (Eqs. []--[]). We also formed pooled cu
+rves $[]\OML/lmm/m/it/10 ; []$ \T1/lmtt/m/n/10 (Eqs. []--[]). Where
+ []
+
+
+Overfull \hbox (4.49863pt too wide) in paragraph at lines 574--575
+\T1/lmtt/m/n/10 specified, monotone shape-preserving interpolation was applied 
+after PAVA. In a low-burden
+ []
+
+
+Overfull \hbox (37.83475pt too wide) in paragraph at lines 574--575
+\T1/lmtt/m/n/10 setting we elicited only $\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 d[]
+; d[]\OT1/lmr/m/n/10 )$ \T1/lmtt/m/n/10 and $\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 
+^^R[]; ^^R[]\OT1/lmr/m/n/10 )$ \T1/lmtt/m/n/10 and used the linear special case
+ (Eqs. []--[])
+ []
+
+
+Overfull \hbox (25.09262pt too wide) in paragraph at lines 577--578
+[]\T1/lmtt/m/n/10 Given the fitted memberships, the predicted perceived visibil
+ity for a held-out item $\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 d; ^^R\OT1/lmr/m/n/1
+0 ) \OMS/lmsy/m/n/10 2
+ []
+
+[16]
+Overfull \hbox (25.49857pt too wide) in paragraph at lines 581--584
+\T1/lmtt/m/n/10 This prediction multiplies the distance and angle memberships t
+o estimate perceived visibility
+ []
+
+
+Overfull \hbox (19.07785pt too wide) in paragraph at lines 581--584
+\T1/lmtt/m/n/10 for a new stimulus. or pooled $[]\OT1/lmr/m/n/10 (\OML/lmm/m/it
+/10 d; ^^R\OT1/lmr/m/n/10 ) = [](\OML/lmm/m/it/10 d\OT1/lmr/m/n/10 ) [](\OML/lm
+m/m/it/10 ^^R\OT1/lmr/m/n/10 )$\T1/lmtt/m/n/10 . We evaluated agreement using r
+oot mean
+ []
+
+
+Overfull \hbox (4.49863pt too wide) in paragraph at lines 590--592
+\T1/lmtt/m/n/10 RMSE penalizes large discrepancies whereas MAE reports the aver
+age absolute error over the
+ []
+
+
+Overfull \hbox (14.9986pt too wide) in paragraph at lines 598--601
+\T1/lmtt/m/n/10 Spearman's rank correlation evaluates how well the predicted an
+d observed visibilities order
+ []
+
+
+Overfull \hbox (17.86005pt too wide) in paragraph at lines 598--601
+\T1/lmtt/m/n/10 the held-out stimuli. with $\OML/lmm/m/it/10 S[]\OMS/lmsy/m/n/1
+0 hjGji$ \T1/lmtt/m/n/10 held-out items. For an optional binary ^^Phigh-visibil
+ity^^Q
+ []
+
+
+Overfull \hbox (83.2484pt too wide) in paragraph at lines 604--606
+\T1/lmtt/m/n/10 The area under the ROC curve summarizes binary classification p
+erformance for identifying high-visibility
+ []
+
+
+Overfull \hbox (24.24867pt too wide) in paragraph at lines 632--633
+[]\T1/lmtt/b/n/10 Monotone trend with mild saturation. \T1/lmtt/m/n/10 Points r
+ise with the identity line, indicating that
+ []
+
+
+Overfull \hbox (10.52678pt too wide) in paragraph at lines 632--633
+\T1/lmtt/m/n/10 the multiplicative combination in Eq. [] tracks perceived visib
+ility. Any flattening
+ []
+
+
+Overfull \hbox (13.7487pt too wide) in paragraph at lines 633--634
+[]\T1/lmtt/b/n/10 Heteroscedastic residuals (expected). \T1/lmtt/m/n/10 Varianc
+e is typically larger in the mid-range of
+ []
+
+
+Overfull \hbox (40.02321pt too wide) in paragraph at lines 633--634
+\OML/lmm/m/it/10 H$ \T1/lmtt/m/n/10 where multiple $\OT1/lmr/m/n/10 (\OML/lmm/m
+/it/10 d; ^^R\OT1/lmr/m/n/10 )$ \T1/lmtt/m/n/10 pairs feel similarly visible; n
+ear 0/1 the response is more decisive,
+ []
+
+[17]
+Overfull \hbox (8.49872pt too wide) in paragraph at lines 634--635
+[]\T1/lmtt/b/n/10 Pooled vs. respondent-specific. \T1/lmtt/m/n/10 Pooled marker
+s sit on the central trend, showing good
+ []
+
+
+Overfull \hbox (3.24873pt too wide) in paragraph at lines 634--635
+\T1/lmtt/m/n/10 average calibration. Respondent-specific clouds reveal individu
+al differences (e.g.,
+ []
+
+
+Overfull \hbox (8.49872pt too wide) in paragraph at lines 635--636
+[]\T1/lmtt/b/n/10 Linear special case compresses extremes. \T1/lmtt/m/n/10 When
+ included, its points cluster toward the
+ []
+
+
+Overfull \hbox (29.49866pt too wide) in paragraph at lines 635--636
+\T1/lmtt/m/n/10 center, under-estimating high-visibility and over-estimating lo
+w-visibility items (smaller
+ []
+
+
+Overfull \hbox (35.99854pt too wide) in paragraph at lines 637--638
+\T1/lmtt/m/n/10 These visual patterns align with Table 4[]: monotone fits typic
+ally outperform the linear special
+ []
+
+
+Overfull \hbox (14.91876pt too wide) in paragraph at lines 637--638
+\T1/lmtt/m/n/10 case, while the pooled model approaches respondent-specific per
+formance for ranking (high $\OML/lmm/m/it/10 ^^Z$\T1/lmtt/m/n/10 )
+ []
+
+
+Overfull \hbox (174.276pt too wide) in paragraph at lines 640--641
+[]\T1/lmtt/m/n/10 We compared our pooled model against a published geometric vi
+sibility metric $\OMS/lmsy/m/n/10 h[]i$
+ []
+
+
+Overfull \hbox (64.77628pt too wide) in paragraph at lines 640--641
+\T1/lmtt/m/n/10 implemented on the |   [] rooms, grids, and ray budgets. Baseli
+ne parameters followed $\OMS/lmsy/m/n/10 h[]i$\T1/lmtt/m/n/10 .
+ []
+
+
+Overfull \hbox (7.58163pt too wide) in paragraph at lines 640--641
+\T1/lmtt/m/n/10 We report absolute metrics and improvements $\OT1/lmr/m/n/10 ^^
+A$ \T1/lmtt/m/n/10 relative to the baseline, aggregating across
+ []
+
+
+Overfull \hbox (108.24843pt too wide) in paragraph at lines 671--672
+[]\T1/lmtt/b/n/10 Hotspot localization. \T1/lmtt/m/n/10 By enforcing the window
+-through-window rule and weighting by respondent-calibrated
+ []
+
+
+Overfull \hbox (39.99863pt too wide) in paragraph at lines 671--672
+\T1/lmtt/m/n/10 memberships, our maps (Fig. 9[], left) concentrate exposure whe
+re a real line-of-sight exists.
+ []
+
+
+Overfull \hbox (3.24873pt too wide) in paragraph at lines 671--672
+\T1/lmtt/m/n/10 Baselines that integrate generic view openness often ``smear'' 
+exposure across façades,
+ []
+
+[18]
+Overfull \hbox (29.41882pt too wide) in paragraph at lines 672--673
+[]\T1/lmtt/b/n/10 Ranking vs. absolute error. \T1/lmtt/m/n/10 Table 5[] typical
+ly shows higher $\OML/lmm/m/it/10 ^^Z$ \T1/lmtt/m/n/10 and lower RMSE/MAE for o
+urs,
+ []
+
+
+Overfull \hbox (24.24867pt too wide) in paragraph at lines 672--673
+\T1/lmtt/m/n/10 especially in rooms with competing apertures or oblique approac
+hes. In simple one-window
+ []
+
+
+Overfull \hbox (24.24867pt too wide) in paragraph at lines 673--674
+[]\T1/lmtt/b/n/10 Failure modes to watch. \T1/lmtt/m/n/10 If human ratings are 
+driven by non-geometric cues (glare, social
+ []
+
+
+Overfull \hbox (24.24867pt too wide) in paragraph at lines 673--674
+\T1/lmtt/m/n/10 cues), both methods underperform. We flag these rooms in the su
+pplement and exclude them
+ []
+
+
+Overfull \hbox (16.98714pt too wide) in paragraph at lines 677--678
+ \T1/lmr/m/it/10 Sta-tis-ti-cal test-ing..[] \T1/lmtt/m/n/10 For each metric, w
+e compute paired differences per room/respondent and apply
+ []
+
+
+Overfull \hbox (8.50716pt too wide) in paragraph at lines 677--678
+\T1/lmtt/m/n/10 a Wilcoxon signed-rank test (two-sided, $\OML/lmm/m/it/10 []\O
+T1/lmr/m/n/10 0\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 05$\T1/lmtt/m/n/10 ). Report $
+\OML/lmm/m/it/10 p$\T1/lmtt/m/n/10 -values and effect sizes ($\OML/lmm/m/it/10 
+r[][]$\T1/lmtt/m/n/10 )
+ []
+
+
+Overfull \hbox (10.23483pt too wide) in paragraph at lines 680--681
+[]\T1/lmtt/m/n/10 We selected $\OMS/lmsy/m/n/10 h\OML/lmm/m/it/10 K\OMS/lmsy/m/
+n/10 i$ \T1/lmtt/m/n/10 rooms across the BIM examples in Fig. 2[], computed poi
+nt-level visibility
+ []
+
+
+Overfull \hbox (25.8517pt too wide) in paragraph at lines 680--681
+[][]$ \T1/lmtt/m/n/10 using Eq. [], and derived space privacy $[]$ per Eq. []. 
+Respondents viewed a 10s video
+ []
+
+
+Overfull \hbox (51.74849pt too wide) in paragraph at lines 680--681
+\T1/lmtt/m/n/10 fly-through of each room and rated overall perceived visibility
+ on the same 1--5 scale (normalized).
+ []
+
+
+Overfull \hbox (41.24852pt too wide) in paragraph at lines 684--687
+\T1/lmtt/m/n/10 Taking one minus the privacy index provides a room-level visibi
+lity estimate for each respondent.
+ []
+
+<fuzzy_membership_functions.png, id=135, 835.6821pt x 287.1528pt>
+File: fuzzy_membership_functions.png Graphic file (type png)
+<use fuzzy_membership_functions.png>
+Package pdftex.def Info: fuzzy_membership_functions.png  used on input line 707
+.
+(pdftex.def)             Requested size: 444.59857pt x 152.773pt.
+[19]
+Overfull \hbox (31.10931pt too wide) in paragraph at lines 714--715
+ \T1/lmr/m/it/10 Read-ing Fig. 10[]..[] \T1/lmtt/m/n/10 The left map reveals lo
+calized ^^Phot^^Q directions (e.g., a narrow opposing window)
+ []
+
+
+Overfull \hbox (41.24852pt too wide) in paragraph at lines 714--715
+\T1/lmtt/m/n/10 that drive the room-level rating on the right. Agreement is bes
+t where hotspots are concentrated
+ []
+
+
+Overfull \hbox (25.49857pt too wide) in paragraph at lines 714--715
+\T1/lmtt/m/n/10 and weakest where exposure is diffuse or multi-source; this is 
+reflected in the rank agreement
+ []
+
+
+Overfull \hbox (29.77986pt too wide) in paragraph at lines 718--719
+[]\T1/lmtt/m/n/10 We examined robustness with respect to (i) the soft-max expon
+ent $\OML/lmm/m/it/10 p$\T1/lmtt/m/n/10 , (ii) directional weights
+ []
+
+
+Overfull \hbox (45.55235pt too wide) in paragraph at lines 718--719
+\OML/lmm/m/it/10 ![]$\T1/lmtt/m/n/10 , (iii) uncertainty in the elicited monoto
+ne memberships, and (iv) discretization (grid spacing,
+ []
+
+
+Overfull \hbox (40.35555pt too wide) in paragraph at lines 721--722
+ \T1/lmr/m/it/10 Soft-max ex-po-nent $\OML/lmm/m/it/10 p$\T1/lmr/m/it/10 ..[] \
+T1/lmtt/m/n/10 We swept $\OML/lmm/m/it/10 p \OMS/lmsy/m/n/10 2 f\OT1/lmr/m/n/10
+ 1\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 5\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 10\OML
+/lmm/m/it/10 ; \OT1/lmr/m/n/10 20\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 50\OMS/lmsy
+/m/n/10 g$ \T1/lmtt/m/n/10 in Eq. [] and evaluated: (a) S3 errors (Eq. []);
+ []
+
+
+Overfull \hbox (19.95001pt too wide) in paragraph at lines 721--722
+\T1/lmtt/m/n/10 (b) room ranking stability (Spearman $\OML/lmm/m/it/10 ^^Z$ \T1
+/lmtt/m/n/10 across $\OML/lmm/m/it/10 p$\T1/lmtt/m/n/10 ); and (c) within-room 
+differentiation via the
+ []
+
+
+Overfull \hbox (15.66382pt too wide) in paragraph at lines 721--722
+\T1/lmtt/m/n/10 coefficient of variation of $\OMS/lmsy/m/n/10 f[][]g$\T1/lmtt/m
+/n/10 . We observe a knee near $\OML/lmm/m/it/10 p[]\OT1/lmr/m/n/10 10$\T1/lmtt
+/m/n/10 : larger $\OML/lmm/m/it/10 p$ \T1/lmtt/m/n/10 yields negligible
+ []
+
+<P-value-impacts.jpg, id=140, 536.0025pt x 533.89462pt>
+File: P-value-impacts.jpg Graphic file (type jpg)
+<use P-value-impacts.jpg>
+Package pdftex.def Info: P-value-impacts.jpg  used on input line 725.
+(pdftex.def)             Requested size: 468.0pt x 466.15462pt.
+[20 <./fuzzy_membership_functions.png>] [21 <./P-value-impacts.jpg>]
+Overfull \hbox (1.6118pt too wide) in paragraph at lines 748--749
+ \T1/lmr/m/it/10 Di-rec-tional weights $\OML/lmm/m/it/10 ![]$\T1/lmr/m/it/10 ..
+[] \T1/lmtt/m/n/10 We compared uniform weights ($\OML/lmm/m/it/10 ![][]\OT1/lmr
+/m/n/10 1$\T1/lmtt/m/n/10 ) with spherical-Voronoi solid-angle
+ []
+
+
+Overfull \hbox (35.81606pt too wide) in paragraph at lines 748--749
+\T1/lmtt/m/n/10 areas. Median absolute change in room-level $[]$ (Eq. []) was $
+\OMS/lmsy/m/n/10 h^^Ai$\T1/lmtt/m/n/10 , with room rankings virtually
+ []
+
+
+Overfull \hbox (8.4363pt too wide) in paragraph at lines 751--752
+ \T1/lmr/m/it/10 Un-cer-tainty in mono-tone mem-ber-ships..[] \T1/lmtt/m/n/10 W
+e computed 95% CIs for $[]\OML/lmm/m/it/10 ; []$ \T1/lmtt/m/n/10 via nonparamet
+ric bootstrap
+ []
+
+
+Overfull \hbox (6.52669pt too wide) in paragraph at lines 751--752
+\T1/lmtt/m/n/10 over trials/levels and propagated draws through Eq. [] to obtai
+n VI map envelopes (median
+ []
+
+
+Overfull \hbox (15.05421pt too wide) in paragraph at lines 751--752
+\T1/lmtt/m/n/10 absolute map difference $\OMS/lmsy/m/n/10 h^^Ai$\T1/lmtt/m/n/10
+ ). Leave-one-level-out validation for S1/S2 kept S3 errors within
+ []
+
+
+Overfull \hbox (26.09161pt too wide) in paragraph at lines 754--755
+ \T1/lmr/m/it/10 Dis-cretiza-tion: grid spac-ing and rays per point..[] \T1/lmt
+t/m/n/10 We varied grid spacing $\OT1/lmr/m/n/10 ^^A \OMS/lmsy/m/n/10 2 f\OT1/l
+mr/m/n/10 0\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 5\OML/lmm/m/it/10 ; \OT1/lmr/m/n/1
+0 1\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 2\OML/
+lmm/m/it/10 :\OT1/lmr/m/n/10 0\OMS/lmsy/m/n/10 g$\T1/lmtt/m/n/10 m and rays/poi
+nt
+ []
+
+
+Overfull \hbox (7.30766pt too wide) in paragraph at lines 754--755
+\T1/lmtt/m/n/10 (VI units); room rankings remained stable ($\OML/lmm/m/it/10 ^^
+Z \OMS/lmsy/m/n/10 ^^U h^^Ai$\T1/lmtt/m/n/10 ). Throughput and runtime are repo
+rted in
+ []
+
+
+Overfull \hbox (132.2688pt too wide) in paragraph at lines 757--758
+ \T1/lmr/m/it/10 In-ter-pre-ta-tion bands (vi-su-al-iza-tion only)..[] \T1/lmtt
+/m/n/10 For figures we map continuous $[]$ to five bands (very low/low/moderate
+/high/very
+ []
+
+
+Overfull \hbox (45.33202pt too wide) in paragraph at lines 757--758
+\T1/lmtt/m/n/10 high) using $\OMS/lmsy/m/n/10 f\OT1/lmr/m/n/10 0\OML/lmm/m/it/1
+0 ; \OT1/lmr/m/n/10 0\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 2\OML/lmm/m/it/10 ; \OT1
+/lmr/m/n/10 0\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 4\OML/lmm/m/it/10 ; \OT1/lmr/m/n
+/10 0\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 6\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 0\OM
+L/lmm/m/it/10 :\OT1/lmr/m/n/10 8\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 1\OMS/lmsy/m
+/n/10 g$\T1/lmtt/m/n/10 . Bands do not affect computation, fitting, or validati
+on; analyses
+ []
+
+
+Overfull \hbox (2.51965pt too wide) in paragraph at lines 760--761
+[]\T1/lmtt/m/n/10 Figure 6[] (Methods) illustrates $\OML/lmm/m/it/10 ^^V[]$ \T1
+/lmtt/m/n/10 for a representative participant $\OML/lmm/m/it/10 r[]$\T1/lmtt/m/
+n/10 , with a steeper
+ []
+
+
+Overfull \hbox (4.38298pt too wide) in paragraph at lines 760--761
+\T1/lmtt/m/n/10 early drop-off than the pooled curve; $\OML/lmm/m/it/10 ^^V[]$ 
+\T1/lmtt/m/n/10 shows higher sensitivity to oblique angles. On
+ []
+
+
+Overfull \hbox (9.35783pt too wide) in paragraph at lines 760--761
+\T1/lmtt/m/n/10 S3, this participant achieved $[][][]\OMS/lmsy/m/n/10 h^^Ai$\T1
+/lmtt/m/n/10 , $[][][]\OMS/lmsy/m/n/10 h^^Ai$\T1/lmtt/m/n/10 , and $\OML/lmm/m/
+it/10 ^^Z[][]\OMS/lmsy/m/n/10 h^^Ai$ \T1/lmtt/m/n/10 (Eqs. 15[]--16[]). At room
+
+ []
+
+
+Overfull \hbox (45.74855pt too wide) in paragraph at lines 763--764
+[]\T1/lmtt/m/n/10 To quantify the trade-off between respondent burden and accur
+acy, we compared the two-parameter
+ []
+
+
+Overfull \hbox (25.49857pt too wide) in paragraph at lines 763--764
+\T1/lmtt/m/n/10 linear memberships (Eqs. 7[]--8[]) against monotone fits using 
+identical S3 held-out items. Linear
+ []
+
+
+Overfull \hbox (32.61015pt too wide) in paragraph at lines 763--764
+\T1/lmtt/m/n/10 elicitation reduced per-respondent time by $\OMS/lmsy/m/n/10 h^
+^Ai$\T1/lmtt/m/n/10 % (median) but increased S3 RMSE by $\OMS/lmsy/m/n/10 h^^Ai
+$ \T1/lmtt/m/n/10 and reduced
+ []
+
+
+Overfull \hbox (35.97432pt too wide) in paragraph at lines 763--764
+\T1/lmtt/m/n/10 Spearman $\OML/lmm/m/it/10 ^^Z$ \T1/lmtt/m/n/10 by $\OMS/lmsy/m
+/n/10 h^^Ai$ \T1/lmtt/m/n/10 (Table 4[]). In room-level validation (Table 6[]) 
+the pooled linear model remained
+ []
+
+
+Overfull \hbox (41.24852pt too wide) in paragraph at lines 763--764
+\T1/lmtt/m/n/10 competitive for ranking but under-estimated hotspots in rooms w
+ith multiple competing sightlines. 
+ []
+
+[22]
+Overfull \hbox (3.74867pt too wide) in paragraph at lines 767--768
+[]\T1/lmtt/m/n/10 We assessed robustness to modeling and discretization choices
+ along five axes: (i) the
+ []
+
+
+Overfull \hbox (26.36174pt too wide) in paragraph at lines 767--768
+\T1/lmtt/m/n/10 soft-max exponent $\OML/lmm/m/it/10 p$ \T1/lmtt/m/n/10 in Eq. [
+]; (ii) directional weights $\OML/lmm/m/it/10 ![]$\T1/lmtt/m/n/10 ; (iii) uncer
+tainty in the elicited
+ []
+
+
+Overfull \hbox (14.9986pt too wide) in paragraph at lines 767--768
+\T1/lmtt/m/n/10 monotone memberships; (iv) discretization choices (grid spacing
+ and rays per point); and (v)
+ []
+
+
+Overfull \hbox (15.1012pt too wide) in paragraph at lines 767--768
+\T1/lmtt/m/n/10 the definition of the forward direction $[]$. Unless stated oth
+erwise, summaries are reported
+ []
+
+
+Overfull \hbox (17.30798pt too wide) in paragraph at lines 770--771
+[]\T1/lmtt/m/n/10 We varied $\OML/lmm/m/it/10 p \OMS/lmsy/m/n/10 2 f\OT1/lmr/m/
+n/10 1\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 5\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 10
+\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 20\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 50\OMS/
+lmsy/m/n/10 g$ \T1/lmtt/m/n/10 in Eq. [] and evaluated three criteria: (a) pred
+iction error
+ []
+
+
+Overfull \hbox (30.74855pt too wide) in paragraph at lines 770--771
+\T1/lmtt/m/n/10 on held-out stimuli; (b) stability of room rankings; (c) within
+-room differentiation. Figure 7[]
+ []
+
+
+Overfull \hbox (41.02156pt too wide) in paragraph at lines 773--774
+ \T1/lmr/m/it/10 Met-rics..[] \T1/lmtt/m/n/10 Prediction error follows Eq. []. 
+Ranking stability is the Spearman correlation between
+ []
+
+
+Overfull \hbox (9.52988pt too wide) in paragraph at lines 773--774
+\T1/lmtt/m/n/10 room-level visibilities across $\OML/lmm/m/it/10 p$ \T1/lmtt/m/
+n/10 values. Within-room differentiation is the coefficient of
+ []
+
+
+Overfull \hbox (25.49857pt too wide) in paragraph at lines 779--782
+\T1/lmtt/m/n/10 This coefficient of variation measures the relative spread of v
+isibility values within a room.
+ []
+
+
+Overfull \hbox (26.67244pt too wide) in paragraph at lines 779--782
+\T1/lmtt/m/n/10 We also quantify |   []   |   [] via Jaccard overlap between th
+e top-$\OML/lmm/m/it/10 q$\T1/lmtt/m/n/10 % points (we use $\OML/lmm/m/it/10 q[
+]\OT1/lmr/m/n/10 10$\T1/lmtt/m/n/10 )
+ []
+
+
+Overfull \hbox (41.02979pt too wide) in paragraph at lines 787--789
+\T1/lmtt/m/n/10 The Jaccard index quantifies the overlap between hotspot sets p
+roduced by two different $\OML/lmm/m/it/10 p$ \T1/lmtt/m/n/10 values. 
+ []
+
+
+Overfull \hbox (29.67763pt too wide) in paragraph at lines 791--792
+ \T1/lmr/m/it/10 Find-ings..[] \T1/lmtt/m/n/10 A clear knee appears near $\OML/
+lmm/m/it/10 p[]\OT1/lmr/m/n/10 10$\T1/lmtt/m/n/10 : larger $\OML/lmm/m/it/10 p$
+ \T1/lmtt/m/n/10 offers negligible ranking gains but reduces
+ []
+
+
+Overfull \hbox (16.80789pt too wide) in paragraph at lines 791--792
+\T1/lmtt/m/n/10 within-room differentiation (hotspot saturation). Top-10% Jacca
+rd overlaps between $\OML/lmm/m/it/10 p[]\OT1/lmr/m/n/10 10$ \T1/lmtt/m/n/10 an
+d
+ []
+
+
+Overfull \hbox (8.36809pt too wide) in paragraph at lines 805--816
+ [][] 
+ []
+
+[23]
+Overfull \hbox (13.0925pt too wide) in paragraph at lines 819--820
+ \T1/lmr/m/it/10 Prac-ti-cal de-fault..[] \T1/lmtt/m/n/10 Use $\OML/lmm/m/it/10
+ p[]\OT1/lmr/m/n/10 10$ \T1/lmtt/m/n/10 by default; consider $\OML/lmm/m/it/10 
+p[]\OT1/lmr/m/n/10 20$ \T1/lmtt/m/n/10 for single-aperture dominance and $\OML/
+lmm/m/it/10 p[]\OT1/lmr/m/n/10 4$\T1/lmtt/m/n/10 --$\OT1/lmr/m/n/10 10$
+ []
+
+
+Overfull \hbox (47.08041pt too wide) in paragraph at lines 822--823
+[]\T1/lmtt/m/n/10 We compared uniform weights ($\OML/lmm/m/it/10 ![][]\OT1/lmr/
+m/n/10 1$\T1/lmtt/m/n/10 ) with spherical-Voronoi solid-angle areas for our ico
+sahedral
+ []
+
+
+Overfull \hbox (36.48924pt too wide) in paragraph at lines 825--826
+ \T1/lmr/m/it/10 Met-rics..[] \T1/lmtt/m/n/10 Let $[]$ and $[]$ be room-level v
+isibilities (Eq. []) under the two choices. We report
+ []
+
+
+Overfull \hbox (41.24852pt too wide) in paragraph at lines 829--832
+\T1/lmtt/m/n/10 This statistic reports the median absolute change in room-level
+ visibility when replacing uniform
+ []
+
+
+Overfull \hbox (20.12047pt too wide) in paragraph at lines 829--832
+\T1/lmtt/m/n/10 directional weights with Voronoi-based areas. and ranking stabi
+lity $\OML/lmm/m/it/10 ^^Z\OT1/lmr/m/n/10 ([]\OML/lmm/m/it/10 ; []\OT1/lmr/m/n/
+10 )$ \T1/lmtt/m/n/10 across rooms. 
+ []
+
+
+Overfull \hbox (9.89288pt too wide) in paragraph at lines 834--835
+ \T1/lmr/m/it/10 Find-ings..[] \T1/lmtt/m/n/10 Directional weights made only sm
+all changes to $[]$ and left room rankings virtually
+ []
+
+
+Overfull \hbox (3.98685pt too wide) in paragraph at lines 851--852
+[]\T1/lmtt/m/n/10 We quantified uncertainty in $\OML/lmm/m/it/10 ^^V[]$ \T1/lmt
+t/m/n/10 and $\OML/lmm/m/it/10 ^^V[]$ \T1/lmtt/m/n/10 by bootstrap and leave-on
+e-level-out validation,
+ []
+
+
+Overfull \hbox (50.90645pt too wide) in paragraph at lines 854--855
+ \T1/lmr/m/it/10 Boot-strap prop-a-ga-tion..[] \T1/lmtt/m/n/10 For each factor 
+and respondent (or pooled), we draw $\OML/lmm/m/it/10 B$ \T1/lmtt/m/n/10 resamp
+les of elicitation
+ []
+
+
+Overfull \hbox (22.27664pt too wide) in paragraph at lines 854--855
+\T1/lmtt/m/n/10 data, refit isotonic curves, and propagate each draw through Eq
+. [] to obtain a distribution
+ []
+
+[24]
+Overfull \hbox (51.74849pt too wide) in paragraph at lines 858--861
+\T1/lmtt/m/n/10 This median absolute difference captures how much the visibilit
+y at a point varies across bootstrap
+ []
+
+
+Overfull \hbox (22.26987pt too wide) in paragraph at lines 863--864
+ \T1/lmr/m/it/10 Find-ings..[] \T1/lmtt/m/n/10 Pooled $[]\OML/lmm/m/it/10 ; []$
+ \T1/lmtt/m/n/10 exhibit narrow CIs; propagated variation produces small map di
+fferences
+ []
+
+
+Overfull \hbox (14.9986pt too wide) in paragraph at lines 863--864
+\T1/lmtt/m/n/10 and stable room rankings. Leave-one-level-out errors remain clo
+se to S3 results, indicating
+ []
+
+
+Overfull \hbox (3.80797pt too wide) in paragraph at lines 873--874
+[]\T1/lmtt/m/n/10 We varied grid spacing $\OT1/lmr/m/n/10 ^^A \OMS/lmsy/m/n/10 
+2 f\OT1/lmr/m/n/10 0\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 5\OML/lmm/m/it/10 ; \OT1/
+lmr/m/n/10 1\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; \OT1/lmr/m/n/
+10 2\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 0\OMS/lmsy/m/n/10 g$\T1/lmtt/m/n/10 m and
+ rays per point $\OML/lmm/m/it/10 R \OMS/lmsy/m/n/10 2 f\OT1/lmr/m/n/10 812\OML
+/lmm/m/it/10 ; \OT1/lmr/m/n/10 1212\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 1692\OMS/
+lmsy/m/n/10 g$ \T1/lmtt/m/n/10 (Table 2[])
+ []
+
+
+Overfull \hbox (5.30315pt too wide) in paragraph at lines 876--877
+ \T1/lmr/m/it/10 Met-rics..[] \T1/lmtt/m/n/10 Relative to $\OT1/lmr/m/n/10 (^^A
+[]1\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 0[]\OML/lmm/m/it/10 ; R[]\OT1/lmr/m/n/10 1
+212)$\T1/lmtt/m/n/10 , we report the median point-wise absolute difference 
+ []
+
+
+Overfull \hbox (4.49863pt too wide) in paragraph at lines 880--883
+\T1/lmtt/m/n/10 Comparing each setting with the reference using this median dif
+ference reveals sensitivity
+ []
+
+
+Overfull \hbox (25.41873pt too wide) in paragraph at lines 880--883
+\T1/lmtt/m/n/10 to grid spacing and ray count. Spearman $\OML/lmm/m/it/10 ^^Z$ 
+\T1/lmtt/m/n/10 of room rankings, and runtime (Table 3[]). Figure 14[]
+ []
+
+
+Overfull \hbox (17.04424pt too wide) in paragraph at lines 885--886
+\T1/lmtt/m/n/10 runtime scales roughly linearly with $\OML/lmm/m/it/10 N[] \OMS
+/lmsy/m/n/10 ^^B \OML/lmm/m/it/10 R$\T1/lmtt/m/n/10 . The $\OT1/lmr/m/n/10 (1\O
+ML/lmm/m/it/10 :\OT1/lmr/m/n/10 0[]\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 1212)$ \T
+1/lmtt/m/n/10 setting sits near the Pareto
+ []
+
+
+Overfull \hbox (18.13661pt too wide) in paragraph at lines 910--911
+[]\T1/lmtt/m/n/10 We compared two definitions used in the angle formula $\OML/l
+mm/m/it/10 ^^R \OT1/lmr/m/n/10 = []  [] []\OMS/lmsy/m/n/10 f\OT1/lmr/m/n/10 0\O
+ML/lmm/m/it/10 ; []  \OMS/lmsy/m/n/10 ^^A  []g[]$\T1/lmtt/m/n/10 : (F1) outward
+
+ []
+
+
+Overfull \hbox (25.49857pt too wide) in paragraph at lines 910--911
+\T1/lmtt/m/n/10 normal of the nearest primary window; (F2) room principal axis 
+(e.g., longest-wall direction). 
+ []
+
+[25]
+Overfull \hbox (9.68144pt too wide) in paragraph at lines 913--914
+ \T1/lmr/m/it/10 Met-rics and find-ings..[] \T1/lmtt/m/n/10 Across rooms, the m
+edian absolute map difference and rankings between F1
+ []
+
+
+Overfull \hbox (17.558pt too wide) in paragraph at lines 913--914
+\T1/lmtt/m/n/10 and F2 were $\OMS/lmsy/m/n/10 h^^Ai$ \T1/lmtt/m/n/10 and $\OML/
+lmm/m/it/10 ^^Z[]\OMS/lmsy/m/n/10 h^^Ai$\T1/lmtt/m/n/10 , respectively; discrep
+ancies concentrate at interior points far from
+ []
+
+
+Overfull \hbox (3.74867pt too wide) in paragraph at lines 923--928
+[]\T1/lmtt/m/n/10 To complement parameter sweeps without repeating factor elici
+tation (Sec. 4.4[]), we show
+ []
+
+
+Overfull \hbox (20.24858pt too wide) in paragraph at lines 923--928
+\T1/lmtt/m/n/10 how |   [] interventions alter privacy in a specific space (Roo
+m R12), recomputed with the
+ []
+
+
+Overfull \hbox (18.2806pt too wide) in paragraph at lines 923--928
+\T1/lmtt/m/n/10 same sampling and $\OML/lmm/m/it/10 p$\T1/lmtt/m/n/10 : (i) |  
+ [] of the most exposed window by +1.5m, (ii) a |   []   |   [] (0.6m
+ []
+
+
+Overfull \hbox (32.49892pt too wide) in paragraph at lines 923--928
+\T1/lmtt/m/n/10 depth) added to the dominant window, and (iii) |   []   |   [] 
+(+0.2m parapet) to partially occlude
+ []
+
+
+Overfull \hbox (4.49863pt too wide) in paragraph at lines 923--928
+\T1/lmtt/m/n/10 eye-height sightlines. Figure 16[] overlays baseline vs. interv
+ention SPI maps with hotspot
+ []
+
+
+Overfull \hbox (3.55942pt too wide) in paragraph at lines 954--955
+ \T1/lmr/m/it/10 De-sign take-away..[] \T1/lmtt/m/n/10 Small geometric controls
+ (setback/fin/sill height) curb localized hotspots
+ []
+
+
+Overfull \hbox (35.99854pt too wide) in paragraph at lines 954--955
+\T1/lmtt/m/n/10 with minimal impact on average exposure. For privacy-critical r
+ooms, combining a modest setback
+ []
+
+
+Overfull \hbox (8.99866pt too wide) in paragraph at lines 958--959
+[]\T1/lmtt/m/n/10 As urbanization accelerates and cities become denser, balanci
+ng privacy and view quality
+ []
+
+
+Overfull \hbox (20.24858pt too wide) in paragraph at lines 958--959
+\T1/lmtt/m/n/10 in architectural design has become increasingly important. High
+-rise developments, mixed-use
+ []
+
+
+Overfull \hbox (25.49857pt too wide) in paragraph at lines 958--959
+\T1/lmtt/m/n/10 buildings, and compact residential spaces bring diverse occupan
+ts into close proximity, making
+ []
+
+
+Overfull \hbox (14.9986pt too wide) in paragraph at lines 958--959
+\T1/lmtt/m/n/10 privacy crucial for maintaining comfort and well-being. This st
+udy presents a framework for
+ []
+
+
+Overfull \hbox (35.99854pt too wide) in paragraph at lines 958--959
+\T1/lmtt/m/n/10 quantifying the subjective perception of privacy in buildings b
+y integrating visibility analysis
+ []
+
+[26]
+Overfull \hbox (35.24858pt too wide) in paragraph at lines 960--961
+[]\T1/lmtt/m/n/10 The framework is innovative in its approach to privacy assess
+ment. It combines 3D grid-based
+ []
+
+
+Overfull \hbox (4.49863pt too wide) in paragraph at lines 960--961
+\T1/lmtt/m/n/10 visibility maps with fuzzy membership functions, accounting for
+ both physical factors such
+ []
+
+
+Overfull \hbox (20.24858pt too wide) in paragraph at lines 960--961
+\T1/lmtt/m/n/10 as distance and angle, and user perceptions of privacy. Each gr
+id point is used to calculate
+ []
+
+
+Overfull \hbox (41.24852pt too wide) in paragraph at lines 960--961
+\T1/lmtt/m/n/10 privacy, reflecting the diverse perceptions of privacy that may
+ arise depending on the occupant's
+ []
+
+
+Overfull \hbox (41.24852pt too wide) in paragraph at lines 960--961
+\T1/lmtt/m/n/10 position within the room. The methodology explicitly considers 
+spatial configurations in privacy
+ []
+
+
+Overfull \hbox (62.24846pt too wide) in paragraph at lines 960--961
+\T1/lmtt/m/n/10 evaluations, ensuring that the layout and design of each buildi
+ng are considered into the assessment.
+ []
+
+
+Overfull \hbox (35.99854pt too wide) in paragraph at lines 960--961
+\T1/lmtt/m/n/10 BIM-based 3D analysis allows the simulation of visibility acros
+s different points in a building,
+ []
+
+
+Overfull \hbox (4.49863pt too wide) in paragraph at lines 960--961
+\T1/lmtt/m/n/10 using rays cast from grid locations to generate privacy indices
+. Experiments validate the
+ []
+
+
+Overfull \hbox (83.2484pt too wide) in paragraph at lines 960--961
+\T1/lmtt/m/n/10 framework's effectiveness, showing how design elements^^Vsuch a
+s window size and room configurations^^Vaffect
+ []
+
+
+Overfull \hbox (61.4985pt too wide) in paragraph at lines 962--963
+[]\T1/lmtt/m/n/10 This study contributes to architectural design in several way
+s. It introduces a novel integration
+ []
+
+
+Overfull \hbox (4.49863pt too wide) in paragraph at lines 962--963
+\T1/lmtt/m/n/10 of grid-based visibility maps and fuzzy logic, offering a more 
+comprehensive framework for
+ []
+
+
+Overfull \hbox (14.9986pt too wide) in paragraph at lines 962--963
+\T1/lmtt/m/n/10 understanding how design choices impact privacy. The methodolog
+y also incorporates building
+ []
+
+
+Overfull \hbox (35.99854pt too wide) in paragraph at lines 962--963
+\T1/lmtt/m/n/10 spatial configurations into privacy evaluations, marking a sign
+ificant improvement over previous
+ []
+
+
+Overfull \hbox (62.24846pt too wide) in paragraph at lines 962--963
+\T1/lmtt/m/n/10 models. Additionally, the use of user-centric fuzzy membership 
+functions and the softmax aggregation
+ []
+
+
+Overfull \hbox (20.24858pt too wide) in paragraph at lines 962--963
+\T1/lmtt/m/n/10 technique for raycast evaluations enhances modeling perception 
+and subjectivity in visibility
+ []
+
+
+Overfull \hbox (14.9986pt too wide) in paragraph at lines 962--963
+\T1/lmtt/m/n/10 analysis methods. By leveraging BIM's hierarchical structure an
+d bounding boxes, the method
+ []
+
+
+Overfull \hbox (30.74855pt too wide) in paragraph at lines 962--963
+\T1/lmtt/m/n/10 improves the efficiency of raycast evaluations, making it appli
+cable to large-scale, real-world
+ []
+
+
+Overfull \hbox (41.24852pt too wide) in paragraph at lines 962--963
+\T1/lmtt/m/n/10 projects. The data-driven nature of this approach empowers desi
+gners to optimize spatial layouts
+ []
+
+
+Overfull \hbox (56.99847pt too wide) in paragraph at lines 962--963
+\T1/lmtt/m/n/10 and window placements while balancing privacy with other archit
+ectural qualities such as aesthetics,
+ []
+
+
+Overfull \hbox (30.74855pt too wide) in paragraph at lines 962--963
+\T1/lmtt/m/n/10 light access, and ventilation. Its versatility makes it a valua
+ble tool for architects working
+ []
+
+
+Overfull \hbox (13.30365pt too wide) in paragraph at lines 965--967
+ \T1/lmr/m/it/10 Con-tri-bu-tions..[] \T1/lmtt/m/n/10 This work introduces a pe
+rception-grounded, BIM-native framework for assessing
+ []
+
+
+Overfull \hbox (13.7487pt too wide) in paragraph at lines 967--968
+[]\T1/lmtt/b/n/10 Window-through-window visibility metric. \T1/lmtt/m/n/10 We f
+ormalize a ray-based pipeline that counts
+ []
+
+
+Overfull \hbox (18.99869pt too wide) in paragraph at lines 967--968
+\T1/lmtt/m/n/10 only |   [] lines of sight, converting per-ray hits into a Ray 
+Visibility
+ []
+
+
+Overfull \hbox (18.99869pt too wide) in paragraph at lines 967--968
+\T1/lmtt/m/n/10 Index (RVI) and aggregating to point- and space-level indices (
+VI, SPI) suited to design
+ []
+
+[27]
+Overfull \hbox (3.24873pt too wide) in paragraph at lines 968--969
+[]\T1/lmtt/b/n/10 Human-elicited monotone memberships. \T1/lmtt/m/n/10 We elici
+t respondent judgments for |   [] and
+ []
+
+
+Overfull \hbox (8.49872pt too wide) in paragraph at lines 968--969
+|   []   |   [] \T1/lmtt/m/n/10 and fit monotone (piecewise) functions to obtai
+n (i) |   []
+ []
+
+
+Overfull \hbox (13.7487pt too wide) in paragraph at lines 969--970
+[]\T1/lmtt/b/n/10 Soft-max pooling for ^^Photspot vs. average^^Q control. \T1/l
+mtt/m/n/10 We propose a soft-max aggregation
+ []
+
+
+Overfull \hbox (8.06125pt too wide) in paragraph at lines 969--970
+\T1/lmtt/m/n/10 with exponent $\OML/lmm/m/it/10 p$ \T1/lmtt/m/n/10 to balance s
+ensitivity to localized hotspots (higher $\OML/lmm/m/it/10 p$\T1/lmtt/m/n/10 ) 
+versus overall
+ []
+
+
+Overfull \hbox (24.24867pt too wide) in paragraph at lines 970--971
+[]\T1/lmtt/b/n/10 Predictive validation against held-out human ratings. \T1/lmt
+t/m/n/10 Using a held-out set (S3), we show
+ []
+
+
+Overfull \hbox (37.47438pt too wide) in paragraph at lines 970--971
+\T1/lmtt/m/n/10 that our privacy proxy $[]$ predicts perceived privacy with str
+ong agreement (RMSE/MAE/$\OML/lmm/m/it/10 ^^Z$\T1/lmtt/m/n/10 /AUC),
+ []
+
+
+Overfull \hbox (3.03pt too wide) in paragraph at lines 971--972
+[]\T1/lmtt/b/n/10 Sensitivity, ablations, and practical guidance. \T1/lmtt/m/n/
+10 We quantify impacts of $\OML/lmm/m/it/10 p$\T1/lmtt/m/n/10 , membership
+ []
+
+
+Overfull \hbox (34.74864pt too wide) in paragraph at lines 971--972
+\T1/lmtt/m/n/10 weights, ray count, grid scheme, and discretization; we also co
+mpare a two-parameter |   []
+ []
+
+
+Overfull \hbox (13.7487pt too wide) in paragraph at lines 971--972
+\T1/lmtt/m/n/10 elicitation (faster) versus full monotone fits (more accurate),
+ providing time^^Uaccuracy
+ []
+
+
+Overfull \hbox (8.49872pt too wide) in paragraph at lines 972--973
+[]\T1/lmtt/b/n/10 Reproducible BIM/Three.js implementation and scalability temp
+late. \T1/lmtt/m/n/10 We report runtimes
+ []
+
+
+Overfull \hbox (13.7487pt too wide) in paragraph at lines 972--973
+\T1/lmtt/m/n/10 and scaling (rays, elements, scene size) and provide a minimal 
+reproduction pack (scene
+ []
+
+
+Overfull \hbox (66.74849pt too wide) in paragraph at lines 976--977
+[]\T1/lmtt/m/n/10 Several promising directions for future research can further 
+enhance the framework's applicability.
+ []
+
+
+Overfull \hbox (62.24846pt too wide) in paragraph at lines 976--977
+\T1/lmtt/m/n/10 One key area is the development of culturally specific membersh
+ip functions, enabling region-specific
+ []
+
+
+Overfull \hbox (25.49857pt too wide) in paragraph at lines 976--977
+\T1/lmtt/m/n/10 privacy assessments and architectural guidelines. Another avenu
+e involves integrating privacy
+ []
+
+
+Overfull \hbox (51.74849pt too wide) in paragraph at lines 976--977
+\T1/lmtt/m/n/10 metrics with building layout optimization algorithms to balance
+ privacy with other design features,
+ []
+
+
+Overfull \hbox (51.74849pt too wide) in paragraph at lines 976--977
+\T1/lmtt/m/n/10 such as natural light, ventilation, and spatial efficiency, esp
+ecially in dense urban environments.
+ []
+
+
+Overfull \hbox (9.74861pt too wide) in paragraph at lines 976--977
+\T1/lmtt/m/n/10 Finally, advancing user-centric fuzzy logic approaches to evalu
+ate other subjective aspects
+ []
+
+
+Overfull \hbox (14.9986pt too wide) in paragraph at lines 976--977
+\T1/lmtt/m/n/10 of architecture---such as view quality, aesthetic preferences, 
+and noise levels---can pave the
+ []
+
+
+Overfull \hbox (4.49863pt too wide) in paragraph at lines 976--977
+\T1/lmtt/m/n/10 way for a comprehensive framework that optimizes designs to acc
+ommodate a diverse spectrum
+ []
+
+
+Overfull \hbox (19.49863pt too wide) in paragraph at lines 980--981
+[]\T1/lmtt/m/n/10 During the preparation of this work the authors used ChatGPT 
+4 in order to improve writing
+ []
+
+
+Overfull \hbox (20.24858pt too wide) in paragraph at lines 980--981
+\T1/lmtt/m/n/10 style. After using this tool, the authors reviewed and edited t
+he content as needed and take
+ []
+
+(./elsarticle-template-num.bbl
+Overfull \hbox (4.5pt too wide) in paragraph at lines 9--14
+[]\T1/lmtt/m/n/8 N. Hariram, K. Mekha, V. Suganthan, K. Sudhakar, Sustainalism:
+ An integrated socio-economic-environmental
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--14
+\T1/lmtt/m/n/8 model to address sustainable development and sustainability, Sus
+tainability 15 (13) (2023) 10682.
+ []
+
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 16--21
+[]\T1/lmtt/m/n/8 J. Mensah, Sustainable development: Meaning, history, principl
+es, pillars, and implications
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--21
+\T1/lmtt/m/n/8 for human action: Literature review, Cogent social sciences 5 (1
+) (2019) 1653531.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--28
+[]\T1/lmtt/m/n/8 L. Lima, E. Trindade, L. Alencar, M. Alencar, L. Silva, Sustai
+nability in the construction
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--28
+\T1/lmtt/m/n/8 industry: A systematic review of the literature, Journal of Clea
+ner Production 289 (2021) 125730.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--36
+[]\T1/lmtt/m/n/8 Y. T. Negash, A. M. Hassan, M.-L. Tseng, K.-J. Wu, M. H. Ali, 
+Sustainable construction and demolition
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--36
+\T1/lmtt/m/n/8 waste management in somaliland: Regulatory barriers lead to tech
+nical and environmental barriers,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--44
+[]\T1/lmtt/m/n/8 S. Mousavi, M. G. Villarreal-Marroquín, M. Hajiaghaei-Keshteli
+, N. R. Smith, Data-driven prediction
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--44
+\T1/lmtt/m/n/8 and optimization toward net-zero and positive-energy buildings: 
+A systematic review, Building and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--52
+[]\T1/lmtt/m/n/8 N. S. N. Arman, R. S. Chen, S. Ahmad, Review of state-of-the-a
+rt studies on the water absorption
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--52
+\T1/lmtt/m/n/8 capacity of agricultural fiber-reinforced polymer composites for
+ sustainable construction, Construction
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--59
+[]\T1/lmtt/m/n/8 C. Debrah, A. P. C. Chan, A. Darko, Green finance gap in green
+ buildings: A scoping review and future
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--66
+[]\T1/lmtt/m/n/8 S. Y^^Yld^^Yz, S. K^^Yvrak, A. B. Gültekin, G. Arslan, Built e
+nvironment design-social sustainability relation
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--73
+[]\T1/lmtt/m/n/8 A. Faraji, M. Rashidi, F. Rezaei, P. Rahnamayiezekavat, A meta
+-synthesis review of occupant comfort
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--80
+[]\T1/lmtt/m/n/8 F. Abd-Alhamid, M. Kent, Y. Wu, Quantifying window view qualit
+y: A review on view perception
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--80
+\T1/lmtt/m/n/8 assessment and representation methods, Building and Environment 
+227 (2023) 109742.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--88
+[]\T1/lmtt/m/n/8 A. Lis, P. Iwankowski, Where do we want to see other people wh
+ile relaxing in a city park? visual
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--88
+\T1/lmtt/m/n/8 relationships with park users and their impact on preferences, s
+afety and privacy, Journal of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--94
+[]\T1/lmtt/m/n/8 R. Mansor, L. Sheau-Ting, Criteria for occupant well-being: A 
+qualitative study of malaysian office
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--100
+[]\T1/lmtt/m/n/8 I. Elgadra, S. Fotios, Examining female visual privacy as a fu
+nction of window treatments, Lighting
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--107
+[]\T1/lmtt/m/n/8 E. Gago, T. Muneer, M. Knez, H. Köster, Natural light controls
+ and guides in buildings. energy saving
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--107
+\T1/lmtt/m/n/8 for electrical lighting, reduction of cooling load, Renewable an
+d Sustainable Energy Reviews 41 (2015)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--114
+[]\T1/lmtt/m/n/8 R. M. ElBatran, W. S. Ismaeel, Applying a parametric design ap
+proach for optimizing daylighting
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--114
+\T1/lmtt/m/n/8 and visual comfort in office buildings, Ain Shams Engineering Jo
+urnal 12 (3) (2021) 3275--3284.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--122
+[]\T1/lmtt/m/n/8 A. A. S. Bahdad, S. F. S. Fadzil, H. O. Onubi, S. A. BenLasod,
+ Sensitivity analysis linked to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--122
+\T1/lmtt/m/n/8 multi-objective optimization for adjustments of light-shelves de
+sign parameters in response to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--122
+\T1/lmtt/m/n/8 visual comfort and thermal energy performance, Journal of Buildi
+ng Engineering 44 (2021) 102996.
+ []
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 124--130
+[]\T1/lmtt/m/n/8 A. Khani, M. Khakzand, M. Faizi, Multi-objective optimization 
+for energy consumption, visual and thermal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--130
+\T1/lmtt/m/n/8 comfort performance of educational building (case study: Qeshm i
+sland, iran), Sustainable Energy
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--136
+[]\T1/lmtt/m/n/8 P. Lotfabadi, P. Hançer, Optimization of visual comfort: Build
+ing openings, Journal of Building
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--143
+[]\T1/lmtt/m/n/8 J. K. Day, S. Ruiz, W. O'Brien, M. Schweiker, Seeing is believ
+ing: An innovative approach to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--150
+[]\T1/lmtt/m/n/8 Q. J. Kwong, Light level, visual comfort and lighting energy s
+avings potential in a green-certified
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--158
+[]\T1/lmtt/m/n/8 Y.-L. Peng, Y. Li, W.-Y. Cheng, K. Wang, Evaluation and optimi
+zation of sense of security during the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--158
+\T1/lmtt/m/n/8 day and night in campus public spaces based on physical environm
+ent and psychological perception,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--165
+[]\T1/lmtt/m/n/8 M. Kent, S. Schiavon, Evaluation of the effect of landscape di
+stance seen in window views on visual
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--172
+[]\T1/lmtt/m/n/8 J. Kim, R. de Dear, C. Candido, H. Zhang, E. Arens, Gender dif
+ferences in office occupant
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--172
+\T1/lmtt/m/n/8 perception of indoor environmental quality (ieq), Building and e
+nvironment 70 (2013) 245--256.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--178
+[]\T1/lmtt/m/n/8 L. A. Zadeh, Fuzzy logic= computing with words, IEEE transacti
+ons on fuzzy systems 4 (2) (1996) 103--111.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--184
+[]\T1/lmtt/m/n/8 R. B. Shepard, Quantifying environmental impact assessments us
+ing fuzzy logic, Springer, 2005.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--190
+[]\T1/lmtt/m/n/8 L. A. Zadeh, Fuzzy logic^^Va personal perspective, Fuzzy sets 
+and systems 281 (2015) 4--20.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--196
+[]\T1/lmtt/m/n/8 S. Liu, X. Meng, C. Tam, Building information modeling based b
+uilding design optimization for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--203
+[]\T1/lmtt/m/n/8 Y. Lu, Z. Wu, R. Chang, Y. Li, Building information modeling (
+bim) for green buildings:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--203
+\T1/lmtt/m/n/8 A critical review and future directions, Automation in Construct
+ion 83 (2017) 134--148.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--210
+[]\T1/lmtt/m/n/8 H.-Y. Chong, C.-Y. Lee, X. Wang, A mixed review of the adoptio
+n of building information
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--210
+\T1/lmtt/m/n/8 modelling (bim) for sustainability, Journal of cleaner productio
+n 142 (2017) 4114--4126.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--218
+[]\T1/lmtt/m/n/8 C. Llatas, B. Soust-Verdaguer, A. Passer, Implementing life cy
+cle sustainability assessment during
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--218
+\T1/lmtt/m/n/8 design stages in building information modelling: From systematic
+ literature review to a methodological
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--226
+[]\T1/lmtt/m/n/8 O. I. Olanrewaju, A. F. Kineber, N. Chileshe, D. J. Edwards, M
+odelling the relationship between building
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--226
+\T1/lmtt/m/n/8 information modelling (bim) implementation barriers, usage and a
+wareness on building project lifecycle,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--233
+[]\T1/lmtt/m/n/8 R. Askarizad, H. Safari, The influence of social interactions 
+on the behavioral patterns of the people
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--233
+\T1/lmtt/m/n/8 in urban spaces (case study: The pedestrian zone of rasht munici
+pality square, iran), Cities 101 (2020)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--240
+[]\T1/lmtt/m/n/8 N. C. Inglis, J. Vukomanovic, J. Costanza, K. K. Singh, From v
+iewsheds to viewscapes: Trends in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--240
+\T1/lmtt/m/n/8 landscape visibility and visual quality research, Landscape and 
+Urban Planning 224 (2022) 104424.
+ []
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 242--245
+[]\T1/lmtt/m/n/8 M. L. Benedikt, To take hold of space: isovists and isovist fi
+elds, Environment and Planning B:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--251
+[]\T1/lmtt/m/n/8 A. Turner, M. Doxa, D. O'sullivan, A. Penn, From isovists to v
+isibility graphs: a methodology for the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--251
+\T1/lmtt/m/n/8 analysis of architectural space, Environment and Planning B: Pla
+nning and design 28 (1) (2001) 103--121.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--258
+[]\T1/lmtt/m/n/8 A. Hosseini Alamdari, K. Daneshjoo, M. Yeganeh, New algorithms
+ for generating isovist field and isovist
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--258
+\T1/lmtt/m/n/8 measurements, Environment and Planning B: Urban Analytics and Ci
+ty Science 49 (9) (2022) 2331--2344.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--265
+[]\T1/lmtt/m/n/8 L.-M. Misthos, B. Nakos, V. Krassanakis, M. Menegaki, The effe
+ct of topography and elevation on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--265
+\T1/lmtt/m/n/8 viewsheds in mountain landscapes using geovisualization, Interna
+tional Journal of Cartography 5 (1)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--271
+[]\T1/lmtt/m/n/8 M. Gillings, D. Wheatley, Gis-based visibility analysis, in: A
+rchaeological Spatial Analysis,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--279
+[]\T1/lmtt/m/n/8 R. M. Stein, B. Lecigne, J. U. Eitel, T. R. Johnson, C. McGowa
+n, J. L. Rachlow, Vegetation and vantage
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--279
+\T1/lmtt/m/n/8 point influence visibility across diverse ecosystems: Implicatio
+ns for animal ecology, Frontiers in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--285
+[]\T1/lmtt/m/n/8 M. Cavaglià, A. Speroni, J. D. Blanco Cadena, A. G. Mainini, T
+. Poli, Exploring built environment visual
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--285
+\T1/lmtt/m/n/8 interactions: A softbim data-driven approach for a database abou
+t the outdoor view, Buildings 14 (11)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--291
+[]\T1/lmtt/m/n/8 P. F. Fisher, First experiments in viewshed uncertainty: simul
+ating fuzzy viewsheds, Photogrammetric
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--297
+[]\T1/lmtt/m/n/8 P. Fisher, Probable and fuzzy models of the viewshed operation
+, in: Innovations in GIS, CRC Press,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--309
+[]\T1/lmtt/m/n/8 Z. Cimburova, S. Blumentrath, Viewshed-based modelling of visu
+al exposure to urban greenery--an
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--309
+\T1/lmtt/m/n/8 efficient gis tool for practical planning applications, Landscap
+e and Urban Planning 222 (2022) 104395.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--314
+[]\T1/lmtt/m/n/8 P. F. Fisher, Probable and fuzzy models of the viewshed, Innov
+ations In GIS (2024)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--320
+[]\T1/lmtt/m/n/8 F. Biljecki, K. Ito, Street view imagery in urban analytics an
+d gis: A review, Landscape and Urban
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--327
+[]\T1/lmtt/m/n/8 M. Abdelrahman, P. Coates, T. Poppelreuter, Visible outside vi
+ew as a facilitation tool to evaluate view
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--327
+\T1/lmtt/m/n/8 quality and shading systems through building openings, Journal o
+f Building Engineering 80 (2023) 108049.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--333
+[]\T1/lmtt/m/n/8 E. Morello, C. Ratti, A digital image of the city: 3d isovists
+ in lynch's urban analysis, Environment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--340
+[]\T1/lmtt/m/n/8 W. Suleiman, T. Joliveau, E. Favier, A new algorithm for 3d is
+ovists, Advances in Spatial
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--340
+\T1/lmtt/m/n/8 Data Handling: Geospatial Dynamics, Geosimulation and Explorator
+y Visualization (2013)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--346
+[]\T1/lmtt/m/n/8 Y. Chen, J. Chen, A parallel multipoint viewshed analysis meth
+od for urban 3d building scenes,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 348--353
+[]\T1/lmtt/m/n/8 J. Krukar, C. Manivannan, M. Bhatt, C. Schultz, Embodied 3d is
+ovists: A method to model the visual
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 348--353
+\T1/lmtt/m/n/8 perception of space, Environment and Planning B: Urban Analytics
+ and City Science 48 (8) (2021)
+ []
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 355--360
+[]\T1/lmtt/m/n/8 J. R. Parent, Q. Lei-Parent, Rapid viewshed analyses: A case s
+tudy with visibilities limited by trees
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--368
+[]\T1/lmtt/m/n/8 F. Othman, Z. M. Yusoff, A. A. Rasam, Isovist and visibility g
+raph analysis (vga): Strategies to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--368
+\T1/lmtt/m/n/8 evaluate visibility along movement pattern for safe space, in: I
+OP Conference Series: Earth and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 370--375
+[]\T1/lmtt/m/n/8 D. Snopková, L. De Cock, V. Ju°ík, O. Kvarda, M. Tanco², L. He
+rman, P. Kubí£ek, Isovists compactness
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 370--375
+\T1/lmtt/m/n/8 and stairs as predictors of evacuation route choice, Scientific 
+Reports 13 (1) (2023) 2970.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 377--382
+[]\T1/lmtt/m/n/8 Z. Wu, Y. Wang, W. Gan, Y. Zou, W. Dong, S. Zhou, M. Wang, A s
+urvey of the landscape visibility analysis
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 377--382
+\T1/lmtt/m/n/8 tools and technical improvements, International Journal of Envir
+onmental Research and Public Health
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--389
+[]\T1/lmtt/m/n/8 M. H. G. Khaleel, A. M. Assem, The utilization of algorithms i
+n the evaluation of space layout planning
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--389
+\T1/lmtt/m/n/8 in inpatient departments, International Journal of Architectural
+ Engineering and Urban Research 6 (2)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--396
+[]\T1/lmtt/m/n/8 Y. Guo, D. Lai, X. Hu, Measuring river-view visibilities of in
+dividual dwellings for planning of compact
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--402
+[]\T1/lmtt/m/n/8 K. Al-Kodmany, Residential visual privacy: Traditional and mod
+ern architecture and urban design,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--408
+[]\T1/lmtt/m/n/8 Z. A. Rahim, The influence of culture and religion on visual p
+rivacy, Procedia-Social and Behavioral
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 410--415
+[]\T1/lmtt/m/n/8 S. Altomonte, S. Schiavon, Occupant satisfaction in leed and n
+on-leed certified buildings, Building and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 417--423
+[]\T1/lmtt/m/n/8 S. Schiavon, S. Altomonte, Influence of factors unrelated to e
+nvironmental quality on occupant
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 417--423
+\T1/lmtt/m/n/8 satisfaction in leed and non-leed certified buildings, Building 
+and Environment 77 (2014) 148--159.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 425--433
+[]\T1/lmtt/m/n/8 X. Guo, K. Lee, Z. Wang, S. Liu, Occupants' satisfaction with 
+leed- and non-leed-certified
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 425--433
+\T1/lmtt/m/n/8 apartments using social media data, Building and Environment 206
+ (2021) 108288.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--442
+[]\T1/lmtt/m/n/8 London Borough Council, London borough residential design guid
+elines, typical guidelines for residential
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--451
+[]\T1/lmtt/m/n/8 Manchester City Council, Manchester residential quality guide,
+ guidelines for minimum separation
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--460
+[]\T1/lmtt/m/n/8 New South Wales Government, Apartment design guide - nsw, guid
+elines for separation distances based on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 462--469
+[]\T1/lmtt/m/n/8 City of Toronto, Tall building design guidelines, separation d
+istance recommendations for tall buildings
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 471--478
+[]\T1/lmtt/m/n/8 New York City Department of City Planning, New york city zonin
+g handbook, zoning regulations including
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 480--486
+[]\T1/lmtt/m/n/8 N. Alkhalili, T. Kesik, W. O'Brien, T. Peters, Developing and 
+testing visual privacy metrics, in:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 480--486
+\T1/lmtt/m/n/8 Proceedings of the 7th International Building Physics Conference
+ (IBPC 2018), Syracuse, NY, 2018, pp.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 488--492
+[]\T1/lmtt/m/n/8 H. Zheng, B. Wu, H. Wei, J. Yan, J. Zhu, A quantitative method
+ for evaluation of visual privacy in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 494--498
+[]\T1/lmtt/m/n/8 A. Churchman, Disentangling the concept of density, Journal of
+ Planning Literature 13 (4) (1999)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 500--505
+[]\T1/lmtt/m/n/8 D. Shach-Pinsly, D. Fisher-Gewirtzman, M. Burt, `visual exposu
+re' analysis model: A
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 500--505
+\T1/lmtt/m/n/8 comparative evaluation of three case studies, Urban Design Inter
+national 12 (2007) 155--168.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--512
+[]\T1/lmtt/m/n/8 D. Shach-Pinsly, D. Fisher-Gewirtzman, M. Burt, Visual exposur
+e and visual openness: An
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--512
+\T1/lmtt/m/n/8 integrated approach and comparative evaluation, Journal of Urban
+ Design 16 (2) (2011) 197--220.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 514--518
+[]\T1/lmtt/m/n/8 D. Fisher-Gewirtzman, I. Wagner, Spatial openness as a practic
+al metric for evaluating built-up
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 520--524
+[]\T1/lmtt/m/n/8 D. Fisher-Gewirtzman, M. Burt, Y. Tzamir, A 3-d visual method 
+for comparative evaluation of dense
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 520--524
+\T1/lmtt/m/n/8 built-up environments, Environment and Planning B: Planning and 
+Design 30 (4) (2003) 575--587.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 526--532
+[]\T1/lmtt/m/n/8 D. Fisher-Gewirtzman, The association between perceived densit
+y in minimum apartments and spatial
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 526--532
+\T1/lmtt/m/n/8 openness index: three-dimensional visual analysis, Environment a
+nd Planning B: Urban Analytics and City
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 534--539
+[]\T1/lmtt/m/n/8 D. Fisher-Gewirtzman, Integrating weighted views to quantitati
+ve 3d visibility analysis as a predictive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 534--539
+\T1/lmtt/m/n/8 tool for perception of space, Environment and Planning B: Urban 
+Analytics and City Science 45 (2) (2018)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--546
+[]\T1/lmtt/m/n/8 H. Zheng, et al., Refining the potential visual exposure index
+ for the assessment of residential visual
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--546
+\T1/lmtt/m/n/8 privacy: A three-dimensional study, Journal of Asian Architectur
+e and Building Engineering 22 (5)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 548--552
+[]\T1/lmtt/m/n/8 F. Abd-Alhamid, et al., Quantifying window view quality: A rev
+iew on metrics, methods, and research
+ []
+
+) [33] (./elsarticle-template-num.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+ ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 547 ({)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 12673 strings out of 476106
+ 198974 string characters out of 5793934
+ 1938975 words of memory out of 5000000
+ 34434 multiletter control sequences out of 15000+600000
+ 639939 words of font info for 106 fonts, out of 8000000 for 9000
+ 59 hyphenation exceptions out of 8191
+ 72i,18n,79p,1506b,649s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/l
+mex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmmi5.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr
+/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/publ
+ic/lm/lmr5.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmri7.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm
+/lmtk10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/symbols/msbm10.pfb>
+Output written on elsarticle-template-num.pdf (33 pages, 1252593 bytes).
+PDF statistics:
+ 309 PDF objects out of 1000 (max. 8388607)
+ 171 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: elsarticle-template-num.aux
+The style file: elsarticle-num.bst
+Database file #1: cas-refs.bib
+Warning--can't use both volume and number fields in othman2019
+You've used 78 entries,
+            2952 wiz_defined-function locations,
+            1215 strings with 22339 characters,
+and the built_in function-call counts, 24967 in all, are:
+= -- 2561
+> -- 714
+< -- 5
++ -- 290
+- -- 212
+* -- 2069
+:= -- 3353
+add.period$ -- 153
+call.type$ -- 78
+change.case$ -- 83
+chr.to.int$ -- 0
+cite$ -- 79
+duplicate$ -- 671
+empty$ -- 2707
+format.name$ -- 270
+if$ -- 6379
+int.to.chr$ -- 0
+int.to.str$ -- 78
+missing$ -- 74
+newline$ -- 323
+num.names$ -- 78
+pop$ -- 359
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1610
+stack$ -- 0
+substring$ -- 1482
+swap$ -- 275
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 185
+width$ -- 80
+write$ -- 792
+(There was 1 warning)

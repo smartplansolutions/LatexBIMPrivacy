@@ -1,0 +1,290 @@
+\relax 
+\Newlabel{cor1}{1}
+\citation{hariram2023}
+\citation{mensah2019}
+\citation{lima2021}
+\citation{negash2021}
+\citation{mousavi2023}
+\citation{arman2021}
+\citation{debrah2022}
+\providecommand \oddpage@label [2]{}
+\Newlabel{1}{a}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{}\protected@file@percent }
+\citation{yildiz2020}
+\citation{faraji2023}
+\citation{abd2023}
+\citation{lis2021}
+\citation{mansor2020}
+\citation{elgadra2023}
+\citation{gago2015}
+\citation{elbatran2021,bahdad2021,khani2022,lotfabadi2023}
+\citation{day2020}
+\citation{kwong2020,peng2024}
+\citation{kent2020}
+\citation{kim2013}
+\citation{zadeh1996,shepard2005,zadeh2015}
+\citation{liu2015,lu2017,chong2017,llatas2020,olanrewaju2022}
+\citation{askarizad2020}
+\citation{inglis2022}
+\citation{benedikt1979,turner2001,hosseini2022}
+\citation{inglis2022}
+\citation{misthos2019,gillings2020,stein2022}
+\citation{cavaglia2024}
+\@writefile{toc}{\contentsline {paragraph}{Contributions.}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Literature Review}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Visibility Analysis Approaches}{3}{}\protected@file@percent }
+\citation{fisher1992,fisher1994,alberti2017,cimburova2022}
+\citation{fisher2024}
+\citation{biljecki2021}
+\citation{kent2020,abdelrahman2023}
+\citation{morello2009,suleiman2013,chen2021,krukar2021,parent2023}
+\citation{othman2019,snopkova2023}
+\citation{wu2023,khaleel2023,guo2023}
+\citation{Kodmany1999}
+\citation{rahim2015}
+\citation{Altomonte2013,Schiavon2014,Guo2021}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Visual Privacy}{4}{}\protected@file@percent }
+\citation{LondonGuidelines,ManchesterGuidelines}
+\citation{NSWApartmentDesign}
+\citation{TorontoTallBuildings}
+\citation{NYCZoning}
+\citation{alkhalili2018}
+\citation{zheng2021}
+\citation{Churchman1999}
+\citation{ShachPinsly2007,ShachPinsly2011}
+\citation{FisherGewirtzman2003a,FisherGewirtzman2003b,FisherGewirtzman2017,FisherGewirtzman2018}
+\citation{zheng2021,Zheng2023_IPVEI}
+\citation{AbdAlhamid2023Review}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Visibility \& privacy in context: from VE/VO and Spatial Openness to (I-)PVEI and this work}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{How this study differs.}{5}{}\protected@file@percent }
+\citation{ShachPinsly2007}
+\citation{ShachPinsly2011}
+\citation{FisherGewirtzman2003a,FisherGewirtzman2003b}
+\citation{FisherGewirtzman2018}
+\citation{zheng2021}
+\citation{Zheng2023_IPVEI}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Compact summary of related visibility/visual-privacy methods.}}{6}{}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:prior_comparison}{{1}{6}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Problem Statement}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Methodology}{7}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Processing pipeline from BIM preprocessing to space-level privacy aggregation.}}{8}{}\protected@file@percent }
+\newlabel{fig:pipeline}{{1}{8}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}BIM Model Setup}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Grid Point Generation}{8}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Examples of BIM models illustrating privacy scenarios: (a) two buildings with facing windows; (b) three buildings with increased visibility exposure.}}{9}{}\protected@file@percent }
+\newlabel{fig:bim_models}{{2}{9}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Grid-based approach: (a) 2D view; (b) 3D view.}}{9}{}\protected@file@percent }
+\newlabel{fig:griding}{{3}{9}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Occupant forward direction and boundary handling.}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Ray-Casting Methodology}{10}{}\protected@file@percent }
+\newlabel{sec:raycasting}{{4.3}{10}{}{}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Uniform ray generation and casting}}{10}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Progression of uniform ray directions with increasing icosahedral subdivisions (2, 4, 6, 8).}}{10}{}\protected@file@percent }
+\newlabel{fig:raycasting}{{4}{10}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Number of rays for different subdivisions (chosen to balance accuracy and runtime).}}{10}{}\protected@file@percent }
+\newlabel{tab:subdivisions}{{2}{10}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Level confinement and occlusion handling.}{11}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Visualization of potential sightlines across building levels: (a) 3D view; (b) 2D view.}}{11}{}\protected@file@percent }
+\newlabel{fig:ray-intersections}{{5}{11}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Numerical robustness.}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Assigning Visibility Indices to Rays}{11}{}\protected@file@percent }
+\newlabel{sec:rvi}{{4.4}{11}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Geometric definitions.}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Stimuli and task (ratings).}{12}{}\protected@file@percent }
+\newlabel{eq:rating-normalization}{{1}{12}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Monotone, non-parametric memberships (respondent-specific or pooled).}{12}{}\protected@file@percent }
+\newlabel{eq:isotonic-individual}{{2}{12}{}{}{}}
+\newlabel{eq:anchors}{{3}{12}{}{}{}}
+\newlabel{eq:interp}{{4}{12}{}{}{}}
+\newlabel{eq:pooled-mean}{{5}{12}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces \textbf  {Monotone memberships from elicitation.} Left: pooled fits for distance and angle (thick line with 95\% CI band). Right: several respondent-specific curves and the two-parameter linear special case used for low-burden elicitation.}}{13}{}\protected@file@percent }
+\newlabel{fig:memberships}{{6}{13}{}{}{}}
+\newlabel{eq:isotonic-pooled}{{6}{13}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Special case: two-parameter linear memberships (low-burden elicitation).}{14}{}\protected@file@percent }
+\newlabel{eq:linear-distance}{{7}{14}{}{}{}}
+\newlabel{eq:linear-angle}{{8}{14}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Per-ray visibility.}{14}{}\protected@file@percent }
+\newlabel{eq:rvi-individual}{{9}{14}{}{}{}}
+\newlabel{eq:rvi-pooled}{{10}{14}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Aggregating Ray Visibility Indices}{14}{}\protected@file@percent }
+\newlabel{sec:aggregation}{{4.5}{14}{}{}{}}
+\newlabel{eq:softmax-weighted}{{11}{14}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \textbf  {Hotspot sensitivity via the soft-max exponent $p$.} Larger $p$ emphasizes localized high-visibility directions (hotspots), while smaller $p$ reflects average exposure across directions. Panels show SPI maps for representative values $p\in \{1,4,10,32\}$ on the same scene and sampling; identical color scales are used for comparability.}}{15}{}\protected@file@percent }
+\newlabel{fig:softmax}{{7}{15}{}{}{}}
+\newlabel{eq:acrossrespondents}{{12}{15}{}{}{}}
+\newlabel{eq:spi_respondent_pooled}{{13}{15}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Runtime and scale (reporting template).}{15}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Runtime and scale for two scenes (fill with your measurements).}}{15}{}\protected@file@percent }
+\newlabel{tab:runtime}{{3}{15}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Reproducibility and Data Handling}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Experimental Analysis}{15}{}\protected@file@percent }
+\newlabel{sec:evaluation}{{5}{15}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Participants and Apparatus}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Stimuli and Procedure}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{S1: Distance series (elicitation).}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{S2: Angle series (elicitation).}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{S3: Combined generalization (held-out test).}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Membership Elicitation and Fitting}{16}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces \textbf  {Validation on held-out stimuli (S3).} Predicted $\setbox \z@ \hbox {\mathsurround \z@ $\textstyle H$}\mathaccent "0362{H}$ versus observed $H$ across respondents. Thin points depict individual respondents; thick markers show the pooled model. Shaded bands indicate 95\% bootstrap CIs. Summary metrics (RMSE/MAE/$\rho $/AUC) correspond to Table~\ref {tab:heldout}.}}{17}{}\protected@file@percent }
+\newlabel{fig:validation}{{8}{17}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Predictive Validity on Held-Out Stimuli (S3)}{17}{}\protected@file@percent }
+\newlabel{eq:hhat}{{14}{17}{}{}{}}
+\newlabel{eq:rmse-mae}{{15}{17}{}{}{}}
+\newlabel{eq:spearman}{{16}{17}{}{}{}}
+\newlabel{eq:auc}{{17}{17}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Held-out predictive validity on S3 (median [IQR] across respondents).}}{17}{}\protected@file@percent }
+\newlabel{tab:heldout}{{4}{17}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{How to read Fig.~\ref {fig:validation} (and what it shows).}{17}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces \textbf  {Comparison with a published baseline.} Left: side-by-side room maps (baseline vs.\ ours) on identical grids and color scales; our method localizes window-through-window hotspots and suppresses spurious exposure behind opaque surfaces. Right: aggregate improvements (\(\Delta \)RMSE, \(\Delta \)MAE, \(\Delta \rho \), \(\Delta \)AUC) across rooms.}}{18}{}\protected@file@percent }
+\newlabel{fig:baseline}{{9}{18}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Comparison with Published Baselines}{18}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Comparison to baseline on S3 (median [IQR] across respondents/rooms). $\Delta $ is ours minus baseline; negative $\Delta $ for RMSE/MAE indicates improvement.}}{18}{}\protected@file@percent }
+\newlabel{tab:baseline}{{5}{18}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Why our method beats the baseline (and where it does not).}{19}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Statistical testing.}{19}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}Scene-Level Validation (VI/PI Maps)}{19}{}\protected@file@percent }
+\newlabel{eq:room-visibility-proxy}{{18}{19}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Room-level validation: errors and rank agreement across $\langle K\rangle $ rooms (median [IQR] across respondents).}}{19}{}\protected@file@percent }
+\newlabel{tab:room-validation}{{6}{19}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Scene-level validation in a representative room. Left: model visibility map $\mathrm  {VI}_j^{\mathrm  {med}}$ (Eq.~\eqref  {eq:acrossrespondents}); right: normalized human room rating with 95\% CI.}}{20}{}\protected@file@percent }
+\newlabel{fig:vi-map-vs-rating}{{10}{20}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Reading Fig.~\ref {fig:vi-map-vs-rating}.}{20}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7}Sensitivity Analyses}{20}{}\protected@file@percent }
+\newlabel{sec:sensitivity}{{5.7}{20}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Soft-max exponent $p$.}{20}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Effect of soft-max exponent $p$ on visibility maps in a representative floor (same scene as Fig.~\ref {fig:bim_models}b). Left to right: $p{=}1,5,10,20,50$. Higher $p$ emphasizes strongest sightlines; $p{=}10$ preserves hotspots without saturation.}}{21}{}\protected@file@percent }
+\newlabel{fig:p-sweep-heatmaps}{{11}{21}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Sensitivity to soft-max exponent $p$ (median [IQR] across rooms/respondents).}}{22}{}\protected@file@percent }
+\newlabel{tab:p-sweep}{{7}{22}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Directional weights $\omega _i$.}{22}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Uncertainty in monotone memberships.}{22}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Discretization: grid spacing and rays per point.}{22}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Interpretation bands (visualization only).}{22}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.8}Worked Example: One Respondent}{22}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.9}Ablation: Linear Low-Burden Option}{22}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces \textbf  {Effect of soft-max exponent $p$ (quantitative).} Prediction error (RMSE/MAE), room-ranking stability (Spearman $\rho $), and within-room differentiation (CoV of $\{\mathrm  {VI}_j\}$) versus $p$, normalized to $p{=}10$. Error bars: IQR across rooms/respondents.}}{23}{}\protected@file@percent }
+\newlabel{fig:sens-metrics-p}{{12}{23}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Sensitivity Analyses}{23}{}\protected@file@percent }
+\newlabel{sec:sensitivity}{{6}{23}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Soft-max Exponent $p$}{23}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Metrics.}{23}{}\protected@file@percent }
+\newlabel{eq:cov-vi}{{19}{23}{}{}{}}
+\newlabel{eq:jaccard}{{20}{23}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Findings.}{23}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Sensitivity to $p$ (median [IQR] across rooms/respondents). Fill with your values.}}{24}{}\protected@file@percent }
+\newlabel{tab:p-sweep}{{8}{24}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Practical default.}{24}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Directional Weights $\omega _i$}{24}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Metrics.}{24}{}\protected@file@percent }
+\newlabel{eq:deltaV}{{21}{24}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Findings.}{24}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Effect of directional weights on room-level visibility.}}{24}{}\protected@file@percent }
+\newlabel{tab:omega}{{9}{24}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Uncertainty in Monotone Memberships}{24}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Bootstrap propagation.}{25}{}\protected@file@percent }
+\newlabel{eq:boot-map-diff}{{22}{25}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Findings.}{25}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces \textbf  {Membership uncertainty (pooled).} Isotonic fits with 95\% bootstrap CIs for $\bar  {\mu }_d$ (left) and $\bar  {\mu }_\theta $ (right).}}{25}{}\protected@file@percent }
+\newlabel{fig:mf-uncertainty}{{13}{25}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Discretization: Grid Spacing and Rays per Point}{25}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Metrics.}{25}{}\protected@file@percent }
+\newlabel{eq:map-delta}{{23}{25}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Findings.}{25}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces \textbf  {Accuracy--cost trade-off.} Median $\Delta \mathrm  {VI}$ (Eq.~\ref {eq:map-delta}) versus runtime relative to $(1.0\text  { m},1212)$; markers denote $(\Delta ,R)$ pairs.}}{25}{}\protected@file@percent }
+\newlabel{fig:discretization-tradeoff}{{14}{25}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Discretization sensitivity relative to $(\Delta {=}1.0\text  { m}, R{=}1212)$.}}{25}{}\protected@file@percent }
+\newlabel{tab:discretization}{{10}{25}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces \textbf  {Embedded qualitative case on Room R12 (geometric moves).} SPI maps (baseline vs.\ intervention) for three lightweight design moves: +1.5\,m setback, 0.6\,m side fin, and +0.2\,m raised sill. Hotspots are annotated; arrows mark primary window-through-window sightlines attenuated by each intervention.}}{26}{}\protected@file@percent }
+\newlabel{fig:sensitivity-case}{{16}{26}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.5}Forward Direction Definition $\hat  {\mathbf  {u}}_j$}{26}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Metrics and findings.}{26}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces \textbf  {Sensitivity to forward-direction definition.} $\mathrm  {VI}_j$ under (F1) window-normal (left) and (F2) room-axis (middle); right: absolute difference heatmap. Differences are localized away from façades.}}{26}{}\protected@file@percent }
+\newlabel{fig:forward-sensitivity}{{15}{26}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.6}Embedded Qualitative Case (Design Implications)}{26}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Design moves and their effects on Room R12 (relative to baseline). Negative $\Delta \setbox \z@ \hbox {\mathsurround \z@ $\textstyle V$}\mathaccent "0362{V}$ and $\Delta \text  {RMSE}$ indicate improvement; positive $\Delta \rho $ indicates stronger agreement with human ratings.}}{26}{}\protected@file@percent }
+\newlabel{tab:case_deltas}{{11}{26}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Design takeaway.}{26}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Contributions.}{27}{}\protected@file@percent }
+\bibstyle{elsarticle-num}
+\bibdata{cas-refs}
+\bibcite{hariram2023}{{1}{}{{}}{{}}}
+\bibcite{mensah2019}{{2}{}{{}}{{}}}
+\bibcite{lima2021}{{3}{}{{}}{{}}}
+\bibcite{negash2021}{{4}{}{{}}{{}}}
+\bibcite{mousavi2023}{{5}{}{{}}{{}}}
+\bibcite{arman2021}{{6}{}{{}}{{}}}
+\bibcite{debrah2022}{{7}{}{{}}{{}}}
+\bibcite{yildiz2020}{{8}{}{{}}{{}}}
+\bibcite{faraji2023}{{9}{}{{}}{{}}}
+\bibcite{abd2023}{{10}{}{{}}{{}}}
+\bibcite{lis2021}{{11}{}{{}}{{}}}
+\bibcite{mansor2020}{{12}{}{{}}{{}}}
+\bibcite{elgadra2023}{{13}{}{{}}{{}}}
+\bibcite{gago2015}{{14}{}{{}}{{}}}
+\bibcite{elbatran2021}{{15}{}{{}}{{}}}
+\bibcite{bahdad2021}{{16}{}{{}}{{}}}
+\bibcite{khani2022}{{17}{}{{}}{{}}}
+\bibcite{lotfabadi2023}{{18}{}{{}}{{}}}
+\bibcite{day2020}{{19}{}{{}}{{}}}
+\bibcite{kwong2020}{{20}{}{{}}{{}}}
+\bibcite{peng2024}{{21}{}{{}}{{}}}
+\bibcite{kent2020}{{22}{}{{}}{{}}}
+\bibcite{kim2013}{{23}{}{{}}{{}}}
+\bibcite{zadeh1996}{{24}{}{{}}{{}}}
+\bibcite{shepard2005}{{25}{}{{}}{{}}}
+\bibcite{zadeh2015}{{26}{}{{}}{{}}}
+\bibcite{liu2015}{{27}{}{{}}{{}}}
+\bibcite{lu2017}{{28}{}{{}}{{}}}
+\bibcite{chong2017}{{29}{}{{}}{{}}}
+\bibcite{llatas2020}{{30}{}{{}}{{}}}
+\bibcite{olanrewaju2022}{{31}{}{{}}{{}}}
+\bibcite{askarizad2020}{{32}{}{{}}{{}}}
+\bibcite{inglis2022}{{33}{}{{}}{{}}}
+\bibcite{benedikt1979}{{34}{}{{}}{{}}}
+\bibcite{turner2001}{{35}{}{{}}{{}}}
+\bibcite{hosseini2022}{{36}{}{{}}{{}}}
+\bibcite{misthos2019}{{37}{}{{}}{{}}}
+\bibcite{gillings2020}{{38}{}{{}}{{}}}
+\bibcite{stein2022}{{39}{}{{}}{{}}}
+\bibcite{cavaglia2024}{{40}{}{{}}{{}}}
+\bibcite{fisher1992}{{41}{}{{}}{{}}}
+\bibcite{fisher1994}{{42}{}{{}}{{}}}
+\bibcite{alberti2017}{{43}{}{{}}{{}}}
+\bibcite{cimburova2022}{{44}{}{{}}{{}}}
+\bibcite{fisher2024}{{45}{}{{}}{{}}}
+\bibcite{biljecki2021}{{46}{}{{}}{{}}}
+\bibcite{abdelrahman2023}{{47}{}{{}}{{}}}
+\bibcite{morello2009}{{48}{}{{}}{{}}}
+\bibcite{suleiman2013}{{49}{}{{}}{{}}}
+\bibcite{chen2021}{{50}{}{{}}{{}}}
+\bibcite{krukar2021}{{51}{}{{}}{{}}}
+\bibcite{parent2023}{{52}{}{{}}{{}}}
+\bibcite{othman2019}{{53}{}{{}}{{}}}
+\bibcite{snopkova2023}{{54}{}{{}}{{}}}
+\bibcite{wu2023}{{55}{}{{}}{{}}}
+\bibcite{khaleel2023}{{56}{}{{}}{{}}}
+\bibcite{guo2023}{{57}{}{{}}{{}}}
+\bibcite{Kodmany1999}{{58}{}{{}}{{}}}
+\bibcite{rahim2015}{{59}{}{{}}{{}}}
+\bibcite{Altomonte2013}{{60}{}{{}}{{}}}
+\bibcite{Schiavon2014}{{61}{}{{}}{{}}}
+\bibcite{Guo2021}{{62}{}{{}}{{}}}
+\bibcite{LondonGuidelines}{{63}{}{{}}{{}}}
+\bibcite{ManchesterGuidelines}{{64}{}{{}}{{}}}
+\bibcite{NSWApartmentDesign}{{65}{}{{}}{{}}}
+\bibcite{TorontoTallBuildings}{{66}{}{{}}{{}}}
+\bibcite{NYCZoning}{{67}{}{{}}{{}}}
+\bibcite{alkhalili2018}{{68}{}{{}}{{}}}
+\bibcite{zheng2021}{{69}{}{{}}{{}}}
+\bibcite{Churchman1999}{{70}{}{{}}{{}}}
+\bibcite{ShachPinsly2007}{{71}{}{{}}{{}}}
+\bibcite{ShachPinsly2011}{{72}{}{{}}{{}}}
+\bibcite{FisherGewirtzman2003a}{{73}{}{{}}{{}}}
+\bibcite{FisherGewirtzman2003b}{{74}{}{{}}{{}}}
+\bibcite{FisherGewirtzman2017}{{75}{}{{}}{{}}}
+\bibcite{FisherGewirtzman2018}{{76}{}{{}}{{}}}
+\bibcite{Zheng2023_IPVEI}{{77}{}{{}}{{}}}
+\bibcite{AbdAlhamid2023Review}{{78}{}{{}}{{}}}
+\providecommand\NAT@force@numbers{}\NAT@force@numbers
+\gdef \@abspage@last{33}
