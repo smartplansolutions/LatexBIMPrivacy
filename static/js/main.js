@@ -8,18 +8,18 @@ import { PointerLockControls } from './PointerLockControls.js';
 //*********************************************/
 export class BuiltEnvironment extends THREE.Scene
 {
-  constructor(name,renderer)
+  constructor(name, renderer)
   {
     super()
-    this.name=name;
-    this.BuiltObjects=[];
+    this.name = name;
+    this.BuiltObjects = [];
     this.background = new THREE.Color( 0xffffff );
     this.camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
     this.camera.position.setZ(30);
     this.camera.position.setY(10);
     this.camera.position.setX(10);
-    this.renderer=renderer;
-    renderer.render(this,this.camera);
+    this.renderer = renderer;
+    this.renderer.render(this, this.camera);
 
     const amblight=new THREE.AmbientLight(0xffffff,1);
     this.add(amblight);
@@ -48,7 +48,7 @@ export class BuiltEnvironment extends THREE.Scene
  
     // Bind the animate function to the correct context
     // Initialize controls
-    this.orbitControls = new OrbitControls(this.camera, renderer.domElement);
+    this.orbitControls = new OrbitControls(this.camera, this.renderer.domElement);
     this.pointerLockControls = new PointerLockControls(this.camera, document.body);
     let isPointerLocked=false;
     // Add an event listener for Pointer Lock
@@ -108,7 +108,7 @@ export class BuiltEnvironment extends THREE.Scene
           this.orbitControls.update();
       }
   
-      renderer.render(this, this.camera);
+      this.renderer.render(this, this.camera);
   }
     saveView()
     {

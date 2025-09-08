@@ -135,8 +135,15 @@ export function create_buildings_from_json(data, renderer, view_name) {
     // detailed creation using walls and doors
     if (building.walls && building.walls.length > 0) {
       building.walls.forEach(wall => {
-        const xzCoords = wall.xzCoords;
-        const levels = wall.levels;
+        // Support both `xzCoords` and `xzCoordinates` property names
+        const xzCoords = wall.xzCoords || wall.xzCoordinates;
+        const levels = wall.levels || [];
+
+        // If coordinates are missing or malformed, skip this wall
+        if (!xzCoords || xzCoords.length < 2) {
+          console.warn('Wall is missing xz coordinates:', wall);
+          return;
+        }
 
         levels.forEach((level, i) => {
           if (i > 0) {
