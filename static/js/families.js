@@ -1,8 +1,8 @@
 //***********************************************/
 //*************Generate families*****************/
 //***********************************************/
-import * as OBIM from './main.js'
-import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/build/three.module.js';
+import * as OBIM from './main.js';
+import * as THREE from './three.module.js';
 
 
 export function simple_window_family(width,height,frame_depth,glass_depth,frameThickness,frame_material,glass_material)

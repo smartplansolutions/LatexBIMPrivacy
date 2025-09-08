@@ -1,12 +1,8 @@
 //we will use raycasting as an efficient way of identifying weather a point is visible but surroundings
 
-import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/build/three.module.js';
-import {OrbitControls} from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/examples/jsm/controls/OrbitControls.js';
-import { PointerLockControls } from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/examples/jsm/controls/PointerLockControls.js';
-
-export const renderer = new THREE.WebGLRenderer();
-renderer.setSize(window.innerWidth, window.innerHeight);
-document.body.appendChild(renderer.domElement);
+import * as THREE from './three.module.js';
+import { OrbitControls } from './OrbitControls.js';
+import { PointerLockControls } from './PointerLockControls.js';
 //*********************************************/
 //******************OBIMCLASSES****************/
 //*********************************************/

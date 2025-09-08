@@ -29,7 +29,7 @@ def close_db_connection(exception=None):
 
 @app.route('/')
 def index():
-    return render_template('Fig6.html')
+    return render_template('index.html')
 
 @app.route('/Fig1')
 def fig1():
