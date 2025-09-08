@@ -1,4 +1,4 @@
-import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/build/three.module.js';
+import * as THREE from './three.module.js';
 import * as OBIM from './main.js';
 import * as families from './families.js';
 
