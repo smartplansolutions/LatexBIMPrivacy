@@ -10,20 +10,6 @@
 <body>
     
     <header></header>
-    <script type="module">
-        // Basic Three.js scene setup
-        // import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/build/three.module.js';
-        // import * as OBIM from './static/js/main.js'
-        // import * as families from './static/js/families.js'
-        import * as OBIMcreate from './static/js/OBIM_create.js'
-        const response = await fetch('./static/buildings_by_envelope.json');
-        import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/build/three.module.js';
-        const data = await response.json();
-        const renderer = new THREE.WebGLRenderer();
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        document.body.appendChild(renderer.domElement);
-
-        const env1=OBIMcreate.create_buildings_from_json(data,renderer,"3D")
-    </script>
+    <script type="module" src="{{ url_for('static', filename='js/index.js') }}"></script>
 </body>
 </html>
